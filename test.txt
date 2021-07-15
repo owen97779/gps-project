@@ -1,0 +1,3 @@
+I am testing out git using pycharm, what do you think?
+
+Testing out pycharm on my laptop.
