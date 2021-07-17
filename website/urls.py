@@ -19,10 +19,12 @@ from django.urls import path
 from django.contrib import admin
 from django.urls import path
 
-from hello.views import *
+from hello.views import home, index
+from users.views import register
 
 urlpatterns = [
-    path('', home),
+    path('', home, name='home'),
     path('admin/', admin.site.urls),
     path('hello/', index),
+    path("register/", register),
 ]
