@@ -1,11 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>hello</title>
-    <h1>hello world</h1>
-</head>
-<body>
+{% extends "hello/base.html" %}
+{% block body %}
+  <div id="map"></div>
+  <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+    <style>
+      #map {
+      position: absolute;
+      top: 66px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      }
+  </style>
+  <script>
+    map = new OpenLayers.Map("map");
+    map.addLayer(new OpenLayers.Layer.OSM());
 
-</body>
-</html>
+    var lonLat = new OpenLayers.LonLat( -0.11640800298688, 51.512984843866064)
+          .transform(
+            new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+            map.getProjectionObject() // to Spherical Mercator Projection
+          );
+
+    var zoom=16;
+
+    var markers = new OpenLayers.Layer.Markers( "Markers" );
+    map.addLayer(markers);
+
+    markers.addMarker(new OpenLayers.Marker(lonLat));
+
+    map.setCenter (lonLat, zoom);
+  </script>
+  <style>
+    div.olControlAttribution{
+    bottom: 0;
+    }
+    body{
+    margin: 0
+    }
+  </style>
+{% endblock body %}
