@@ -18,11 +18,9 @@
     <header class="site-header">
       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container">
-          <a class="navbar-brand" href="{% url 'home' %}">brand</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarToggle">
+          <a href="{% url 'home' %}"><img class="align-self-center mr-3" src="/media/Logo/Official-Logo.png"
+               width="50" height="50" class="d-inline-block align-top" alt=""></a>
+          <a class="navbar-brand" href="{% url 'home' %}">Eodi</a>
 
             <!-- Navbar Right Side -->
             <div class="navbar-nav">
@@ -38,7 +36,6 @@
         </div>
       </nav>
     </header>
-    <br>
     <div class="container">
         {% if messages %}
             {% for message in messages %}
@@ -47,7 +44,6 @@
                 </div>
             {% endfor %}
         {% endif %}
-
         {% block body %}{% endblock body%}
     </div>
     <!-- Optional JavaScript -->
