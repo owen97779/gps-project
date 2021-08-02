@@ -1,21 +1,13 @@
-{% extends "hello/base.html" %}
+{% extends "hello/test_base.html" %}
 {% block body %}
+<div id="body-block">
   <div id="map"></div>
   <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
-    <style>
-      #map {
-      position: absolute;
-      top: 66px;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      }
-  </style>
   <script>
     map = new OpenLayers.Map("map");
     map.addLayer(new OpenLayers.Layer.OSM());
 
-    var lonLat = new OpenLayers.LonLat( -0.11640800298688, 51.512984843866064)
+    var lonLat = new OpenLayers.LonLat( -0.1279688 ,51.5077286 )
           .transform(
             new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
             map.getProjectionObject() // to Spherical Mercator Projection
@@ -30,12 +22,13 @@
 
     map.setCenter (lonLat, zoom);
   </script>
+</div>
   <style>
-    div.olControlAttribution{
-    bottom: 0;
-    }
     body{
-    margin: 0
+      overflow:hidden;
+    }
+    #OpenLayers_Control_Attribution_7{
+        bottom: 65;
     }
   </style>
 {% endblock body %}

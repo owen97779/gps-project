@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- Required meta tags -->
@@ -40,7 +39,7 @@
     </link>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="alert-message">
         {% if messages %}
             {% for message in messages %}<br>
                 <div class="alert alert-{{ message.tags}}">
@@ -49,9 +48,7 @@
             {% endfor %}
         {% endif %}
     </div>
-    <div class="container">
-    {% block body %}{% endblock body%}
-    </div>
+        {% block body %}{% endblock body%}
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
