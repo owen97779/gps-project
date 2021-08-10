@@ -12,3 +12,8 @@ def about(request):
 def index(request):
     return render(request, 'hello/index.html')
 
+
+def tester(request):
+    return render(request, 'hello/test/tester.html')
+
+
