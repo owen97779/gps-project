@@ -1,8 +1,8 @@
 from django.shortcuts import render
-
+from .models import gps_data
 
 def home(request):
-    return render(request, 'hello/home.html')
+    return render(request, 'hello/home/home.html')
 
 
 def about(request):

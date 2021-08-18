@@ -2,7 +2,7 @@
 {% block body %}
 <div id="body-block">
   <div id="map"></div>
-  <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+  <script src="/media/OpenLayers-2.13.1/OpenLayers.js"></script>
   <script>
     map = new OpenLayers.Map("map");
     map.addLayer(new OpenLayers.Layer.OSM());
@@ -21,6 +21,7 @@
 
     var zoom=16;
     map.setCenter (lonLat, zoom);
+
   </script>
 </div>
   <style>
