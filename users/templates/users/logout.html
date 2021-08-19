@@ -1,0 +1,14 @@
+{% extends "hello/base.html" %}
+{% block body %}
+    <h2 class="Logged-Out">Logged Out</h2>
+          <style>
+              h2.Logged-Out {
+                margin-top: 10px;
+              }
+          </style>
+    <div class="border-top pt-3">
+       <small class="text-muted">
+            <a href="{% url 'login' %}">Log In again</a>
+       </small>
+    </div>
+{% endblock body %}

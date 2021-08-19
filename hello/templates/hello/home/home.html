@@ -1,0 +1,36 @@
+{% extends "hello/base.html" %}
+{% block head %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.6.1/css/ol.css">
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.6.1/build/ol.js"></script>
+    <style>
+      .map {
+        position: fixed;
+        display: flex;
+        height: calc(100% - 66px);
+        width: 100%;
+      }
+      body {
+        position: relative;
+        height: 100%;
+        min-height: 250px;
+        min-width: 210px;
+      }
+    </style>
+{% endblock head %}
+{% block body %}
+<div id="map" class="map"></div>
+    <script>
+      var map = new ol.Map({
+        target: 'map',
+        layers: [
+          new ol.layer.Tile({
+            source: new ol.source.OSM()
+          })
+        ],
+        view: new ol.View({
+          center: ol.proj.fromLonLat([37.41, 8.82]),
+          zoom: 4
+        })
+      });
+    </script>
+{% endblock body %}
