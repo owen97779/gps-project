@@ -1,19 +1,25 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.6.1/css/ol.css" type="text/css">
+{% extends "hello/test_base.html" %}
+{% block head %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.6.1/css/ol.css">
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.6.1/build/ol.js"></script>
     <style>
       .map {
-        height: 1000px;
+        position: fixed;
+        display: flex;
+        height: calc(100% - 66px);
         width: 100%;
-        overflow:hidden;
+      }
+      body {
+        position: relative;
+        height: 100%;
+        min-height: 250px;
+        min-width: 210px;
       }
     </style>
-    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.6.1/build/ol.js"></script>
-  </head>
-  <body>
-    <div id="map" class="map"></div>
-    <script type="text/javascript">
+{% endblock head %}
+{% block body %}
+<div id="map" class="map"></div>
+    <script>
       var map = new ol.Map({
         target: 'map',
         layers: [
@@ -27,5 +33,4 @@
         })
       });
     </script>
-  </body>
-</html>
+{% endblock body %}

@@ -1,35 +1,36 @@
 {% extends "hello/test_base.html" %}
+{% block head %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.6.1/css/ol.css">
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.6.1/build/ol.js"></script>
+    <style>
+      .map {
+        position: fixed;
+        display: flex;
+        height: calc(100% - 66px);
+        width: 100%;
+      }
+      body {
+        position: relative;
+        height: 100%;
+        min-height: 250px;
+        min-width: 210px;
+      }
+    </style>
+{% endblock head %}
 {% block body %}
-<div id="body-block">
-  <div id="map"></div>
-  <script src="/media/OpenLayers-2.13.1/OpenLayers.js"></script>
-  <script>
-    map = new OpenLayers.Map("map");
-    map.addLayer(new OpenLayers.Layer.OSM());
-
-    var pois = new OpenLayers.Layer.Text( "My Points",{ location:"/media/Markers/longlat.txt", projection: map.displayProjection});
-    map.addLayer(pois);
-
-    var layer_switcher= new OpenLayers.Control.LayerSwitcher({});
-    map.addControl(layer_switcher);
-
-    var lonLat = new OpenLayers.LonLat( -0.1279688 ,51.5077286 )
-          .transform(
-            new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
-            map.getProjectionObject() // to Spherical Mercator Projection
-          );
-
-    var zoom=16;
-    map.setCenter (lonLat, zoom);
-
-  </script>
-</div>
-  <style>
-    body{
-      overflow:hidden;
-    }
-    #OpenLayers_Control_Attribution_7{
-        bottom: 65;
-    }
-  </style>
+<div id="map" class="map"></div>
+    <script>
+      var map = new ol.Map({
+        target: 'map',
+        layers: [
+          new ol.layer.Tile({
+            source: new ol.source.OSM()
+          })
+        ],
+        view: new ol.View({
+          center: ol.proj.fromLonLat([37.41, 8.82]),
+          zoom: 4
+        })
+      });
+    </script>
 {% endblock body %}
