@@ -11,7 +11,7 @@ def about(request):
 
 
 def index(request):
-    return render(request, 'hello/index.html')
+    return render(request, 'hello/home/index.html')
 
 
 def tester(request):
