@@ -19,18 +19,28 @@
 {% endblock head %}
 {% block body %}
 <div id="map" class="map"></div>
-    <script>
-      var map = new ol.Map({
-        target: 'map',
-        layers: [
-          new ol.layer.Tile({
-            source: new ol.source.OSM()
-          })
-        ],
-        view: new ol.View({
-          center: ol.proj.fromLonLat([37.41, 8.82]),
-          zoom: 4
-        })
-      });
-    </script>
+<script>
+const tilelayer = new ol.layer.Tile({source: new ol.source.OSM()});
+const source = new ol.source.Vector();
+const vector = new ol.layer.Vector({source: source});
+
+const map = new ol.Map({
+  target: 'map',
+  layers: [tilelayer, vector],
+  view: new ol.View({
+    center: ol.proj.fromLonLat([-0.12778700618, 51.5077000112]),
+    zoom: 16
+  })
+});
+
+function addFeature() {
+    const vector = new ol.layer.Vector()
+    const coord = [-0.127787, 51.5077];
+    const geom = new ol.geom.Point(ol.proj.fromLonLat(coord))
+    const feature = new ol.Feature(geom)
+    source.addFeature(feature);
+}
+
+window.setInterval(addRandomFeature, 1000);
+ </script>
 {% endblock body %}
