@@ -1,5 +1,10 @@
 from django.shortcuts import render
-from .models import gps_data
+from .models import GpsData
+
+
+def AllGpsData(request):
+    GpsDataList = GpsData.objects.all()
+    return render(request, 'hello/home/home.html', {'GpsDataList': GpsDataList})
 
 
 def home(request):
@@ -16,5 +21,3 @@ def index(request):
 
 def tester(request):
     return render(request, 'hello/test/tester.html')
-
-
