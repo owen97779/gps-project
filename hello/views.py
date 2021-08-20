@@ -3,12 +3,14 @@ from .models import GpsData
 
 
 def AllGpsData(request):
+    test = "sent"
     GpsDataList = GpsData.objects.all()
-    return render(request, 'hello/home/home.html', {'GpsDataList': GpsDataList})
+    return render(request, 'hello/test/tester.html', {'GpsDataList': GpsDataList, 'test': test})
 
 
 def home(request):
-    return render(request, 'hello/home/home.html')
+    GpsDataList = GpsData.objects.all()
+    return render(request, 'hello/home/home.html', {'GpsDataList': GpsDataList})
 
 
 def about(request):

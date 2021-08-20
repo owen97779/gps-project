@@ -6,5 +6,5 @@ class GpsData(models.Model):
     latitude = models.DecimalField(max_digits=20, decimal_places=18)
     #time = models.DateTimeField(auto_now=True)
 
-    def __str__(self):
-        return self.longitude + ' ' + self.latitude
+    objects = models.Manager()
+

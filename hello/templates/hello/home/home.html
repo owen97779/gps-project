@@ -20,30 +20,52 @@
       }
     </style>
 {% endblock head %}
+
 {% block body %}
-<div class="container">
-    <h2>{{GpsDataList}} yes</h2>
-    <ul>
-    {% for GpsData in GpsDataList %}
-        <li>{{ GpsData }}</li>
-    {% endfor %}
-    </ul>
-</div>
 {% endblock body %}
+
 {% block map %}
 <div id="map" class="map"></div>
-    <script>
-        var map = new ol.Map({
-          target: 'map',
-          layers: [
-            new ol.layer.Tile({
-              source: new ol.source.OSM()
-            })
-          ],
-          view: new ol.View({
-            center: ol.proj.fromLonLat([-0.127787006188513050, 51.507700011210680000]),
-            zoom: 16
-          })
-        });
-    </script>
+{% load static %}
+<script>
+
+var array = [
+    {% for GpsData in GpsDataList %}
+        [{{ GpsData.longitude }}, {{ GpsData.latitude }}],
+    {% endfor %}
+];
+
+const tilelayer = new ol.layer.Tile({source: new ol.source.OSM()});
+
+var map = new ol.Map({
+  target: 'map',
+  layers: [tilelayer],
+  view: new ol.View({
+    center: ol.proj.fromLonLat([-0.12778700618, 51.5077000112]),
+    zoom: 16
+  })
+});
+
+var points = [[-0.12778700618, 51.5077000112], [-0.1277870,	51.507], [-0.1287870, 51.507]];
+
+var feature = new ol.Feature({
+    geometry: new ol.geom.LineString(array)
+});
+
+feature.getGeometry().transform('EPSG:4326', 'EPSG:3857');
+
+var vectorSource= new ol.source.Vector({
+    features: [feature]
+});
+var vectorLayer = new ol.layer.Vector({
+    source: vectorSource
+});
+
+map.addLayer(vectorLayer);
+
+console.log(array);
+console.log(points);
+
+
+ </script>
 {% endblock map %}
