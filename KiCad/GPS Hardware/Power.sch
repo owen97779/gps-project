@@ -22,7 +22,7 @@ AR Path="/613B204B/613BC225" Ref="U?"  Part="1"
 F 0 "U?" H 4700 3250 50  0000 C CNN
 F 1 "BQ24295" H 4700 3150 50  0000 C CNN
 F 2 "" H 4750 2400 50  0001 C CNN
-F 3 "" H 4750 2400 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/BQ24295RGER?qs=igp4D3uu33JuaPeRfsSg2w%3D%3D" H 4750 2400 50  0001 C CNN
 	1    4700 2000
 	1    0    0    -1  
 $EndComp
@@ -48,7 +48,7 @@ AR Path="/613B204B/613BC231" Ref="U?"  Part="1"
 F 0 "U?" H 2900 2175 50  0000 C CNN
 F 1 "ESD122DMX" H 2900 2084 50  0000 C CNN
 F 2 "" H 2900 1850 50  0001 C CNN
-F 3 "" H 2900 1850 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/ESD122DMXR?qs=%2Fha2pyFaduihn3aKw32kKFOpmmjnpuflw4tqhxDwaDnOkPWXZway8Q%3D%3D" H 2900 1850 50  0001 C CNN
 	1    2900 1800
 	1    0    0    -1  
 $EndComp
@@ -61,7 +61,7 @@ AR Path="/613B204B/613BC237" Ref="U?"  Part="1"
 F 0 "U?" H 2900 1475 50  0000 C CNN
 F 1 "ESD122DMX" H 2900 1384 50  0000 C CNN
 F 2 "" H 2900 1150 50  0001 C CNN
-F 3 "" H 2900 1150 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/ESD122DMXR?qs=%2Fha2pyFaduihn3aKw32kKFOpmmjnpuflw4tqhxDwaDnOkPWXZway8Q%3D%3D" H 2900 1150 50  0001 C CNN
 	1    2900 1100
 	1    0    0    -1  
 $EndComp
@@ -74,7 +74,7 @@ AR Path="/613B204B/613BC23D" Ref="C?"  Part="1"
 F 0 "C?" H 3965 1146 50  0000 L CNN
 F 1 "C" H 3965 1055 50  0000 L CNN
 F 2 "" H 3888 950 50  0001 C CNN
-F 3 "~" H 3850 1100 50  0001 C CNN
+F 3 "test" H 3550 1100 50  0000 L CNN
 	1    3850 1100
 	1    0    0    -1  
 $EndComp
@@ -104,32 +104,6 @@ Text GLabel 4250 1900 0    50   Input ~ 0
 D-
 NoConn ~ 1750 2050
 NoConn ~ 1750 2150
-$Comp
-L Device:R R?
-U 1 1 613BC252
-P 1900 1150
-AR Path="/613BC252" Ref="R?"  Part="1" 
-AR Path="/613B204B/613BC252" Ref="R?"  Part="1" 
-F 0 "R?" V 1693 1150 50  0000 C CNN
-F 1 "R" V 1784 1150 50  0000 C CNN
-F 2 "" V 1830 1150 50  0001 C CNN
-F 3 "~" H 1900 1150 50  0001 C CNN
-	1    1900 1150
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 613BC258
-P 1900 1250
-AR Path="/613BC258" Ref="R?"  Part="1" 
-AR Path="/613B204B/613BC258" Ref="R?"  Part="1" 
-F 0 "R?" V 2107 1250 50  0000 C CNN
-F 1 "R" V 2016 1250 50  0000 C CNN
-F 2 "" V 1830 1250 50  0001 C CNN
-F 3 "~" H 1900 1250 50  0001 C CNN
-	1    1900 1250
-	0    1    1    0   
-$EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 613BC25E
@@ -188,9 +162,9 @@ U 1 1 613BC276
 P 4100 2100
 AR Path="/613BC276" Ref="R?"  Part="1" 
 AR Path="/613B204B/613BC276" Ref="R?"  Part="1" 
-F 0 "R?" V 3893 2100 50  0000 C CNN
-F 1 "R" V 3984 2100 50  0000 C CNN
-F 2 "" V 4030 2100 50  0001 C CNN
+F 0 "R?" V 4000 2100 50  0000 C CNN
+F 1 "10k" V 4100 2100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4030 2100 50  0001 C CNN
 F 3 "~" H 4100 2100 50  0001 C CNN
 	1    4100 2100
 	0    1    1    0   
@@ -214,9 +188,9 @@ U 1 1 613BC282
 P 4100 2200
 AR Path="/613BC282" Ref="R?"  Part="1" 
 AR Path="/613B204B/613BC282" Ref="R?"  Part="1" 
-F 0 "R?" V 3893 2200 50  0000 C CNN
-F 1 "R" V 3984 2200 50  0000 C CNN
-F 2 "" V 4030 2200 50  0001 C CNN
+F 0 "R?" V 4000 2200 50  0000 C CNN
+F 1 "10k" V 4100 2200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4030 2200 50  0001 C CNN
 F 3 "~" H 4100 2200 50  0001 C CNN
 	1    4100 2200
 	0    -1   -1   0   
@@ -241,8 +215,8 @@ P 3550 2600
 AR Path="/613BC290" Ref="R?"  Part="1" 
 AR Path="/613B204B/613BC290" Ref="R?"  Part="1" 
 F 0 "R?" H 3480 2554 50  0000 R CNN
-F 1 "R" H 3480 2645 50  0000 R CNN
-F 2 "" V 3480 2600 50  0001 C CNN
+F 1 "4k7" V 3550 2650 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3480 2600 50  0001 C CNN
 F 3 "~" H 3550 2600 50  0001 C CNN
 	1    3550 2600
 	-1   0    0    1   
@@ -258,8 +232,8 @@ P 4050 2600
 AR Path="/613BC298" Ref="R?"  Part="1" 
 AR Path="/613B204B/613BC298" Ref="R?"  Part="1" 
 F 0 "R?" H 3980 2554 50  0000 R CNN
-F 1 "R" H 3980 2645 50  0000 R CNN
-F 2 "" V 3980 2600 50  0001 C CNN
+F 1 "4k7" V 4050 2650 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3980 2600 50  0001 C CNN
 F 3 "~" H 4050 2600 50  0001 C CNN
 	1    4050 2600
 	-1   0    0    1   
@@ -279,8 +253,8 @@ P 3800 2600
 AR Path="/613BC2A2" Ref="R?"  Part="1" 
 AR Path="/613B204B/613BC2A2" Ref="R?"  Part="1" 
 F 0 "R?" H 3870 2646 50  0000 L CNN
-F 1 "R" H 3870 2555 50  0000 L CNN
-F 2 "" V 3730 2600 50  0001 C CNN
+F 1 "4k7" V 3800 2550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3730 2600 50  0001 C CNN
 F 3 "~" H 3800 2600 50  0001 C CNN
 	1    3800 2600
 	1    0    0    -1  
@@ -347,107 +321,57 @@ $EndComp
 $Comp
 L Device:C C?
 U 1 1 613BC2C6
-P 5300 1200
+P 5250 1100
 AR Path="/613BC2C6" Ref="C?"  Part="1" 
 AR Path="/613B204B/613BC2C6" Ref="C?"  Part="1" 
-F 0 "C?" H 5415 1246 50  0000 L CNN
-F 1 "C" H 5415 1155 50  0000 L CNN
-F 2 "" H 5338 1050 50  0001 C CNN
-F 3 "~" H 5300 1200 50  0001 C CNN
-	1    5300 1200
+F 0 "C?" H 5365 1146 50  0000 L CNN
+F 1 "C" H 5365 1055 50  0000 L CNN
+F 2 "" H 5288 950 50  0001 C CNN
+F 3 "~" H 5250 1100 50  0001 C CNN
+	1    5250 1100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5150 1400 5300 1400
-Wire Wire Line
-	5300 1400 5300 1350
-Wire Wire Line
-	5150 950  5300 950 
-Wire Wire Line
-	5300 950  5300 1050
 $Comp
 L Device:L L?
 U 1 1 613BC2D0
-P 5650 950
+P 5750 1300
 AR Path="/613BC2D0" Ref="L?"  Part="1" 
 AR Path="/613B204B/613BC2D0" Ref="L?"  Part="1" 
-F 0 "L?" V 5840 950 50  0000 C CNN
-F 1 "L" V 5749 950 50  0000 C CNN
-F 2 "" H 5650 950 50  0001 C CNN
-F 3 "~" H 5650 950 50  0001 C CNN
-	1    5650 950 
+F 0 "L?" V 5940 1300 50  0000 C CNN
+F 1 "L" V 5849 1300 50  0000 C CNN
+F 2 "" H 5750 1300 50  0001 C CNN
+F 3 "~" H 5750 1300 50  0001 C CNN
+	1    5750 1300
 	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5300 950  5500 950 
-Connection ~ 5300 950 
-Wire Wire Line
-	5150 1700 5800 1700
-Wire Wire Line
-	5800 1700 5800 950 
-$Comp
-L Device:C C?
-U 1 1 613BC2DA
-P 6050 1100
-AR Path="/613BC2DA" Ref="C?"  Part="1" 
-AR Path="/613B204B/613BC2DA" Ref="C?"  Part="1" 
-F 0 "C?" H 6165 1146 50  0000 L CNN
-F 1 "C" H 6165 1055 50  0000 L CNN
-F 2 "" H 6088 950 50  0001 C CNN
-F 3 "~" H 6050 1100 50  0001 C CNN
-	1    6050 1100
-	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 613BC2E0
-P 6500 1100
+P 6250 1650
 AR Path="/613BC2E0" Ref="C?"  Part="1" 
 AR Path="/613B204B/613BC2E0" Ref="C?"  Part="1" 
-F 0 "C?" H 6615 1146 50  0000 L CNN
-F 1 "C" H 6615 1055 50  0000 L CNN
-F 2 "" H 6538 950 50  0001 C CNN
-F 3 "~" H 6500 1100 50  0001 C CNN
-	1    6500 1100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5800 950  6050 950 
-Connection ~ 5800 950 
-Connection ~ 6050 950 
-Wire Wire Line
-	6050 950  6500 950 
-$Comp
-L power:GND #PWR?
-U 1 1 613BC2EA
-P 6050 1250
-AR Path="/613BC2EA" Ref="#PWR?"  Part="1" 
-AR Path="/613B204B/613BC2EA" Ref="#PWR0110"  Part="1" 
-F 0 "#PWR0110" H 6050 1000 50  0001 C CNN
-F 1 "GND" H 6055 1077 50  0000 C CNN
-F 2 "" H 6050 1250 50  0001 C CNN
-F 3 "" H 6050 1250 50  0001 C CNN
-	1    6050 1250
+F 0 "C?" H 6365 1696 50  0000 L CNN
+F 1 "C" H 6365 1605 50  0000 L CNN
+F 2 "" H 6288 1500 50  0001 C CNN
+F 3 "~" H 6250 1650 50  0001 C CNN
+	1    6250 1650
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 613BC2F0
-P 6500 1250
+P 6250 1800
 AR Path="/613BC2F0" Ref="#PWR?"  Part="1" 
 AR Path="/613B204B/613BC2F0" Ref="#PWR0111"  Part="1" 
-F 0 "#PWR0111" H 6500 1000 50  0001 C CNN
-F 1 "GND" H 6505 1077 50  0000 C CNN
-F 2 "" H 6500 1250 50  0001 C CNN
-F 3 "" H 6500 1250 50  0001 C CNN
-	1    6500 1250
+F 0 "#PWR0111" H 6250 1550 50  0001 C CNN
+F 1 "GND" H 6255 1627 50  0000 C CNN
+F 2 "" H 6250 1800 50  0001 C CNN
+F 3 "" H 6250 1800 50  0001 C CNN
+	1    6250 1800
 	1    0    0    -1  
 $EndComp
-Text GLabel 5900 1700 2    50   Output ~ 0
+Text GLabel 6550 1600 3    50   Output ~ 0
 SYS
-Wire Wire Line
-	5800 1700 5900 1700
-Connection ~ 5800 1700
 $Comp
 L power:GND #PWR?
 U 1 1 613BC2F9
@@ -486,9 +410,9 @@ U 1 1 613BC308
 P 5300 1900
 AR Path="/613BC308" Ref="R?"  Part="1" 
 AR Path="/613B204B/613BC308" Ref="R?"  Part="1" 
-F 0 "R?" V 5093 1900 50  0000 C CNN
-F 1 "R" V 5184 1900 50  0000 C CNN
-F 2 "" V 5230 1900 50  0001 C CNN
+F 0 "R?" V 5200 1900 50  0000 C CNN
+F 1 "2k2" V 5300 1900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5230 1900 50  0001 C CNN
 F 3 "~" H 5300 1900 50  0001 C CNN
 	1    5300 1900
 	0    1    1    0   
@@ -497,19 +421,6 @@ Text GLabel 5900 2000 2    50   Input ~ 0
 SYS
 Wire Wire Line
 	5900 2000 5450 2000
-$Comp
-L Device:R R?
-U 1 1 613BC310
-P 5300 2000
-AR Path="/613BC310" Ref="R?"  Part="1" 
-AR Path="/613B204B/613BC310" Ref="R?"  Part="1" 
-F 0 "R?" V 5093 2000 50  0000 C CNN
-F 1 "R" V 5184 2000 50  0000 C CNN
-F 2 "" V 5230 2000 50  0001 C CNN
-F 3 "~" H 5300 2000 50  0001 C CNN
-	1    5300 2000
-	0    -1   -1   0   
-$EndComp
 $Comp
 L power:+BATT #PWR?
 U 1 1 613BC316
@@ -616,8 +527,8 @@ P 5600 2800
 AR Path="/613BC347" Ref="R?"  Part="1" 
 AR Path="/613B204B/613BC347" Ref="R?"  Part="1" 
 F 0 "R?" H 5670 2846 50  0000 L CNN
-F 1 "R" H 5670 2755 50  0000 L CNN
-F 2 "" V 5530 2800 50  0001 C CNN
+F 1 "5k23" V 5600 2700 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5530 2800 50  0001 C CNN
 F 3 "~" H 5600 2800 50  0001 C CNN
 	1    5600 2800
 	1    0    0    -1  
@@ -629,8 +540,8 @@ P 5600 3100
 AR Path="/613BC34D" Ref="R?"  Part="1" 
 AR Path="/613B204B/613BC34D" Ref="R?"  Part="1" 
 F 0 "R?" H 5670 3146 50  0000 L CNN
-F 1 "R" H 5670 3055 50  0000 L CNN
-F 2 "" V 5530 3100 50  0001 C CNN
+F 1 "32k" V 5600 3050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5530 3100 50  0001 C CNN
 F 3 "~" H 5600 3100 50  0001 C CNN
 	1    5600 3100
 	1    0    0    -1  
@@ -642,9 +553,9 @@ P 6000 3100
 AR Path="/613BC353" Ref="TH?"  Part="1" 
 AR Path="/613B204B/613BC353" Ref="TH?"  Part="1" 
 F 0 "TH?" H 6098 3146 50  0000 L CNN
-F 1 "Thermistor_NTC" H 6098 3055 50  0000 L CNN
-F 2 "" H 6000 3150 50  0001 C CNN
-F 3 "~" H 6000 3150 50  0001 C CNN
+F 1 "Thermistor_NTC 10K" H 6098 3055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 6000 3150 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/NCP21XV103J03RA?qs=X7SGqsckn%2FJexuhMPnYgzQ%3D%3D" H 6000 3150 50  0001 C CNN
 	1    6000 3100
 	1    0    0    -1  
 $EndComp
@@ -689,9 +600,8 @@ Wire Wire Line
 Connection ~ 1750 1700
 Wire Wire Line
 	1750 1700 1750 1750
-Text GLabel 7200 950  2    50   Output ~ 0
+Text GLabel 7100 1500 2    50   Output ~ 0
 VCC
-Connection ~ 6500 950 
 Text Notes 5900 800  0    50   ~ 0
 Check if switch is required
 NoConn ~ 4250 2300
@@ -735,30 +645,25 @@ Wire Wire Line
 $Comp
 L Device:CP C?
 U 1 1 6142C46C
-P 6950 1100
-F 0 "C?" H 7068 1146 50  0000 L CNN
-F 1 "CP" H 7068 1055 50  0000 L CNN
-F 2 "" H 6988 950 50  0001 C CNN
-F 3 "~" H 6950 1100 50  0001 C CNN
-	1    6950 1100
+P 6850 1650
+F 0 "C?" H 6968 1696 50  0000 L CNN
+F 1 "CP" H 6968 1605 50  0000 L CNN
+F 2 "" H 6888 1500 50  0001 C CNN
+F 3 "~" H 6850 1650 50  0001 C CNN
+	1    6850 1650
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0122
 U 1 1 6142CFD4
-P 6950 1250
-F 0 "#PWR0122" H 6950 1000 50  0001 C CNN
-F 1 "GND" H 6955 1077 50  0000 C CNN
-F 2 "" H 6950 1250 50  0001 C CNN
-F 3 "" H 6950 1250 50  0001 C CNN
-	1    6950 1250
+P 6850 1800
+F 0 "#PWR0122" H 6850 1550 50  0001 C CNN
+F 1 "GND" H 6855 1627 50  0000 C CNN
+F 2 "" H 6850 1800 50  0001 C CNN
+F 3 "" H 6850 1800 50  0001 C CNN
+	1    6850 1800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6500 950  6950 950 
-Wire Wire Line
-	6950 950  7200 950 
-Connection ~ 6950 950 
 Wire Wire Line
 	5600 2350 5600 2650
 Wire Wire Line
@@ -808,10 +713,10 @@ Wire Wire Line
 	8000 1750 8150 1750
 Connection ~ 8150 1750
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR0123
 U 1 1 6146807E
 P 9250 1750
-F 0 "#PWR?" H 9250 1600 50  0001 C CNN
+F 0 "#PWR0123" H 9250 1600 50  0001 C CNN
 F 1 "+3V3" V 9265 1878 50  0000 L CNN
 F 2 "" H 9250 1750 50  0001 C CNN
 F 3 "" H 9250 1750 50  0001 C CNN
@@ -822,10 +727,10 @@ Wire Wire Line
 	9050 1750 9250 1750
 Connection ~ 9050 1750
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0124
 U 1 1 6146B115
 P 8150 2050
-F 0 "#PWR?" H 8150 1800 50  0001 C CNN
+F 0 "#PWR0124" H 8150 1800 50  0001 C CNN
 F 1 "GND" H 8155 1877 50  0000 C CNN
 F 2 "" H 8150 2050 50  0001 C CNN
 F 3 "" H 8150 2050 50  0001 C CNN
@@ -833,10 +738,10 @@ F 3 "" H 8150 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0125
 U 1 1 6146BB0D
 P 9050 2050
-F 0 "#PWR?" H 9050 1800 50  0001 C CNN
+F 0 "#PWR0125" H 9050 1800 50  0001 C CNN
 F 1 "GND" H 9055 1877 50  0000 C CNN
 F 2 "" H 9050 2050 50  0001 C CNN
 F 3 "" H 9050 2050 50  0001 C CNN
@@ -844,10 +749,10 @@ F 3 "" H 9050 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0126
 U 1 1 6146F41C
 P 8600 2050
-F 0 "#PWR?" H 8600 1800 50  0001 C CNN
+F 0 "#PWR0126" H 8600 1800 50  0001 C CNN
 F 1 "GND" H 8605 1877 50  0000 C CNN
 F 2 "" H 8600 2050 50  0001 C CNN
 F 3 "" H 8600 2050 50  0001 C CNN
@@ -857,4 +762,69 @@ $EndComp
 Wire Wire Line
 	3750 950  3850 950 
 Connection ~ 3850 950 
+Wire Wire Line
+	5150 950  5250 950 
+Wire Wire Line
+	5150 1300 5250 1300
+Wire Wire Line
+	5250 1300 5250 1250
+Connection ~ 5250 1300
+Wire Wire Line
+	5150 1500 6250 1500
+Wire Wire Line
+	6250 1500 6250 1300
+Connection ~ 6250 1500
+Wire Wire Line
+	5250 1300 5600 1300
+Wire Wire Line
+	5900 1300 6250 1300
+Wire Wire Line
+	6250 1500 6550 1500
+Wire Wire Line
+	6550 1500 6550 1600
+Wire Wire Line
+	6850 1500 6550 1500
+Connection ~ 6550 1500
+Wire Wire Line
+	6850 1500 7100 1500
+Connection ~ 6850 1500
+$Comp
+L Device:R R?
+U 1 1 613BC252
+P 1900 1150
+AR Path="/613BC252" Ref="R?"  Part="1" 
+AR Path="/613B204B/613BC252" Ref="R?"  Part="1" 
+F 0 "R?" V 1800 1150 50  0000 C CNN
+F 1 "5k1" V 1900 1150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 1830 1150 50  0001 C CNN
+F 3 "~" H 1900 1150 50  0001 C CNN
+	1    1900 1150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 613BC258
+P 1900 1250
+AR Path="/613BC258" Ref="R?"  Part="1" 
+AR Path="/613B204B/613BC258" Ref="R?"  Part="1" 
+F 0 "R?" V 2000 1250 50  0000 C CNN
+F 1 "5k1" V 1900 1250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 1830 1250 50  0001 C CNN
+F 3 "~" H 1900 1250 50  0001 C CNN
+	1    1900 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 613BC310
+P 5300 2000
+AR Path="/613BC310" Ref="R?"  Part="1" 
+AR Path="/613B204B/613BC310" Ref="R?"  Part="1" 
+F 0 "R?" V 5200 2000 50  0000 C CNN
+F 1 "10k" V 5300 2000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5230 2000 50  0001 C CNN
+F 3 "~" H 5300 2000 50  0001 C CNN
+	1    5300 2000
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
