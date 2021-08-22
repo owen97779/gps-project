@@ -22,7 +22,7 @@ AR Path="/613B204B/613BC225" Ref="U?"  Part="1"
 F 0 "U?" H 4700 3250 50  0000 C CNN
 F 1 "BQ24295" H 4700 3150 50  0000 C CNN
 F 2 "" H 4750 2400 50  0001 C CNN
-F 3 "" H 4750 2400 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/BQ24295RGER?qs=igp4D3uu33JuaPeRfsSg2w%3D%3D" H 4750 2400 50  0001 C CNN
 	1    4700 2000
 	1    0    0    -1  
 $EndComp
@@ -48,7 +48,7 @@ AR Path="/613B204B/613BC231" Ref="U?"  Part="1"
 F 0 "U?" H 2900 2175 50  0000 C CNN
 F 1 "ESD122DMX" H 2900 2084 50  0000 C CNN
 F 2 "" H 2900 1850 50  0001 C CNN
-F 3 "" H 2900 1850 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/ESD122DMXR?qs=%2Fha2pyFaduihn3aKw32kKFOpmmjnpuflw4tqhxDwaDnOkPWXZway8Q%3D%3D" H 2900 1850 50  0001 C CNN
 	1    2900 1800
 	1    0    0    -1  
 $EndComp
@@ -61,7 +61,7 @@ AR Path="/613B204B/613BC237" Ref="U?"  Part="1"
 F 0 "U?" H 2900 1475 50  0000 C CNN
 F 1 "ESD122DMX" H 2900 1384 50  0000 C CNN
 F 2 "" H 2900 1150 50  0001 C CNN
-F 3 "" H 2900 1150 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/ESD122DMXR?qs=%2Fha2pyFaduihn3aKw32kKFOpmmjnpuflw4tqhxDwaDnOkPWXZway8Q%3D%3D" H 2900 1150 50  0001 C CNN
 	1    2900 1100
 	1    0    0    -1  
 $EndComp
@@ -72,9 +72,9 @@ P 3850 1100
 AR Path="/613BC23D" Ref="C?"  Part="1" 
 AR Path="/613B204B/613BC23D" Ref="C?"  Part="1" 
 F 0 "C?" H 3965 1146 50  0000 L CNN
-F 1 "C" H 3965 1055 50  0000 L CNN
-F 2 "" H 3888 950 50  0001 C CNN
-F 3 "test" H 3550 1100 50  0000 L CNN
+F 1 "1u" H 3965 1055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3888 950 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/ProductDetail/Taiyo-Yuden/LMK107B7105KAHT?qs=CNQs48zzdnpelxTWRrWvpA%3D%3D" H 3550 1100 50  0001 L CNN
 	1    3850 1100
 	1    0    0    -1  
 $EndComp
@@ -162,9 +162,9 @@ U 1 1 613BC276
 P 4100 2100
 AR Path="/613BC276" Ref="R?"  Part="1" 
 AR Path="/613B204B/613BC276" Ref="R?"  Part="1" 
-F 0 "R?" V 3893 2100 50  0000 C CNN
-F 1 "R" V 3984 2100 50  0000 C CNN
-F 2 "" V 4030 2100 50  0001 C CNN
+F 0 "R?" V 4000 2100 50  0000 C CNN
+F 1 "10k" V 4100 2100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4030 2100 50  0001 C CNN
 F 3 "~" H 4100 2100 50  0001 C CNN
 	1    4100 2100
 	0    1    1    0   
@@ -188,9 +188,9 @@ U 1 1 613BC282
 P 4100 2200
 AR Path="/613BC282" Ref="R?"  Part="1" 
 AR Path="/613B204B/613BC282" Ref="R?"  Part="1" 
-F 0 "R?" V 3893 2200 50  0000 C CNN
-F 1 "R" V 3984 2200 50  0000 C CNN
-F 2 "" V 4030 2200 50  0001 C CNN
+F 0 "R?" V 4000 2200 50  0000 C CNN
+F 1 "10k" V 4100 2200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4030 2200 50  0001 C CNN
 F 3 "~" H 4100 2200 50  0001 C CNN
 	1    4100 2200
 	0    -1   -1   0   
@@ -216,7 +216,7 @@ AR Path="/613BC290" Ref="R?"  Part="1"
 AR Path="/613B204B/613BC290" Ref="R?"  Part="1" 
 F 0 "R?" H 3480 2554 50  0000 R CNN
 F 1 "4k7" V 3550 2650 50  0000 R CNN
-F 2 "" V 3480 2600 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3480 2600 50  0001 C CNN
 F 3 "~" H 3550 2600 50  0001 C CNN
 	1    3550 2600
 	-1   0    0    1   
@@ -233,7 +233,7 @@ AR Path="/613BC298" Ref="R?"  Part="1"
 AR Path="/613B204B/613BC298" Ref="R?"  Part="1" 
 F 0 "R?" H 3980 2554 50  0000 R CNN
 F 1 "4k7" V 4050 2650 50  0000 R CNN
-F 2 "" V 3980 2600 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3980 2600 50  0001 C CNN
 F 3 "~" H 4050 2600 50  0001 C CNN
 	1    4050 2600
 	-1   0    0    1   
@@ -254,7 +254,7 @@ AR Path="/613BC2A2" Ref="R?"  Part="1"
 AR Path="/613B204B/613BC2A2" Ref="R?"  Part="1" 
 F 0 "R?" H 3870 2646 50  0000 L CNN
 F 1 "4k7" V 3800 2550 50  0000 L CNN
-F 2 "" V 3730 2600 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3730 2600 50  0001 C CNN
 F 3 "~" H 3800 2600 50  0001 C CNN
 	1    3800 2600
 	1    0    0    -1  
@@ -325,9 +325,9 @@ P 5250 1100
 AR Path="/613BC2C6" Ref="C?"  Part="1" 
 AR Path="/613B204B/613BC2C6" Ref="C?"  Part="1" 
 F 0 "C?" H 5365 1146 50  0000 L CNN
-F 1 "C" H 5365 1055 50  0000 L CNN
-F 2 "" H 5288 950 50  0001 C CNN
-F 3 "~" H 5250 1100 50  0001 C CNN
+F 1 "47n" H 5365 1055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5288 950 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/ProductDetail/Samsung-Electro-Mechanics/CL10B473KO8NNNC?qs=X6jEic%2FHinAEbu%2FfpWZrPQ%3D%3D" H 5250 1100 50  0001 C CNN
 	1    5250 1100
 	1    0    0    -1  
 $EndComp
@@ -338,9 +338,9 @@ P 5750 1300
 AR Path="/613BC2D0" Ref="L?"  Part="1" 
 AR Path="/613B204B/613BC2D0" Ref="L?"  Part="1" 
 F 0 "L?" V 5940 1300 50  0000 C CNN
-F 1 "L" V 5849 1300 50  0000 C CNN
+F 1 "2u2" V 5849 1300 50  0000 C CNN
 F 2 "" H 5750 1300 50  0001 C CNN
-F 3 "~" H 5750 1300 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/ProductDetail/Bourns/SRP0312-2R2K?qs=OlC7AqGiEDm3h2uD5NkxPQ%3D%3D" H 5750 1300 50  0001 C CNN
 	1    5750 1300
 	0    -1   -1   0   
 $EndComp
@@ -351,9 +351,9 @@ P 6250 1650
 AR Path="/613BC2E0" Ref="C?"  Part="1" 
 AR Path="/613B204B/613BC2E0" Ref="C?"  Part="1" 
 F 0 "C?" H 6365 1696 50  0000 L CNN
-F 1 "C" H 6365 1605 50  0000 L CNN
-F 2 "" H 6288 1500 50  0001 C CNN
-F 3 "~" H 6250 1650 50  0001 C CNN
+F 1 "22u" H 6365 1605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 6288 1500 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/ProductDetail/Samsung-Electro-Mechanics/CL10A226MP8NRNC?qs=xZ%2FP%252Ba9zWqbykJJ6x%252BsWhA%3D%3D" H 6250 1650 50  0001 C CNN
 	1    6250 1650
 	1    0    0    -1  
 $EndComp
@@ -410,9 +410,9 @@ U 1 1 613BC308
 P 5300 1900
 AR Path="/613BC308" Ref="R?"  Part="1" 
 AR Path="/613B204B/613BC308" Ref="R?"  Part="1" 
-F 0 "R?" V 5093 1900 50  0000 C CNN
-F 1 "R" V 5184 1900 50  0000 C CNN
-F 2 "" V 5230 1900 50  0001 C CNN
+F 0 "R?" V 5200 1900 50  0000 C CNN
+F 1 "2k2" V 5300 1900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5230 1900 50  0001 C CNN
 F 3 "~" H 5300 1900 50  0001 C CNN
 	1    5300 1900
 	0    1    1    0   
@@ -421,19 +421,6 @@ Text GLabel 5900 2000 2    50   Input ~ 0
 SYS
 Wire Wire Line
 	5900 2000 5450 2000
-$Comp
-L Device:R R?
-U 1 1 613BC310
-P 5300 2000
-AR Path="/613BC310" Ref="R?"  Part="1" 
-AR Path="/613B204B/613BC310" Ref="R?"  Part="1" 
-F 0 "R?" V 5093 2000 50  0000 C CNN
-F 1 "R" V 5184 2000 50  0000 C CNN
-F 2 "" V 5230 2000 50  0001 C CNN
-F 3 "~" H 5300 2000 50  0001 C CNN
-	1    5300 2000
-	0    -1   -1   0   
-$EndComp
 $Comp
 L power:+BATT #PWR?
 U 1 1 613BC316
@@ -480,9 +467,9 @@ P 5850 2400
 AR Path="/613BC328" Ref="C?"  Part="1" 
 AR Path="/613B204B/613BC328" Ref="C?"  Part="1" 
 F 0 "C?" H 5965 2446 50  0000 L CNN
-F 1 "C" H 5965 2355 50  0000 L CNN
-F 2 "" H 5888 2250 50  0001 C CNN
-F 3 "~" H 5850 2400 50  0001 C CNN
+F 1 "10u" H 5965 2355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5888 2250 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/ProductDetail/Taiyo-Yuden/JMK107ABJ106KA-T?qs=lkMpTOwszhd28fybYDECfg%3D%3D" H 5850 2400 50  0001 C CNN
 	1    5850 2400
 	1    0    0    -1  
 $EndComp
@@ -511,9 +498,9 @@ P 5250 2500
 AR Path="/613BC337" Ref="C?"  Part="1" 
 AR Path="/613B204B/613BC337" Ref="C?"  Part="1" 
 F 0 "C?" H 5365 2546 50  0000 L CNN
-F 1 "C" H 5365 2455 50  0000 L CNN
-F 2 "" H 5288 2350 50  0001 C CNN
-F 3 "~" H 5250 2500 50  0001 C CNN
+F 1 "4u7" H 5365 2455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5288 2350 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/ProductDetail/Samsung-Electro-Mechanics/CL10A475KQ8NNWC?qs=EvNa9vf1TdZbxyCJBSuGUg%3D%3D" H 5250 2500 50  0001 C CNN
 	1    5250 2500
 	1    0    0    -1  
 $EndComp
@@ -540,8 +527,8 @@ P 5600 2800
 AR Path="/613BC347" Ref="R?"  Part="1" 
 AR Path="/613B204B/613BC347" Ref="R?"  Part="1" 
 F 0 "R?" H 5670 2846 50  0000 L CNN
-F 1 "R" H 5670 2755 50  0000 L CNN
-F 2 "" V 5530 2800 50  0001 C CNN
+F 1 "5k23" V 5600 2700 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5530 2800 50  0001 C CNN
 F 3 "~" H 5600 2800 50  0001 C CNN
 	1    5600 2800
 	1    0    0    -1  
@@ -553,8 +540,8 @@ P 5600 3100
 AR Path="/613BC34D" Ref="R?"  Part="1" 
 AR Path="/613B204B/613BC34D" Ref="R?"  Part="1" 
 F 0 "R?" H 5670 3146 50  0000 L CNN
-F 1 "R" H 5670 3055 50  0000 L CNN
-F 2 "" V 5530 3100 50  0001 C CNN
+F 1 "32k" V 5600 3050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5530 3100 50  0001 C CNN
 F 3 "~" H 5600 3100 50  0001 C CNN
 	1    5600 3100
 	1    0    0    -1  
@@ -566,9 +553,9 @@ P 6000 3100
 AR Path="/613BC353" Ref="TH?"  Part="1" 
 AR Path="/613B204B/613BC353" Ref="TH?"  Part="1" 
 F 0 "TH?" H 6098 3146 50  0000 L CNN
-F 1 "Thermistor_NTC" H 6098 3055 50  0000 L CNN
-F 2 "" H 6000 3150 50  0001 C CNN
-F 3 "~" H 6000 3150 50  0001 C CNN
+F 1 "Thermistor_NTC 10K" H 6098 3055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 6000 3150 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/NCP21XV103J03RA?qs=X7SGqsckn%2FJexuhMPnYgzQ%3D%3D" H 6000 3150 50  0001 C CNN
 	1    6000 3100
 	1    0    0    -1  
 $EndComp
@@ -623,9 +610,9 @@ L Device:C C?
 U 1 1 6140FB1F
 P 3850 1550
 F 0 "C?" H 3965 1596 50  0000 L CNN
-F 1 "C" H 3965 1505 50  0000 L CNN
-F 2 "" H 3888 1400 50  0001 C CNN
-F 3 "~" H 3850 1550 50  0001 C CNN
+F 1 "22u" H 3965 1505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3888 1400 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/ProductDetail/Samsung-Electro-Mechanics/CL10A226MP8NRNC?qs=xZ%2FP%252Ba9zWqbykJJ6x%252BsWhA%3D%3D" H 3850 1550 50  0001 C CNN
 	1    3850 1550
 	1    0    0    -1  
 $EndComp
@@ -660,9 +647,9 @@ L Device:CP C?
 U 1 1 6142C46C
 P 6850 1650
 F 0 "C?" H 6968 1696 50  0000 L CNN
-F 1 "CP" H 6968 1605 50  0000 L CNN
-F 2 "" H 6888 1500 50  0001 C CNN
-F 3 "~" H 6850 1650 50  0001 C CNN
+F 1 "220u" H 6968 1605 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-12_Kemet-T_Pad1.50x2.35mm_HandSolder" H 6888 1500 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/ProductDetail/AVX/F930J227MBA?qs=sGAEpiMZZMtZ1n0r9vR22dQtzANU%252BEXpnQ1Vtzj%2FLbk%3D" H 6850 1650 50  0001 C CNN
 	1    6850 1650
 	1    0    0    -1  
 $EndComp
@@ -699,8 +686,8 @@ L Device:C C?
 U 1 1 6146363C
 P 8150 1900
 F 0 "C?" H 8265 1946 50  0000 L CNN
-F 1 "C" H 8265 1855 50  0000 L CNN
-F 2 "" H 8188 1750 50  0001 C CNN
+F 1 "0u1" H 8265 1855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 8188 1750 50  0001 C CNN
 F 3 "~" H 8150 1900 50  0001 C CNN
 	1    8150 1900
 	1    0    0    -1  
@@ -710,8 +697,8 @@ L Device:C C?
 U 1 1 614640B3
 P 9050 1900
 F 0 "C?" H 9165 1946 50  0000 L CNN
-F 1 "C" H 9165 1855 50  0000 L CNN
-F 2 "" H 9088 1750 50  0001 C CNN
+F 1 "0u1" H 9165 1855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 9088 1750 50  0001 C CNN
 F 3 "~" H 9050 1900 50  0001 C CNN
 	1    9050 1900
 	1    0    0    -1  
@@ -809,7 +796,7 @@ AR Path="/613BC252" Ref="R?"  Part="1"
 AR Path="/613B204B/613BC252" Ref="R?"  Part="1" 
 F 0 "R?" V 1800 1150 50  0000 C CNN
 F 1 "5k1" V 1900 1150 50  0000 C CNN
-F 2 "" V 1830 1150 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 1830 1150 50  0001 C CNN
 F 3 "~" H 1900 1150 50  0001 C CNN
 	1    1900 1150
 	0    1    1    0   
@@ -822,9 +809,22 @@ AR Path="/613BC258" Ref="R?"  Part="1"
 AR Path="/613B204B/613BC258" Ref="R?"  Part="1" 
 F 0 "R?" V 2000 1250 50  0000 C CNN
 F 1 "5k1" V 1900 1250 50  0000 C CNN
-F 2 "" V 1830 1250 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 1830 1250 50  0001 C CNN
 F 3 "~" H 1900 1250 50  0001 C CNN
 	1    1900 1250
 	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 613BC310
+P 5300 2000
+AR Path="/613BC310" Ref="R?"  Part="1" 
+AR Path="/613B204B/613BC310" Ref="R?"  Part="1" 
+F 0 "R?" V 5200 2000 50  0000 C CNN
+F 1 "10k" V 5300 2000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5230 2000 50  0001 C CNN
+F 3 "~" H 5300 2000 50  0001 C CNN
+	1    5300 2000
+	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC

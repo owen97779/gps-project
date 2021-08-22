@@ -72,9 +72,9 @@ P 3850 1100
 AR Path="/613BC23D" Ref="C?"  Part="1" 
 AR Path="/613B204B/613BC23D" Ref="C?"  Part="1" 
 F 0 "C?" H 3965 1146 50  0000 L CNN
-F 1 "C" H 3965 1055 50  0000 L CNN
-F 2 "" H 3888 950 50  0001 C CNN
-F 3 "test" H 3550 1100 50  0000 L CNN
+F 1 "1u" H 3965 1055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3888 950 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/ProductDetail/Taiyo-Yuden/LMK107B7105KAHT?qs=CNQs48zzdnpelxTWRrWvpA%3D%3D" H 3550 1100 50  0001 L CNN
 	1    3850 1100
 	1    0    0    -1  
 $EndComp
@@ -325,9 +325,9 @@ P 5250 1100
 AR Path="/613BC2C6" Ref="C?"  Part="1" 
 AR Path="/613B204B/613BC2C6" Ref="C?"  Part="1" 
 F 0 "C?" H 5365 1146 50  0000 L CNN
-F 1 "C" H 5365 1055 50  0000 L CNN
-F 2 "" H 5288 950 50  0001 C CNN
-F 3 "~" H 5250 1100 50  0001 C CNN
+F 1 "47n" H 5365 1055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5288 950 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/ProductDetail/Samsung-Electro-Mechanics/CL10B473KO8NNNC?qs=X6jEic%2FHinAEbu%2FfpWZrPQ%3D%3D" H 5250 1100 50  0001 C CNN
 	1    5250 1100
 	1    0    0    -1  
 $EndComp
@@ -338,9 +338,9 @@ P 5750 1300
 AR Path="/613BC2D0" Ref="L?"  Part="1" 
 AR Path="/613B204B/613BC2D0" Ref="L?"  Part="1" 
 F 0 "L?" V 5940 1300 50  0000 C CNN
-F 1 "L" V 5849 1300 50  0000 C CNN
+F 1 "2u2" V 5849 1300 50  0000 C CNN
 F 2 "" H 5750 1300 50  0001 C CNN
-F 3 "~" H 5750 1300 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/ProductDetail/Bourns/SRP0312-2R2K?qs=OlC7AqGiEDm3h2uD5NkxPQ%3D%3D" H 5750 1300 50  0001 C CNN
 	1    5750 1300
 	0    -1   -1   0   
 $EndComp
@@ -351,9 +351,9 @@ P 6250 1650
 AR Path="/613BC2E0" Ref="C?"  Part="1" 
 AR Path="/613B204B/613BC2E0" Ref="C?"  Part="1" 
 F 0 "C?" H 6365 1696 50  0000 L CNN
-F 1 "C" H 6365 1605 50  0000 L CNN
-F 2 "" H 6288 1500 50  0001 C CNN
-F 3 "~" H 6250 1650 50  0001 C CNN
+F 1 "22u" H 6365 1605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 6288 1500 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/ProductDetail/Samsung-Electro-Mechanics/CL10A226MP8NRNC?qs=xZ%2FP%252Ba9zWqbykJJ6x%252BsWhA%3D%3D" H 6250 1650 50  0001 C CNN
 	1    6250 1650
 	1    0    0    -1  
 $EndComp
@@ -467,9 +467,9 @@ P 5850 2400
 AR Path="/613BC328" Ref="C?"  Part="1" 
 AR Path="/613B204B/613BC328" Ref="C?"  Part="1" 
 F 0 "C?" H 5965 2446 50  0000 L CNN
-F 1 "C" H 5965 2355 50  0000 L CNN
-F 2 "" H 5888 2250 50  0001 C CNN
-F 3 "~" H 5850 2400 50  0001 C CNN
+F 1 "10u" H 5965 2355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5888 2250 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/ProductDetail/Taiyo-Yuden/JMK107ABJ106KA-T?qs=lkMpTOwszhd28fybYDECfg%3D%3D" H 5850 2400 50  0001 C CNN
 	1    5850 2400
 	1    0    0    -1  
 $EndComp
@@ -498,9 +498,9 @@ P 5250 2500
 AR Path="/613BC337" Ref="C?"  Part="1" 
 AR Path="/613B204B/613BC337" Ref="C?"  Part="1" 
 F 0 "C?" H 5365 2546 50  0000 L CNN
-F 1 "C" H 5365 2455 50  0000 L CNN
-F 2 "" H 5288 2350 50  0001 C CNN
-F 3 "~" H 5250 2500 50  0001 C CNN
+F 1 "4u7" H 5365 2455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5288 2350 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/ProductDetail/Samsung-Electro-Mechanics/CL10A475KQ8NNWC?qs=EvNa9vf1TdZbxyCJBSuGUg%3D%3D" H 5250 2500 50  0001 C CNN
 	1    5250 2500
 	1    0    0    -1  
 $EndComp
@@ -610,9 +610,9 @@ L Device:C C?
 U 1 1 6140FB1F
 P 3850 1550
 F 0 "C?" H 3965 1596 50  0000 L CNN
-F 1 "C" H 3965 1505 50  0000 L CNN
-F 2 "" H 3888 1400 50  0001 C CNN
-F 3 "~" H 3850 1550 50  0001 C CNN
+F 1 "22u" H 3965 1505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3888 1400 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/ProductDetail/Samsung-Electro-Mechanics/CL10A226MP8NRNC?qs=xZ%2FP%252Ba9zWqbykJJ6x%252BsWhA%3D%3D" H 3850 1550 50  0001 C CNN
 	1    3850 1550
 	1    0    0    -1  
 $EndComp
@@ -647,9 +647,9 @@ L Device:CP C?
 U 1 1 6142C46C
 P 6850 1650
 F 0 "C?" H 6968 1696 50  0000 L CNN
-F 1 "CP" H 6968 1605 50  0000 L CNN
-F 2 "" H 6888 1500 50  0001 C CNN
-F 3 "~" H 6850 1650 50  0001 C CNN
+F 1 "220u" H 6968 1605 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-12_Kemet-T_Pad1.50x2.35mm_HandSolder" H 6888 1500 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/ProductDetail/AVX/F930J227MBA?qs=sGAEpiMZZMtZ1n0r9vR22dQtzANU%252BEXpnQ1Vtzj%2FLbk%3D" H 6850 1650 50  0001 C CNN
 	1    6850 1650
 	1    0    0    -1  
 $EndComp
@@ -686,8 +686,8 @@ L Device:C C?
 U 1 1 6146363C
 P 8150 1900
 F 0 "C?" H 8265 1946 50  0000 L CNN
-F 1 "C" H 8265 1855 50  0000 L CNN
-F 2 "" H 8188 1750 50  0001 C CNN
+F 1 "0u1" H 8265 1855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 8188 1750 50  0001 C CNN
 F 3 "~" H 8150 1900 50  0001 C CNN
 	1    8150 1900
 	1    0    0    -1  
@@ -697,8 +697,8 @@ L Device:C C?
 U 1 1 614640B3
 P 9050 1900
 F 0 "C?" H 9165 1946 50  0000 L CNN
-F 1 "C" H 9165 1855 50  0000 L CNN
-F 2 "" H 9088 1750 50  0001 C CNN
+F 1 "0u1" H 9165 1855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 9088 1750 50  0001 C CNN
 F 3 "~" H 9050 1900 50  0001 C CNN
 	1    9050 1900
 	1    0    0    -1  
