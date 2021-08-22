@@ -1,4 +1,4 @@
-19207329577050994
+19217107533544074
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -51575,6 +51575,48 @@ Fuse Fuseholder TR5 Littelfuse/Wickmann No. 460 No560
 0
 2
 2
+GPS Hardware
+GCT_SIM7050-6-0-00-X_REVC
+
+
+0
+10
+10
+GPS Hardware
+IC_ESD122DMXR
+
+
+0
+3
+3
+GPS Hardware
+IND_SRP0312-2R2K
+
+
+0
+2
+2
+GPS Hardware
+QFN50P400X400X100-25N
+
+
+0
+25
+25
+GPS Hardware
+RFSOLUTIONS_CON-SMA-EDGE-S
+
+
+0
+5
+5
+GPS Hardware
+SOP65P640X120-16N
+
+
+0
+16
+16
 Heatsink
 Heatsink_35x26mm_1xFixation3mm_Fischer-SK486-35
 Heatsink, 35mm x 26mm, 1x Fixation 3mm, Fischer SK486-35
