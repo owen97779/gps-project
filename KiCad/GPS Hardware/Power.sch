@@ -21,7 +21,7 @@ AR Path="/613BC225" Ref="U?"  Part="1"
 AR Path="/613B204B/613BC225" Ref="U3"  Part="1" 
 F 0 "U3" H 4700 3250 50  0000 C CNN
 F 1 "BQ24295" H 4700 3150 50  0000 C CNN
-F 2 "" H 4750 2400 50  0001 C CNN
+F 2 "GPS Hardware:QFN50P400X400X100-25N" H 4750 2400 50  0001 C CNN
 F 3 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/BQ24295RGER?qs=igp4D3uu33JuaPeRfsSg2w%3D%3D" H 4750 2400 50  0001 C CNN
 	1    4700 2000
 	1    0    0    -1  
@@ -47,7 +47,7 @@ AR Path="/613BC231" Ref="U?"  Part="1"
 AR Path="/613B204B/613BC231" Ref="U2"  Part="1" 
 F 0 "U2" H 2900 2175 50  0000 C CNN
 F 1 "ESD122DMX" H 2900 2084 50  0000 C CNN
-F 2 "" H 2900 1850 50  0001 C CNN
+F 2 "GPS Hardware:IC_ESD122DMXR" H 2900 1850 50  0001 C CNN
 F 3 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/ESD122DMXR?qs=%2Fha2pyFaduihn3aKw32kKFOpmmjnpuflw4tqhxDwaDnOkPWXZway8Q%3D%3D" H 2900 1850 50  0001 C CNN
 	1    2900 1800
 	1    0    0    -1  
@@ -60,7 +60,7 @@ AR Path="/613BC237" Ref="U?"  Part="1"
 AR Path="/613B204B/613BC237" Ref="U1"  Part="1" 
 F 0 "U1" H 2900 1475 50  0000 C CNN
 F 1 "ESD122DMX" H 2900 1384 50  0000 C CNN
-F 2 "" H 2900 1150 50  0001 C CNN
+F 2 "GPS Hardware:IC_ESD122DMXR" H 2900 1150 50  0001 C CNN
 F 3 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/ESD122DMXR?qs=%2Fha2pyFaduihn3aKw32kKFOpmmjnpuflw4tqhxDwaDnOkPWXZway8Q%3D%3D" H 2900 1150 50  0001 C CNN
 	1    2900 1100
 	1    0    0    -1  
@@ -421,32 +421,6 @@ Text GLabel 5900 2000 2    50   Input ~ 0
 SYS
 Wire Wire Line
 	5900 2000 5450 2000
-$Comp
-L power:+BATT #PWR?
-U 1 1 613BC316
-P 6100 2250
-AR Path="/613BC316" Ref="#PWR?"  Part="1" 
-AR Path="/613B204B/613BC316" Ref="#PWR0113"  Part="1" 
-F 0 "#PWR0113" H 6100 2100 50  0001 C CNN
-F 1 "+BATT" V 6115 2378 50  0000 L CNN
-F 2 "" H 6100 2250 50  0001 C CNN
-F 3 "" H 6100 2250 50  0001 C CNN
-	1    6100 2250
-	0    1    1    0   
-$EndComp
-$Comp
-L power:-BATT #PWR?
-U 1 1 613BC31C
-P 6100 2550
-AR Path="/613BC31C" Ref="#PWR?"  Part="1" 
-AR Path="/613B204B/613BC31C" Ref="#PWR0114"  Part="1" 
-F 0 "#PWR0114" H 6100 2400 50  0001 C CNN
-F 1 "-BATT" V 6115 2678 50  0000 L CNN
-F 2 "" H 6100 2550 50  0001 C CNN
-F 3 "" H 6100 2550 50  0001 C CNN
-	1    6100 2550
-	0    1    1    0   
-$EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 613BC322
@@ -826,5 +800,27 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5230 2000 50  0
 F 3 "~" H 5300 2000 50  0001 C CNN
 	1    5300 2000
 	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 6123F0EC
+P 6100 2250
+F 0 "TP1" V 6054 2438 50  0000 L CNN
+F 1 "Battery +" V 6145 2438 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_4.0x4.0mm" H 6300 2250 50  0001 C CNN
+F 3 "~" H 6300 2250 50  0001 C CNN
+	1    6100 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 61240DDF
+P 6100 2550
+F 0 "TP2" V 6054 2738 50  0000 L CNN
+F 1 "Battery -" V 6145 2738 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_4.0x4.0mm" H 6300 2550 50  0001 C CNN
+F 3 "~" H 6300 2550 50  0001 C CNN
+	1    6100 2550
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
