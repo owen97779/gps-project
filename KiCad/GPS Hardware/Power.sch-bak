@@ -73,7 +73,7 @@ AR Path="/613BC23D" Ref="C?"  Part="1"
 AR Path="/613B204B/613BC23D" Ref="C1"  Part="1" 
 F 0 "C1" H 3965 1146 50  0000 L CNN
 F 1 "1u" H 3965 1055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3888 950 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 3888 950 50  0001 C CNN
 F 3 "https://www.mouser.co.uk/ProductDetail/Taiyo-Yuden/LMK107B7105KAHT?qs=CNQs48zzdnpelxTWRrWvpA%3D%3D" H 3550 1100 50  0001 L CNN
 	1    3850 1100
 	1    0    0    -1  
@@ -90,13 +90,13 @@ Text GLabel 1800 1700 2    50   Output ~ 0
 D+
 Text GLabel 1800 1500 2    50   Output ~ 0
 D-
-Text GLabel 2600 950  0    50   BiDi ~ 0
-D+
-Text GLabel 2600 1650 0    50   BiDi ~ 0
-D+
 Text GLabel 2600 1050 0    50   BiDi ~ 0
-D-
+D+
 Text GLabel 2600 1750 0    50   BiDi ~ 0
+D+
+Text GLabel 2600 950  0    50   BiDi ~ 0
+D-
+Text GLabel 2600 1650 0    50   BiDi ~ 0
 D-
 Text GLabel 4250 1800 0    50   Input ~ 0
 D+
@@ -164,7 +164,7 @@ AR Path="/613BC276" Ref="R?"  Part="1"
 AR Path="/613B204B/613BC276" Ref="R6"  Part="1" 
 F 0 "R6" V 4000 2100 50  0000 C CNN
 F 1 "10k" V 4100 2100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4030 2100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 4030 2100 50  0001 C CNN
 F 3 "~" H 4100 2100 50  0001 C CNN
 	1    4100 2100
 	0    1    1    0   
@@ -190,7 +190,7 @@ AR Path="/613BC282" Ref="R?"  Part="1"
 AR Path="/613B204B/613BC282" Ref="R7"  Part="1" 
 F 0 "R7" V 4000 2200 50  0000 C CNN
 F 1 "10k" V 4100 2200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4030 2200 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 4030 2200 50  0001 C CNN
 F 3 "~" H 4100 2200 50  0001 C CNN
 	1    4100 2200
 	0    -1   -1   0   
@@ -326,7 +326,7 @@ AR Path="/613BC2C6" Ref="C?"  Part="1"
 AR Path="/613B204B/613BC2C6" Ref="C3"  Part="1" 
 F 0 "C3" H 5365 1146 50  0000 L CNN
 F 1 "47n" H 5365 1055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5288 950 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 5288 950 50  0001 C CNN
 F 3 "https://www.mouser.co.uk/ProductDetail/Samsung-Electro-Mechanics/CL10B473KO8NNNC?qs=X6jEic%2FHinAEbu%2FfpWZrPQ%3D%3D" H 5250 1100 50  0001 C CNN
 	1    5250 1100
 	1    0    0    -1  
@@ -412,7 +412,7 @@ AR Path="/613BC308" Ref="R?"  Part="1"
 AR Path="/613B204B/613BC308" Ref="R8"  Part="1" 
 F 0 "R8" V 5200 1900 50  0000 C CNN
 F 1 "2k2" V 5300 1900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5230 1900 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 5230 1900 50  0001 C CNN
 F 3 "~" H 5300 1900 50  0001 C CNN
 	1    5300 1900
 	0    1    1    0   
@@ -473,7 +473,7 @@ AR Path="/613BC337" Ref="C?"  Part="1"
 AR Path="/613B204B/613BC337" Ref="C4"  Part="1" 
 F 0 "C4" H 5365 2546 50  0000 L CNN
 F 1 "4u7" H 5365 2455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5288 2350 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 5288 2350 50  0001 C CNN
 F 3 "https://www.mouser.co.uk/ProductDetail/Samsung-Electro-Mechanics/CL10A475KQ8NNWC?qs=EvNa9vf1TdZbxyCJBSuGUg%3D%3D" H 5250 2500 50  0001 C CNN
 	1    5250 2500
 	1    0    0    -1  
@@ -585,7 +585,7 @@ U 1 1 6140FB1F
 P 3850 1550
 F 0 "C2" H 3965 1596 50  0000 L CNN
 F 1 "22u" H 3965 1505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3888 1400 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 3888 1400 50  0001 C CNN
 F 3 "https://www.mouser.co.uk/ProductDetail/Samsung-Electro-Mechanics/CL10A226MP8NRNC?qs=xZ%2FP%252Ba9zWqbykJJ6x%252BsWhA%3D%3D" H 3850 1550 50  0001 C CNN
 	1    3850 1550
 	1    0    0    -1  
@@ -802,10 +802,10 @@ F 3 "~" H 5300 2000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP1
 U 1 1 6123F0EC
 P 6100 2250
-F 0 "TP?" V 6054 2438 50  0000 L CNN
+F 0 "TP1" V 6054 2438 50  0000 L CNN
 F 1 "Battery +" V 6145 2438 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_4.0x4.0mm" H 6300 2250 50  0001 C CNN
 F 3 "~" H 6300 2250 50  0001 C CNN
@@ -813,10 +813,10 @@ F 3 "~" H 6300 2250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP2
 U 1 1 61240DDF
 P 6100 2550
-F 0 "TP?" V 6054 2738 50  0000 L CNN
+F 0 "TP2" V 6054 2738 50  0000 L CNN
 F 1 "Battery -" V 6145 2738 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_4.0x4.0mm" H 6300 2550 50  0001 C CNN
 F 3 "~" H 6300 2550 50  0001 C CNN

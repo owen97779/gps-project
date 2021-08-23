@@ -83,39 +83,6 @@ F 3 "https://www.mouser.co.uk/ProductDetail/KEMET/C0603C220J1HACTU?qs=W0yvOO0ixf
 $EndComp
 Connection ~ 4400 2800
 $Comp
-L power:GND #PWR0128
-U 1 1 6147C141
-P 4200 2650
-F 0 "#PWR0128" H 4200 2400 50  0001 C CNN
-F 1 "GND" V 4205 2522 50  0000 R CNN
-F 2 "" H 4200 2650 50  0001 C CNN
-F 3 "" H 4200 2650 50  0001 C CNN
-	1    4200 2650
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Crystal_GND24 Y1
-U 1 1 614775D6
-P 4400 2650
-F 0 "Y1" V 4354 2894 50  0000 L CNN
-F 1 "Crystal_GND24" V 4445 2894 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_HC49-SD_HandSoldering" H 4400 2650 50  0001 C CNN
-F 3 "https://www.mouser.co.uk/ProductDetail/IQD/LFXTAL030234Reel?qs=e4%2FAndAAwgKRGsJIO2WnVQ%3D%3D" H 4400 2650 50  0001 C CNN
-	1    4400 2650
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR0129
-U 1 1 6147C5EB
-P 4600 2650
-F 0 "#PWR0129" H 4600 2400 50  0001 C CNN
-F 1 "GND" H 4605 2477 50  0000 C CNN
-F 2 "" H 4600 2650 50  0001 C CNN
-F 3 "" H 4600 2650 50  0001 C CNN
-	1    4600 2650
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0130
 U 1 1 6147CE24
 P 4400 2200
@@ -169,17 +136,6 @@ F 3 "~" H 4000 3750 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_2Rows-07Pins J2
-U 1 1 614C8DA4
-P 4350 1200
-F 0 "J2" H 4400 1517 50  0000 C CNN
-F 1 "Conn_2Rows-07Pins" H 4400 1426 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_2x03_P1.00mm_Vertical_SMD" H 4350 1200 50  0001 C CNN
-F 3 "~" H 4350 1200 50  0001 C CNN
-	1    4350 1200
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R12
 U 1 1 614D403D
 P 3700 2300
@@ -218,38 +174,8 @@ Wire Wire Line
 	3450 2400 3550 2400
 Wire Wire Line
 	3450 2500 3550 2500
-Text GLabel 4150 1100 0    50   Output ~ 0
-MISO
-Text GLabel 4150 1200 0    50   Output ~ 0
-SCK
-Text GLabel 4150 1300 0    50   Output ~ 0
-RESET
 Text GLabel 4050 3500 2    50   Input ~ 0
 RESET
-Text GLabel 4650 1200 2    50   Output ~ 0
-MOSI
-$Comp
-L power:GND #PWR0132
-U 1 1 611EA8CA
-P 4650 1300
-F 0 "#PWR0132" H 4650 1050 50  0001 C CNN
-F 1 "GND" V 4655 1172 50  0000 R CNN
-F 2 "" H 4650 1300 50  0001 C CNN
-F 3 "" H 4650 1300 50  0001 C CNN
-	1    4650 1300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0133
-U 1 1 611EB810
-P 4150 1400
-F 0 "#PWR0133" H 4150 1150 50  0001 C CNN
-F 1 "GND" V 4155 1272 50  0000 R CNN
-F 2 "" H 4150 1400 50  0001 C CNN
-F 3 "" H 4150 1400 50  0001 C CNN
-	1    4150 1400
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	3450 3500 4000 3500
 Wire Wire Line
@@ -269,17 +195,6 @@ F 2 "" H 2850 4700 50  0001 C CNN
 F 3 "" H 2850 4700 50  0001 C CNN
 	1    2850 4700
 	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR0135
-U 1 1 61218E15
-P 4650 1100
-F 0 "#PWR0135" H 4650 950 50  0001 C CNN
-F 1 "+3V3" V 4665 1228 50  0000 L CNN
-F 2 "" H 4650 1100 50  0001 C CNN
-F 3 "" H 4650 1100 50  0001 C CNN
-	1    4650 1100
-	0    1    1    0   
 $EndComp
 $Comp
 L power:+3V3 #PWR0136
@@ -573,4 +488,56 @@ NoConn ~ 3450 3000
 NoConn ~ 3450 4100
 NoConn ~ 3450 4300
 NoConn ~ 3450 4400
+$Comp
+L Device:Crystal Y1
+U 1 1 6124749D
+P 4400 2650
+F 0 "Y1" V 4354 2781 50  0000 L CNN
+F 1 "Crystal" V 4445 2781 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_HC49-SD" H 4400 2650 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/ProductDetail/IQD/LFXTAL030234Reel?qs=e4%2FAndAAwgKRGsJIO2WnVQ%3D%3D" H 4400 2650 50  0001 C CNN
+	1    4400 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x06_Male J2
+U 1 1 612547C1
+P 4150 1300
+F 0 "J2" H 4258 1681 50  0000 C CNN
+F 1 "Conn_01x06_Male" H 4258 1590 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_2x03_P1.00mm_Vertical_SMD" H 4150 1300 50  0001 C CNN
+F 3 "~" H 4150 1300 50  0001 C CNN
+	1    4150 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0135
+U 1 1 61218E15
+P 4350 1200
+F 0 "#PWR0135" H 4350 1050 50  0001 C CNN
+F 1 "+3V3" V 4365 1328 50  0000 L CNN
+F 2 "" H 4350 1200 50  0001 C CNN
+F 3 "" H 4350 1200 50  0001 C CNN
+	1    4350 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0132
+U 1 1 611EA8CA
+P 4350 1600
+F 0 "#PWR0132" H 4350 1350 50  0001 C CNN
+F 1 "GND" V 4355 1472 50  0000 R CNN
+F 2 "" H 4350 1600 50  0001 C CNN
+F 3 "" H 4350 1600 50  0001 C CNN
+	1    4350 1600
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4350 1400 2    50   Output ~ 0
+MOSI
+Text GLabel 4350 1500 2    50   Output ~ 0
+RESET
+Text GLabel 4350 1300 2    50   Output ~ 0
+SCK
+Text GLabel 4350 1100 2    50   Output ~ 0
+MISO
 $EndSCHEMATC
