@@ -41,19 +41,6 @@ F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1300 15
 $EndComp
 $Comp
 L GPS~Hardware:ESD122DMX U?
-U 1 1 613BC231
-P 2900 1800
-AR Path="/613BC231" Ref="U?"  Part="1" 
-AR Path="/613B204B/613BC231" Ref="U2"  Part="1" 
-F 0 "U2" H 2900 2175 50  0000 C CNN
-F 1 "ESD122DMX" H 2900 2084 50  0000 C CNN
-F 2 "GPS Hardware:IC_ESD122DMXR" H 2900 1850 50  0001 C CNN
-F 3 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/ESD122DMXR?qs=%2Fha2pyFaduihn3aKw32kKFOpmmjnpuflw4tqhxDwaDnOkPWXZway8Q%3D%3D" H 2900 1850 50  0001 C CNN
-	1    2900 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L GPS~Hardware:ESD122DMX U?
 U 1 1 613BC237
 P 2900 1100
 AR Path="/613BC237" Ref="U?"  Part="1" 
@@ -90,13 +77,9 @@ Text GLabel 1800 1700 2    50   Output ~ 0
 D+
 Text GLabel 1800 1500 2    50   Output ~ 0
 D-
-Text GLabel 2600 1050 0    50   BiDi ~ 0
-D+
-Text GLabel 2600 1750 0    50   BiDi ~ 0
-D+
 Text GLabel 2600 950  0    50   BiDi ~ 0
-D-
-Text GLabel 2600 1650 0    50   BiDi ~ 0
+D+
+Text GLabel 2600 1050 0    50   BiDi ~ 0
 D-
 Text GLabel 4250 1800 0    50   Input ~ 0
 D+
@@ -141,19 +124,6 @@ F 1 "GND" H 3205 1077 50  0000 C CNN
 F 2 "" H 3200 1250 50  0001 C CNN
 F 3 "" H 3200 1250 50  0001 C CNN
 	1    3200 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 613BC270
-P 3200 1950
-AR Path="/613BC270" Ref="#PWR?"  Part="1" 
-AR Path="/613B204B/613BC270" Ref="#PWR0104"  Part="1" 
-F 0 "#PWR0104" H 3200 1700 50  0001 C CNN
-F 1 "GND" H 3205 1777 50  0000 C CNN
-F 2 "" H 3200 1950 50  0001 C CNN
-F 3 "" H 3200 1950 50  0001 C CNN
-	1    3200 1950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -502,7 +472,7 @@ AR Path="/613BC347" Ref="R?"  Part="1"
 AR Path="/613B204B/613BC347" Ref="R10"  Part="1" 
 F 0 "R10" H 5670 2846 50  0000 L CNN
 F 1 "5k23" V 5600 2700 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5530 2800 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 5530 2800 50  0001 C CNN
 F 3 "~" H 5600 2800 50  0001 C CNN
 	1    5600 2800
 	1    0    0    -1  
@@ -770,7 +740,7 @@ AR Path="/613BC252" Ref="R?"  Part="1"
 AR Path="/613B204B/613BC252" Ref="R1"  Part="1" 
 F 0 "R1" V 1800 1150 50  0000 C CNN
 F 1 "5k1" V 1900 1150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 1830 1150 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 1830 1150 50  0001 C CNN
 F 3 "~" H 1900 1150 50  0001 C CNN
 	1    1900 1150
 	0    1    1    0   
@@ -783,7 +753,7 @@ AR Path="/613BC258" Ref="R?"  Part="1"
 AR Path="/613B204B/613BC258" Ref="R2"  Part="1" 
 F 0 "R2" V 2000 1250 50  0000 C CNN
 F 1 "5k1" V 1900 1250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 1830 1250 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 1830 1250 50  0001 C CNN
 F 3 "~" H 1900 1250 50  0001 C CNN
 	1    1900 1250
 	0    1    1    0   
