@@ -343,12 +343,12 @@ $EndComp
 $Comp
 L power:GND #PWR0145
 U 1 1 6149C4AF
-P 5550 2650
-F 0 "#PWR0145" H 5550 2400 50  0001 C CNN
-F 1 "GND" V 5555 2522 50  0000 R CNN
-F 2 "" H 5550 2650 50  0001 C CNN
-F 3 "" H 5550 2650 50  0001 C CNN
-	1    5550 2650
+P 5550 2250
+F 0 "#PWR0145" H 5550 2000 50  0001 C CNN
+F 1 "GND" V 5555 2122 50  0000 R CNN
+F 2 "" H 5550 2250 50  0001 C CNN
+F 3 "" H 5550 2250 50  0001 C CNN
+	1    5550 2250
 	0    1    1    0   
 $EndComp
 $Comp
@@ -365,23 +365,16 @@ $EndComp
 $Comp
 L power:GND #PWR0147
 U 1 1 6149B341
-P 5550 2250
-F 0 "#PWR0147" H 5550 2000 50  0001 C CNN
-F 1 "GND" V 5555 2122 50  0000 R CNN
-F 2 "" H 5550 2250 50  0001 C CNN
-F 3 "" H 5550 2250 50  0001 C CNN
-	1    5550 2250
+P 5550 2550
+F 0 "#PWR0147" H 5550 2300 50  0001 C CNN
+F 1 "GND" V 5555 2422 50  0000 R CNN
+F 2 "" H 5550 2550 50  0001 C CNN
+F 3 "" H 5550 2550 50  0001 C CNN
+	1    5550 2550
 	0    1    1    0   
 $EndComp
-Connection ~ 5200 2450
 Wire Wire Line
-	5200 2550 5200 2450
-Wire Wire Line
-	5550 2550 5200 2550
-Wire Wire Line
-	5200 2450 5200 2250
-Wire Wire Line
-	5550 2450 5200 2450
+	5550 2650 5200 2650
 $Comp
 L power:+3V3 #PWR0148
 U 1 1 6149A2FD
@@ -393,33 +386,14 @@ F 3 "" H 5200 2250 50  0001 C CNN
 	1    5200 2250
 	1    0    0    -1  
 $EndComp
-Text GLabel 6950 3250 2    50   Input ~ 0
-RTS_Cellular
-Text GLabel 6950 3150 2    50   Output ~ 0
-CTS_Cellular
-Text GLabel 5550 3250 0    50   Output ~ 0
+Text GLabel 6950 3250 2    50   Output ~ 0
 RX_Cellular
-Text GLabel 5550 3150 0    50   Input ~ 0
+Text GLabel 6950 3150 2    50   Input ~ 0
 TX_Cellular
-Text GLabel 6950 2950 2    50   Output ~ 0
-CTS
-Text GLabel 6950 2850 2    50   Input ~ 0
-RTS
-Text GLabel 5550 2950 0    50   Input ~ 0
+Text GLabel 6950 2950 2    50   Input ~ 0
 TX
-Text GLabel 5550 2850 0    50   Output ~ 0
+Text GLabel 6950 2850 2    50   Output ~ 0
 RX
-$Comp
-L GPS~Hardware:SN74AVC4T774PW U6
-U 1 1 61491FC4
-P 6250 2750
-F 0 "U6" H 6250 3820 50  0000 C CNN
-F 1 "SN74AVC4T774PW" H 6250 3729 50  0000 C CNN
-F 2 "GPS Hardware:SOP65P640X120-16N" H 6250 2750 50  0001 L BNN
-F 3 "" H 6250 2750 50  0001 L BNN
-	1    6250 2750
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C C17
 U 1 1 612AD4B1
@@ -540,4 +514,30 @@ Text GLabel 4350 1300 2    50   Output ~ 0
 SCK
 Text GLabel 4350 1100 2    50   Output ~ 0
 MISO
+$Comp
+L GPS~Hardware:SN74AVC4T774PW U6
+U 1 1 61491FC4
+P 6250 2750
+F 0 "U6" H 6250 3820 50  0000 C CNN
+F 1 "SN74AVC4T774PW" H 6250 3729 50  0000 C CNN
+F 2 "GPS Hardware:SOP65P640X120-16N" H 6250 2750 50  0001 L BNN
+F 3 "" H 6250 2750 50  0001 L BNN
+	1    6250 2750
+	1    0    0    -1  
+$EndComp
+Text GLabel 5550 2950 0    50   Input ~ 0
+RTS
+Text GLabel 5550 2850 0    50   Output ~ 0
+CTS
+Text GLabel 5550 3250 0    50   Output ~ 0
+CTS_Cellular
+Text GLabel 5550 3150 0    50   Input ~ 0
+RTS_Cellular
+Connection ~ 5200 2450
+Wire Wire Line
+	5200 2450 5200 2250
+Wire Wire Line
+	5550 2450 5200 2450
+Wire Wire Line
+	5200 2450 5200 2650
 $EndSCHEMATC

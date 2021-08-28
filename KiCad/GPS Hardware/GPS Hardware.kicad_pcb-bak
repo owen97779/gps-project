@@ -3,7 +3,7 @@
   (general
     (thickness 1.6)
     (drawings 7)
-    (tracks 54)
+    (tracks 59)
     (zones 0)
     (modules 76)
     (nets 103)
@@ -3934,6 +3934,8 @@
   (via (at 110.7 98.35) (size 0.45) (drill 0.2) (layers F.Cu B.Cu) (net 0) (tstamp 6127F0B4))
   (segment (start 109.275 89.0975) (end 109.2775 89.1) (width 0.15) (layer B.Cu) (net 1))
   (segment (start 109.375 83.3125) (end 109.3325 83.27) (width 0.15) (layer B.Cu) (net 2))
+  (segment (start 110.635 80.885) (end 110.85 81.1) (width 0.15) (layer B.Cu) (net 3))
+  (segment (start 109.634 80.885) (end 110.635 80.885) (width 0.15) (layer B.Cu) (net 3))
   (segment (start 109.6815 80.4325) (end 112 80.4325) (width 0.15) (layer B.Cu) (net 6))
   (segment (start 109.634 80.385) (end 109.6815 80.4325) (width 0.15) (layer B.Cu) (net 6))
   (segment (start 113.0925 80.4325) (end 113.1 80.425) (width 0.15) (layer B.Cu) (net 6))
@@ -3984,6 +3986,9 @@
   (segment (start 114.295 81.67) (end 114.3 81.675) (width 0.15) (layer B.Cu) (net 42))
   (segment (start 114.295 80.425) (end 114.295 81.67) (width 0.15) (layer B.Cu) (net 42))
   (segment (start 104.175 78.382302) (end 104.175 78.225) (width 0.15) (layer B.Cu) (net 42))
+  (segment (start 104.175 78.377302) (end 104.175 78.225) (width 0.15) (layer B.Cu) (net 42))
+  (segment (start 105.182698 79.385) (end 104.175 78.377302) (width 0.15) (layer B.Cu) (net 42))
+  (segment (start 105.764 79.385) (end 105.182698 79.385) (width 0.15) (layer B.Cu) (net 42))
 
   (zone (net 2) (net_name VBUS) (layer B.Cu) (tstamp 0) (hatch edge 0.508)
     (connect_pads yes (clearance 0.254))
