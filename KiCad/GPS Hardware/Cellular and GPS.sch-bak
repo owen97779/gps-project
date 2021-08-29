@@ -88,7 +88,7 @@ AR Path="/613BCFBA/614925AC" Ref="R?"  Part="1"
 AR Path="/613BCFF5/614925AC" Ref="R16"  Part="1" 
 F 0 "R16" H 1770 2746 50  0000 L CNN
 F 1 "100k" H 1770 2655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 1630 2700 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 1630 2700 50  0001 C CNN
 F 3 "~" H 1700 2700 50  0001 C CNN
 	1    1700 2700
 	1    0    0    -1  

@@ -130,7 +130,7 @@ U 1 1 614B0F0F
 P 4000 3750
 F 0 "R15" H 4070 3796 50  0000 L CNN
 F 1 "10k" V 4000 3700 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3930 3750 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 3930 3750 50  0001 C CNN
 F 3 "~" H 4000 3750 50  0001 C CNN
 	1    4000 3750
 	-1   0    0    1   
@@ -343,12 +343,12 @@ $EndComp
 $Comp
 L power:GND #PWR0145
 U 1 1 6149C4AF
-P 5550 2650
-F 0 "#PWR0145" H 5550 2400 50  0001 C CNN
-F 1 "GND" V 5555 2522 50  0000 R CNN
-F 2 "" H 5550 2650 50  0001 C CNN
-F 3 "" H 5550 2650 50  0001 C CNN
-	1    5550 2650
+P 5550 2250
+F 0 "#PWR0145" H 5550 2000 50  0001 C CNN
+F 1 "GND" V 5555 2122 50  0000 R CNN
+F 2 "" H 5550 2250 50  0001 C CNN
+F 3 "" H 5550 2250 50  0001 C CNN
+	1    5550 2250
 	0    1    1    0   
 $EndComp
 $Comp
@@ -365,23 +365,16 @@ $EndComp
 $Comp
 L power:GND #PWR0147
 U 1 1 6149B341
-P 5550 2250
-F 0 "#PWR0147" H 5550 2000 50  0001 C CNN
-F 1 "GND" V 5555 2122 50  0000 R CNN
-F 2 "" H 5550 2250 50  0001 C CNN
-F 3 "" H 5550 2250 50  0001 C CNN
-	1    5550 2250
+P 5550 2550
+F 0 "#PWR0147" H 5550 2300 50  0001 C CNN
+F 1 "GND" V 5555 2422 50  0000 R CNN
+F 2 "" H 5550 2550 50  0001 C CNN
+F 3 "" H 5550 2550 50  0001 C CNN
+	1    5550 2550
 	0    1    1    0   
 $EndComp
-Connection ~ 5200 2450
 Wire Wire Line
-	5200 2550 5200 2450
-Wire Wire Line
-	5550 2550 5200 2550
-Wire Wire Line
-	5200 2450 5200 2250
-Wire Wire Line
-	5550 2450 5200 2450
+	5550 2650 5200 2650
 $Comp
 L power:+3V3 #PWR0148
 U 1 1 6149A2FD
@@ -393,40 +386,21 @@ F 3 "" H 5200 2250 50  0001 C CNN
 	1    5200 2250
 	1    0    0    -1  
 $EndComp
-Text GLabel 6950 3250 2    50   Input ~ 0
-RTS_Cellular
-Text GLabel 6950 3150 2    50   Output ~ 0
-CTS_Cellular
-Text GLabel 5550 3250 0    50   Output ~ 0
+Text GLabel 6950 3250 2    50   Output ~ 0
 RX_Cellular
-Text GLabel 5550 3150 0    50   Input ~ 0
+Text GLabel 6950 3150 2    50   Input ~ 0
 TX_Cellular
-Text GLabel 6950 2950 2    50   Output ~ 0
-CTS
-Text GLabel 6950 2850 2    50   Input ~ 0
-RTS
-Text GLabel 5550 2950 0    50   Input ~ 0
+Text GLabel 6950 2950 2    50   Input ~ 0
 TX
-Text GLabel 5550 2850 0    50   Output ~ 0
+Text GLabel 6950 2850 2    50   Output ~ 0
 RX
-$Comp
-L GPS~Hardware:SN74AVC4T774PW U6
-U 1 1 61491FC4
-P 6250 2750
-F 0 "U6" H 6250 3820 50  0000 C CNN
-F 1 "SN74AVC4T774PW" H 6250 3729 50  0000 C CNN
-F 2 "GPS Hardware:SOP65P640X120-16N" H 6250 2750 50  0001 L BNN
-F 3 "" H 6250 2750 50  0001 L BNN
-	1    6250 2750
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C C17
 U 1 1 612AD4B1
 P 7600 2100
 F 0 "C17" H 7715 2146 50  0000 L CNN
 F 1 "0u1" H 7715 2055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 7638 1950 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 7638 1950 50  0001 C CNN
 F 3 "~" H 7600 2100 50  0001 C CNN
 	1    7600 2100
 	1    0    0    -1  
@@ -437,7 +411,7 @@ U 1 1 612AE26D
 P 7050 2200
 F 0 "C16" H 7165 2246 50  0000 L CNN
 F 1 "0u1" H 7165 2155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 7088 2050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 7088 2050 50  0001 C CNN
 F 3 "~" H 7050 2200 50  0001 C CNN
 	1    7050 2200
 	1    0    0    -1  
@@ -540,4 +514,30 @@ Text GLabel 4350 1300 2    50   Output ~ 0
 SCK
 Text GLabel 4350 1100 2    50   Output ~ 0
 MISO
+$Comp
+L GPS~Hardware:SN74AVC4T774PW U6
+U 1 1 61491FC4
+P 6250 2750
+F 0 "U6" H 6250 3820 50  0000 C CNN
+F 1 "SN74AVC4T774PW" H 6250 3729 50  0000 C CNN
+F 2 "GPS Hardware:SOP65P640X120-16N" H 6250 2750 50  0001 L BNN
+F 3 "" H 6250 2750 50  0001 L BNN
+	1    6250 2750
+	1    0    0    -1  
+$EndComp
+Text GLabel 5550 2950 0    50   Input ~ 0
+RTS
+Text GLabel 5550 2850 0    50   Output ~ 0
+CTS
+Text GLabel 5550 3250 0    50   Output ~ 0
+CTS_Cellular
+Text GLabel 5550 3150 0    50   Input ~ 0
+RTS_Cellular
+Connection ~ 5200 2450
+Wire Wire Line
+	5200 2450 5200 2250
+Wire Wire Line
+	5550 2450 5200 2450
+Wire Wire Line
+	5200 2450 5200 2650
 $EndSCHEMATC
