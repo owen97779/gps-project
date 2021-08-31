@@ -448,9 +448,9 @@ F 3 "" H 7600 2250 50  0001 C CNN
 	1    7600 2250
 	1    0    0    -1  
 $EndComp
-Text GLabel 3450 3100 2    50   Output ~ 0
+Text GLabel 3450 3200 2    50   Output ~ 0
 PWR_Cellular
-Text GLabel 3450 3200 2    50   Input ~ 0
+Text GLabel 3450 3100 2    50   Input ~ 0
 RESET_Cellular
 NoConn ~ 2250 2200
 NoConn ~ 2250 2300
