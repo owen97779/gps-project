@@ -7,15 +7,17 @@ const App = () => {
   const [altitude, setAltitude] = useState(null);
   const [longitude, setLongitude] = useState(null);
   const [latitude, setLatitude] = useState(null);
-  const [value, setValue] = useState("value");
   const [time, setTime] = useState(null);
+  const [UTCtime, setUTCTime] = useState(null);
   const [errorMsg, setErrorMsg] = useState(null);
+  const [gpsrefresh, setgpsrefresh] = useState(2000);
+  const [test, settest] = useState(0);
   
   const [isEnabled1, setIsEnabled1] = useState(false);
   const toggleSwitch1 = () => setIsEnabled1(previousState1 => !previousState1);
   const [isEnabled2, setIsEnabled2] = useState(false);
   const toggleSwitch2 = () => setIsEnabled2(previousState2 => !previousState2);
-  
+
   async function foo1(){
     fetch('http://58.233.32.234:3000/gpsdata')
       .then(response => response.json())
@@ -23,33 +25,57 @@ const App = () => {
   }
 
   async function foo2(){
-
+    clock();
+    fetch('http://58.233.32.234:3000/gpsdata/longitude/' + longitude + '/latitude/' + latitude + '/altitude/' + altitude )
+      .then(response => response.json())
+      .then(gpsdata => console.log(gpsdata));
+      console.log("write")
   }
 
-
   function clock(){
-    setTime(new Date().getFullYear()  + '/' + ('0' + (new Date().getMonth() + 1)).slice(-2) + '/' + ('0'+ new Date().getDate()).slice(-2) + ' ' + ('0'+ new Date().getHours()).slice(-2) + ':' + ('0' + new Date().getMinutes()).slice(-2) + ':' + ('0' + new Date().getSeconds()).slice(-2));
+    var date = new Date;
+    //setTime(date.getFullYear()  + '-' + ('0' + (date.getMonth() + 1)).slice(-2) + '-' + ('0'+ date.getDate()).slice(-2) + ' ' + ('0'+ date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2) + ':' + ('0' + date.getSeconds()).slice(-2));
+    //console.log(date.toISOString().slice(0, -1)+"000");
+    setTime(date.toString());
+    setUTCTime(date.toISOString());
     return;
   }
 
-  async function fetchCats() {
+  async function perm() {
     let { status } = await Location.requestForegroundPermissionsAsync();
-      if (status !== 'granted') {
-        setErrorMsg('Permission to access location was denied');
-        return;
-      }
-      
-    let location = await Location.getCurrentPositionAsync({});
+    if (status !== 'granted') {
+      setErrorMsg('Permission to access location was denied');
+      return;
+    }
+  }
+
+  async function fetchCats() {
+    let location = await Location.getCurrentPositionAsync({
+      enableHighAccuracy: true,
+    });
       setLocation(location);
       setLongitude(JSON.stringify(location.coords.longitude));
       setLatitude(JSON.stringify(location.coords.latitude));
       setAltitude(JSON.stringify(location.coords.altitude));
+    if (gpsrefresh == 3000 || gpsrefresh == 5000){
+      //foo2();
+    }
   }
+  
 
   useEffect(()=>{
-    fetchCats();
+    perm();
+    fetchCats
     setInterval(fetchCats, 2000);
     setInterval(clock, 500)
+    /*
+    if(isEnabled1){
+      setgpsrefresh(3000);
+    }else if(isEnabled2){
+      setgpsrefresh(5000);
+    }else{
+      setgpsrefresh(2000);
+    }*/
   },[]);
 
   let text = 'Waiting..';
@@ -61,15 +87,17 @@ const App = () => {
 
   return (
     <View style={styles.container}>
+      <Text style={styles.paragraph}>{UTCtime}</Text>
       <Text style={styles.paragraph}>{time}</Text>
       <Text style={styles.paragraph}>longitude: {longitude}</Text>
       <Text style={styles.paragraph}>latitude: {latitude}</Text>
       <Text style={styles.paragraph}>Altitude: {altitude}</Text>
+      <Text style={styles.paragraph}>{gpsrefresh}</Text>
       <View style={styles.button}>
-        <Button title="Post" onPress={()=>foo1()}/>
+        <Button title="Read" onPress={()=>foo1()}/>
       </View>
       <View style={styles.button}>
-        <Button title="Get" onPress={()=>foo2()}/>
+        <Button title="Write" onPress={()=>foo2()}/>
       </View>
         <Text>3 sec</Text>
         <Switch
