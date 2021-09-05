@@ -322,7 +322,7 @@ AR Path="/613BC2E0" Ref="C?"  Part="1"
 AR Path="/613B204B/613BC2E0" Ref="C6"  Part="1" 
 F 0 "C6" H 6365 1696 50  0000 L CNN
 F 1 "22u" H 6365 1605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 6288 1500 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 6288 1500 50  0001 C CNN
 F 3 "https://www.mouser.co.uk/ProductDetail/Samsung-Electro-Mechanics/CL10A226MP8NRNC?qs=xZ%2FP%252Ba9zWqbykJJ6x%252BsWhA%3D%3D" H 6250 1650 50  0001 C CNN
 	1    6250 1650
 	1    0    0    -1  
