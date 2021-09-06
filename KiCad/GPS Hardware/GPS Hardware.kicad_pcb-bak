@@ -3693,7 +3693,7 @@
   )
 
   (module Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder (layer F.Cu) (tedit 5F68FEEF) (tstamp 61231478)
-    (at 160.425 93.2125 90)
+    (at 159.67 98.9225 90)
     (descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor handsolder")
     (path /613BCFBA/6147650D)
