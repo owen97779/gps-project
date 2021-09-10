@@ -412,7 +412,7 @@ AR Path="/613BC328" Ref="C?"  Part="1"
 AR Path="/613B204B/613BC328" Ref="C5"  Part="1" 
 F 0 "C5" H 5965 2446 50  0000 L CNN
 F 1 "10u" H 5965 2355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5888 2250 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 5888 2250 50  0001 C CNN
 F 3 "https://www.mouser.co.uk/ProductDetail/Taiyo-Yuden/JMK107ABJ106KA-T?qs=lkMpTOwszhd28fybYDECfg%3D%3D" H 5850 2400 50  0001 C CNN
 	1    5850 2400
 	1    0    0    -1  
