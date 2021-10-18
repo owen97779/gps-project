@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name "GPS Hardware")(type Legacy)(uri "${KIPRJMOD}/GPS Hardware.lib")(options "")(descr ""))
   (lib (name BQ24295RGET)(type Legacy)(uri /home/owen97779/Downloads/bq24295/BQ24295RGET.lib)(options "")(descr ""))
+  (lib (name GPS-Hardware-rescue)(type Legacy)(uri "${KIPRJMOD}/GPS Hardware-rescue.lib")(options "")(descr ""))
 )
