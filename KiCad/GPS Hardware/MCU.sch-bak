@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Microchip_ATmega:ATmega328-AU U5
+L GPS-Hardware-rescue:ATmega328-AU-MCU_Microchip_ATmega U5
 U 1 1 61474832
 P 2850 3200
 F 0 "U5" H 2850 1611 50  0000 C CNN
@@ -25,7 +25,7 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20w
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C10
+L GPS-Hardware-rescue:C-Device C10
 U 1 1 6147650D
 P 1950 2200
 F 0 "C10" H 2065 2246 50  0000 L CNN
@@ -36,7 +36,7 @@ F 3 "~" H 1950 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0127
+L GPS-Hardware-rescue:GND-power #PWR0127
 U 1 1 61476BD2
 P 1950 2350
 F 0 "#PWR0127" H 1950 2100 50  0001 C CNN
@@ -59,7 +59,7 @@ Wire Wire Line
 Wire Wire Line
 	3450 2700 3950 2700
 $Comp
-L Device:C C14
+L GPS-Hardware-rescue:C-Device C14
 U 1 1 6147B129
 P 4400 2350
 F 0 "C14" H 4515 2396 50  0000 L CNN
@@ -71,7 +71,7 @@ F 3 "https://www.mouser.co.uk/ProductDetail/KEMET/C0603C220J1HACTU?qs=W0yvOO0ixf
 $EndComp
 Connection ~ 4400 2500
 $Comp
-L Device:C C15
+L GPS-Hardware-rescue:C-Device C15
 U 1 1 6147BAE8
 P 4400 2950
 F 0 "C15" H 4515 2996 50  0000 L CNN
@@ -83,7 +83,7 @@ F 3 "https://www.mouser.co.uk/ProductDetail/KEMET/C0603C220J1HACTU?qs=W0yvOO0ixf
 $EndComp
 Connection ~ 4400 2800
 $Comp
-L power:GND #PWR0130
+L GPS-Hardware-rescue:GND-power #PWR0130
 U 1 1 6147CE24
 P 4400 2200
 F 0 "#PWR0130" H 4400 1950 50  0001 C CNN
@@ -94,7 +94,7 @@ F 3 "" H 4400 2200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR0131
+L GPS-Hardware-rescue:GND-power #PWR0131
 U 1 1 6147D183
 P 4400 3100
 F 0 "#PWR0131" H 4400 2850 50  0001 C CNN
@@ -125,7 +125,7 @@ MISO
 Text GLabel 3850 2500 2    50   Input ~ 0
 SCK
 $Comp
-L Device:R R15
+L GPS-Hardware-rescue:R-Device R15
 U 1 1 614B0F0F
 P 4000 3750
 F 0 "R15" H 4070 3796 50  0000 L CNN
@@ -136,7 +136,7 @@ F 3 "~" H 4000 3750 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R12
+L GPS-Hardware-rescue:R-Device R12
 U 1 1 614D403D
 P 3700 2300
 F 0 "R12" V 3650 2150 50  0000 C CNN
@@ -147,7 +147,7 @@ F 3 "~" H 3700 2300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R13
+L GPS-Hardware-rescue:R-Device R13
 U 1 1 614D4D77
 P 3700 2400
 F 0 "R13" V 3650 2250 50  0000 C CNN
@@ -158,7 +158,7 @@ F 3 "~" H 3700 2400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R14
+L GPS-Hardware-rescue:R-Device R14
 U 1 1 614D58E3
 P 3700 2500
 F 0 "R14" V 3650 2350 50  0000 C CNN
@@ -186,7 +186,7 @@ Wire Wire Line
 Wire Wire Line
 	4000 3900 4000 3950
 $Comp
-L power:GND #PWR0134
+L GPS-Hardware-rescue:GND-power #PWR0134
 U 1 1 61218305
 P 2850 4700
 F 0 "#PWR0134" H 2850 4450 50  0001 C CNN
@@ -197,7 +197,7 @@ F 3 "" H 2850 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR0136
+L GPS-Hardware-rescue:+3V3-power #PWR0136
 U 1 1 6121A2B1
 P 4000 3950
 F 0 "#PWR0136" H 4000 3800 50  0001 C CNN
@@ -210,7 +210,7 @@ $EndComp
 Wire Wire Line
 	2850 1700 2950 1700
 $Comp
-L power:+3V3 #PWR0137
+L GPS-Hardware-rescue:+3V3-power #PWR0137
 U 1 1 6121C704
 P 2850 1700
 F 0 "#PWR0137" H 2850 1550 50  0001 C CNN
@@ -222,7 +222,7 @@ F 3 "" H 2850 1700 50  0001 C CNN
 $EndComp
 Connection ~ 2850 1700
 $Comp
-L Device:C C11
+L GPS-Hardware-rescue:C-Device C11
 U 1 1 6121D0CD
 P 2550 1050
 F 0 "C11" H 2665 1096 50  0000 L CNN
@@ -233,7 +233,7 @@ F 3 "~" H 2550 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C12
+L GPS-Hardware-rescue:C-Device C12
 U 1 1 6121E29B
 P 2900 1050
 F 0 "C12" H 3015 1096 50  0000 L CNN
@@ -244,7 +244,7 @@ F 3 "~" H 2900 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C13
+L GPS-Hardware-rescue:C-Device C13
 U 1 1 6121E902
 P 3250 1050
 F 0 "C13" H 3365 1096 50  0000 L CNN
@@ -260,7 +260,7 @@ Connection ~ 2900 900
 Wire Wire Line
 	2900 900  3250 900 
 $Comp
-L power:+3V3 #PWR0138
+L GPS-Hardware-rescue:+3V3-power #PWR0138
 U 1 1 6121FA8B
 P 2900 900
 F 0 "#PWR0138" H 2900 750 50  0001 C CNN
@@ -271,7 +271,7 @@ F 3 "" H 2900 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0139
+L GPS-Hardware-rescue:GND-power #PWR0139
 U 1 1 612206D8
 P 2550 1200
 F 0 "#PWR0139" H 2550 950 50  0001 C CNN
@@ -282,7 +282,7 @@ F 3 "" H 2550 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0140
+L GPS-Hardware-rescue:GND-power #PWR0140
 U 1 1 61220D84
 P 2900 1200
 F 0 "#PWR0140" H 2900 950 50  0001 C CNN
@@ -293,7 +293,7 @@ F 3 "" H 2900 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0141
+L GPS-Hardware-rescue:GND-power #PWR0141
 U 1 1 612213CA
 P 3250 1200
 F 0 "#PWR0141" H 3250 950 50  0001 C CNN
@@ -308,7 +308,7 @@ Wire Wire Line
 Wire Wire Line
 	2250 2000 1950 2000
 $Comp
-L power:+1V8 #PWR0142
+L GPS-Hardware-rescue:+1V8-power #PWR0142
 U 1 1 6149F6C9
 P 7150 2050
 F 0 "#PWR0142" H 7150 1900 50  0001 C CNN
@@ -319,7 +319,7 @@ F 3 "" H 7150 2050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+3V3 #PWR0143
+L GPS-Hardware-rescue:+3V3-power #PWR0143
 U 1 1 6149E56B
 P 7700 1950
 F 0 "#PWR0143" H 7700 1800 50  0001 C CNN
@@ -330,7 +330,7 @@ F 3 "" H 7700 1950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0144
+L GPS-Hardware-rescue:GND-power #PWR0144
 U 1 1 6149DEBA
 P 6950 3450
 F 0 "#PWR0144" H 6950 3200 50  0001 C CNN
@@ -341,7 +341,7 @@ F 3 "" H 6950 3450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR0145
+L GPS-Hardware-rescue:GND-power #PWR0145
 U 1 1 6149C4AF
 P 5550 2250
 F 0 "#PWR0145" H 5550 2000 50  0001 C CNN
@@ -352,7 +352,7 @@ F 3 "" H 5550 2250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0146
+L GPS-Hardware-rescue:GND-power #PWR0146
 U 1 1 6149BDCB
 P 5550 2350
 F 0 "#PWR0146" H 5550 2100 50  0001 C CNN
@@ -363,7 +363,7 @@ F 3 "" H 5550 2350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0147
+L GPS-Hardware-rescue:GND-power #PWR0147
 U 1 1 6149B341
 P 5550 2550
 F 0 "#PWR0147" H 5550 2300 50  0001 C CNN
@@ -376,7 +376,7 @@ $EndComp
 Wire Wire Line
 	5550 2650 5200 2650
 $Comp
-L power:+3V3 #PWR0148
+L GPS-Hardware-rescue:+3V3-power #PWR0148
 U 1 1 6149A2FD
 P 5200 2250
 F 0 "#PWR0148" H 5200 2100 50  0001 C CNN
@@ -395,7 +395,7 @@ TX
 Text GLabel 6950 2850 2    50   Output ~ 0
 RX
 $Comp
-L Device:C C17
+L GPS-Hardware-rescue:C-Device C17
 U 1 1 612AD4B1
 P 7600 2100
 F 0 "C17" H 7715 2146 50  0000 L CNN
@@ -406,7 +406,7 @@ F 3 "~" H 7600 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C16
+L GPS-Hardware-rescue:C-Device C16
 U 1 1 612AE26D
 P 7050 2200
 F 0 "C16" H 7165 2246 50  0000 L CNN
@@ -427,7 +427,7 @@ Connection ~ 7050 2050
 Wire Wire Line
 	7050 2050 6950 2050
 $Comp
-L power:GND #PWR0110
+L GPS-Hardware-rescue:GND-power #PWR0110
 U 1 1 612DF9B5
 P 7050 2350
 F 0 "#PWR0110" H 7050 2100 50  0001 C CNN
@@ -438,7 +438,7 @@ F 3 "" H 7050 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0149
+L GPS-Hardware-rescue:GND-power #PWR0149
 U 1 1 612E15CE
 P 7600 2250
 F 0 "#PWR0149" H 7600 2000 50  0001 C CNN
@@ -463,7 +463,7 @@ NoConn ~ 3450 4100
 NoConn ~ 3450 4300
 NoConn ~ 3450 4400
 $Comp
-L Device:Crystal Y1
+L GPS-Hardware-rescue:Crystal-Device Y1
 U 1 1 6124749D
 P 4400 2650
 F 0 "Y1" V 4354 2781 50  0000 L CNN
@@ -474,9 +474,11 @@ F 3 "https://www.mouser.co.uk/ProductDetail/IQD/LFXTAL030234Reel?qs=e4%2FAndAAwg
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Conn_01x06_Male J2
+L GPS-Hardware-rescue:Conn_01x06_Male-Connector J2
 U 1 1 612547C1
 P 4150 1300
+AR Path="/612547C1" Ref="J2"  Part="1" 
+AR Path="/613BCFBA/612547C1" Ref="J2"  Part="1" 
 F 0 "J2" H 4258 1681 50  0000 C CNN
 F 1 "Conn_01x06_Male" H 4258 1590 50  0000 C CNN
 F 2 "Connector_PinHeader_1.00mm:PinHeader_2x03_P1.00mm_Vertical_SMD" H 4150 1300 50  0001 C CNN
@@ -485,7 +487,7 @@ F 3 "~" H 4150 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR0135
+L GPS-Hardware-rescue:+3V3-power #PWR0135
 U 1 1 61218E15
 P 4350 1200
 F 0 "#PWR0135" H 4350 1050 50  0001 C CNN
@@ -496,7 +498,7 @@ F 3 "" H 4350 1200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0132
+L GPS-Hardware-rescue:GND-power #PWR0132
 U 1 1 611EA8CA
 P 4350 1400
 F 0 "#PWR0132" H 4350 1150 50  0001 C CNN

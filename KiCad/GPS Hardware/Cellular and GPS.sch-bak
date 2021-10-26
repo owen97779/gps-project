@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L RF_GSM:SARA-U201 U?
+L GPS-Hardware-rescue:SARA-U201-RF_GSM U?
 U 1 1 6149258C
 P 3100 2850
 AR Path="/613BCFBA/6149258C" Ref="U?"  Part="1" 
@@ -35,7 +35,7 @@ RTS_Cellular
 Text GLabel 2500 2250 0    50   Input ~ 0
 CTS_Cellular
 $Comp
-L power:GND #PWR?
+L GPS-Hardware-rescue:GND-power #PWR?
 U 1 1 61492596
 P 2500 1950
 AR Path="/613BCFBA/61492596" Ref="#PWR?"  Part="1" 
@@ -48,7 +48,7 @@ F 3 "" H 2500 1950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+1V8 #PWR?
+L GPS-Hardware-rescue:+1V8-power #PWR?
 U 1 1 6149259C
 P 3200 1750
 AR Path="/613BCFBA/6149259C" Ref="#PWR?"  Part="1" 
@@ -68,7 +68,7 @@ Connection ~ 1700 2850
 Wire Wire Line
 	1600 2850 1700 2850
 $Comp
-L power:+3V3 #PWR?
+L GPS-Hardware-rescue:+3V3-power #PWR?
 U 1 1 614925A6
 P 1700 2550
 AR Path="/613BCFBA/614925A6" Ref="#PWR?"  Part="1" 
@@ -81,7 +81,7 @@ F 3 "" H 1700 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L GPS-Hardware-rescue:R-Device R?
 U 1 1 614925AC
 P 1700 2700
 AR Path="/613BCFBA/614925AC" Ref="R?"  Part="1" 
@@ -96,7 +96,7 @@ $EndComp
 Text GLabel 1600 2850 0    50   Input ~ 0
 PWR_Cellular
 $Comp
-L Device:C C?
+L GPS-Hardware-rescue:C-Device C?
 U 1 1 614925B3
 P 1850 1350
 AR Path="/613BCFBA/614925B3" Ref="C?"  Part="1" 
@@ -109,7 +109,7 @@ F 3 "~" H 1850 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L GPS-Hardware-rescue:C-Device C?
 U 1 1 614925B9
 P 2150 1350
 AR Path="/613BCFBA/614925B9" Ref="C?"  Part="1" 
@@ -122,7 +122,7 @@ F 3 "~" H 2150 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L GPS-Hardware-rescue:C-Device C?
 U 1 1 614925BF
 P 2450 1350
 AR Path="/613BCFBA/614925BF" Ref="C?"  Part="1" 
@@ -135,7 +135,7 @@ F 3 "~" H 2450 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L GPS-Hardware-rescue:C-Device C?
 U 1 1 614925C5
 P 2750 1350
 AR Path="/613BCFBA/614925C5" Ref="C?"  Part="1" 
@@ -158,7 +158,7 @@ Wire Wire Line
 Text GLabel 2300 1150 1    50   Input ~ 0
 VCC
 $Comp
-L power:GND #PWR?
+L GPS-Hardware-rescue:GND-power #PWR?
 U 1 1 614925D1
 P 1850 1500
 AR Path="/613BCFBA/614925D1" Ref="#PWR?"  Part="1" 
@@ -171,7 +171,7 @@ F 3 "" H 1850 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L GPS-Hardware-rescue:GND-power #PWR?
 U 1 1 614925D7
 P 2150 1500
 AR Path="/613BCFBA/614925D7" Ref="#PWR?"  Part="1" 
@@ -184,7 +184,7 @@ F 3 "" H 2150 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L GPS-Hardware-rescue:GND-power #PWR?
 U 1 1 614925DD
 P 2450 1500
 AR Path="/613BCFBA/614925DD" Ref="#PWR?"  Part="1" 
@@ -197,7 +197,7 @@ F 3 "" H 2450 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L GPS-Hardware-rescue:GND-power #PWR?
 U 1 1 614925E3
 P 2750 1500
 AR Path="/613BCFBA/614925E3" Ref="#PWR?"  Part="1" 
@@ -217,7 +217,7 @@ Wire Wire Line
 Text GLabel 3000 1750 1    50   Input ~ 0
 VCC
 $Comp
-L Connector:Conn_Coaxial J?
+L GPS-Hardware-rescue:Conn_Coaxial-Connector J?
 U 1 1 614925ED
 P 3900 1950
 AR Path="/613BCFBA/614925ED" Ref="J?"  Part="1" 
@@ -230,7 +230,7 @@ F 3 "https://www.mouser.co.uk/ProductDetail/RF-Solutions/CON-SMA-EDGE-S?qs=UkDUC
 	1    0    0    1   
 $EndComp
 $Comp
-L RF_GPS:ublox_SAM-M8Q U10
+L GPS-Hardware-rescue:ublox_SAM-M8Q-RF_GPS U10
 U 1 1 614F3B93
 P 6000 6250
 F 0 "U10" H 6000 5661 50  0000 C CNN
@@ -254,7 +254,7 @@ F 3 "" H 2750 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0171
+L GPS-Hardware-rescue:GND-power #PWR0171
 U 1 1 6152BD4B
 P 2300 5800
 F 0 "#PWR0171" H 2300 5550 50  0001 C CNN
@@ -265,7 +265,7 @@ F 3 "" H 2300 5800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0172
+L GPS-Hardware-rescue:GND-power #PWR0172
 U 1 1 6152F81D
 P 2300 5600
 F 0 "#PWR0172" H 2300 5350 50  0001 C CNN
@@ -282,7 +282,7 @@ Wire Wire Line
 Wire Wire Line
 	1900 5700 2300 5700
 $Comp
-L Device:C C22
+L GPS-Hardware-rescue:C-Device C22
 U 1 1 6153BE25
 P 3300 5850
 F 0 "C22" H 3415 5896 50  0000 L CNN
@@ -293,7 +293,7 @@ F 3 "~" H 3300 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0173
+L GPS-Hardware-rescue:GND-power #PWR0173
 U 1 1 6153C648
 P 3300 6000
 F 0 "#PWR0173" H 3300 5750 50  0001 C CNN
@@ -306,7 +306,7 @@ $EndComp
 Wire Wire Line
 	3200 5700 3300 5700
 $Comp
-L power:+1V8 #PWR0174
+L GPS-Hardware-rescue:+1V8-power #PWR0174
 U 1 1 6153DDB4
 P 3400 5700
 F 0 "#PWR0174" H 3400 5550 50  0001 C CNN
@@ -320,7 +320,7 @@ Wire Wire Line
 	3300 5700 3400 5700
 Connection ~ 3300 5700
 $Comp
-L Device:C C23
+L GPS-Hardware-rescue:C-Device C23
 U 1 1 6153F8AB
 P 3950 5750
 F 0 "C23" H 4065 5796 50  0000 L CNN
@@ -333,7 +333,7 @@ $EndComp
 Wire Wire Line
 	3200 5600 3950 5600
 $Comp
-L power:GND #PWR0175
+L GPS-Hardware-rescue:GND-power #PWR0175
 U 1 1 61540A2C
 P 3950 5900
 F 0 "#PWR0175" H 3950 5650 50  0001 C CNN
@@ -349,7 +349,7 @@ Wire Wire Line
 	4200 5600 3950 5600
 Connection ~ 3950 5600
 $Comp
-L power:GND #PWR0176
+L GPS-Hardware-rescue:GND-power #PWR0176
 U 1 1 61553C2B
 P 3200 6250
 F 0 "#PWR0176" H 3200 6000 50  0001 C CNN
@@ -372,7 +372,7 @@ EXTINT
 Text GLabel 6500 6150 2    50   Output ~ 0
 TX_GPS
 $Comp
-L power:GND #PWR0177
+L GPS-Hardware-rescue:GND-power #PWR0177
 U 1 1 61577124
 P 6000 6750
 F 0 "#PWR0177" H 6000 6500 50  0001 C CNN
@@ -383,7 +383,7 @@ F 3 "" H 6000 6750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C25
+L GPS-Hardware-rescue:C-Device C25
 U 1 1 61578A86
 P 5750 5700
 F 0 "C25" V 5498 5700 50  0000 C CNN
@@ -394,7 +394,7 @@ F 3 "~" H 5750 5700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0178
+L GPS-Hardware-rescue:GND-power #PWR0178
 U 1 1 61579240
 P 5600 5700
 F 0 "#PWR0178" H 5600 5450 50  0001 C CNN
@@ -449,7 +449,7 @@ NoConn ~ 2500 3450
 NoConn ~ 2500 3650
 NoConn ~ 2500 3750
 $Comp
-L power:GND #PWR0179
+L GPS-Hardware-rescue:GND-power #PWR0179
 U 1 1 615C3FBF
 P 3100 3950
 F 0 "#PWR0179" H 3100 3700 50  0001 C CNN
@@ -461,7 +461,7 @@ F 3 "" H 3100 3950 50  0001 C CNN
 $EndComp
 NoConn ~ 3100 1750
 $Comp
-L Device:R R?
+L GPS-Hardware-rescue:R-Device R?
 U 1 1 615DAB7D
 P 3900 2850
 AR Path="/613BCFBA/615DAB7D" Ref="R?"  Part="1" 
@@ -474,7 +474,7 @@ F 3 "~" H 3900 2850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R?
+L GPS-Hardware-rescue:R-Device R?
 U 1 1 615DB647
 P 4100 3000
 AR Path="/613BCFBA/615DB647" Ref="R?"  Part="1" 
@@ -487,7 +487,7 @@ F 3 "~" H 4100 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_BJT:BC847 Q1
+L GPS-Hardware-rescue:BC847-Transistor_BJT Q1
 U 1 1 615DCAB0
 P 4350 2850
 F 0 "Q1" H 4541 2896 50  0000 L CNN
@@ -498,7 +498,7 @@ F 3 "https://www.mouser.co.uk/datasheet/2/308/1/BC846ALT1_D-2310268.pdf" H 4350 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D2
+L GPS-Hardware-rescue:LED-Device D2
 U 1 1 615DFC25
 P 4450 2500
 F 0 "D2" V 4489 2382 50  0000 R CNN
@@ -509,7 +509,7 @@ F 3 "~" H 4450 2500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R?
+L GPS-Hardware-rescue:R-Device R?
 U 1 1 615E2B7B
 P 4450 2200
 AR Path="/613BCFBA/615E2B7B" Ref="R?"  Part="1" 
@@ -533,7 +533,7 @@ Wire Wire Line
 Wire Wire Line
 	3750 2850 3700 2850
 $Comp
-L power:GND #PWR0180
+L GPS-Hardware-rescue:GND-power #PWR0180
 U 1 1 615E6884
 P 4450 3050
 F 0 "#PWR0180" H 4450 2800 50  0001 C CNN
@@ -544,7 +544,7 @@ F 3 "" H 4450 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0181
+L GPS-Hardware-rescue:GND-power #PWR0181
 U 1 1 615E6F5B
 P 4100 3150
 F 0 "#PWR0181" H 4100 2900 50  0001 C CNN
@@ -557,7 +557,7 @@ $EndComp
 Text GLabel 3700 2550 2    50   Output ~ 0
 VSIM
 $Comp
-L power:GND #PWR0113
+L GPS-Hardware-rescue:GND-power #PWR0113
 U 1 1 61244203
 P 3900 1750
 F 0 "#PWR0113" H 3900 1500 50  0001 C CNN
@@ -568,272 +568,242 @@ F 3 "" H 3900 1750 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GPS~Hardware:SIM8051-6-0-14-01-X-REVD J4
-U 1 1 612F619C
-P 9100 2550
-F 0 "J4" H 9200 2917 50  0000 C CNN
-F 1 "SIM8051-6-0-14-01-X-REVD" H 9200 2826 50  0000 C CNN
-F 2 "GPS Hardware:GCT_SIM8051-6-0-14-01-X-REVD" H 9100 2550 50  0001 L BNN
-F 3 "" H 9100 2550 50  0001 L BNN
-F 4 "GCT" H 9100 2550 50  0001 L BNN "MANUFACTURER"
-	1    9100 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0114
+L GPS-Hardware-rescue:GND-power #PWR0114
 U 1 1 61320761
-P 8000 3050
-F 0 "#PWR0114" H 8000 2800 50  0001 C CNN
-F 1 "GND" H 8005 2877 50  0000 C CNN
-F 2 "" H 8000 3050 50  0001 C CNN
-F 3 "" H 8000 3050 50  0001 C CNN
-	1    8000 3050
+P 7850 4250
+F 0 "#PWR0114" H 7850 4000 50  0001 C CNN
+F 1 "GND" H 7855 4077 50  0000 C CNN
+F 2 "" H 7850 4250 50  0001 C CNN
+F 3 "" H 7850 4250 50  0001 C CNN
+	1    7850 4250
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0128
+L GPS-Hardware-rescue:GND-power #PWR0128
 U 1 1 61320767
-P 8350 3050
-F 0 "#PWR0128" H 8350 2800 50  0001 C CNN
-F 1 "GND" H 8355 2877 50  0000 C CNN
-F 2 "" H 8350 3050 50  0001 C CNN
-F 3 "" H 8350 3050 50  0001 C CNN
-	1    8350 3050
-	1    0    0    -1  
+P 8350 4450
+F 0 "#PWR0128" H 8350 4200 50  0001 C CNN
+F 1 "GND" H 8355 4277 50  0000 C CNN
+F 2 "" H 8350 4450 50  0001 C CNN
+F 3 "" H 8350 4450 50  0001 C CNN
+	1    8350 4450
+	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR0129
+L GPS-Hardware-rescue:GND-power #PWR0129
 U 1 1 6132076D
-P 8700 3050
-F 0 "#PWR0129" H 8700 2800 50  0001 C CNN
-F 1 "GND" H 8705 2877 50  0000 C CNN
-F 2 "" H 8700 3050 50  0001 C CNN
-F 3 "" H 8700 3050 50  0001 C CNN
-	1    8700 3050
+P 8250 5300
+F 0 "#PWR0129" H 8250 5050 50  0001 C CNN
+F 1 "GND" H 8255 5127 50  0000 C CNN
+F 2 "" H 8250 5300 50  0001 C CNN
+F 3 "" H 8250 5300 50  0001 C CNN
+	1    8250 5300
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0133
+L GPS-Hardware-rescue:GND-power #PWR0133
 U 1 1 61320773
-P 8000 2050
-F 0 "#PWR0133" H 8000 1800 50  0001 C CNN
-F 1 "GND" H 8005 1877 50  0000 C CNN
-F 2 "" H 8000 2050 50  0001 C CNN
-F 3 "" H 8000 2050 50  0001 C CNN
-	1    8000 2050
-	-1   0    0    1   
+P 7550 4350
+F 0 "#PWR0133" H 7550 4100 50  0001 C CNN
+F 1 "GND" H 7555 4177 50  0000 C CNN
+F 2 "" H 7550 4350 50  0001 C CNN
+F 3 "" H 7550 4350 50  0001 C CNN
+	1    7550 4350
+	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0157
+L GPS-Hardware-rescue:GND-power #PWR0157
 U 1 1 61320779
-P 8350 2050
-F 0 "#PWR0157" H 8350 1800 50  0001 C CNN
-F 1 "GND" H 8355 1877 50  0000 C CNN
-F 2 "" H 8350 2050 50  0001 C CNN
-F 3 "" H 8350 2050 50  0001 C CNN
-	1    8350 2050
+P 8200 4250
+F 0 "#PWR0157" H 8200 4000 50  0001 C CNN
+F 1 "GND" H 8205 4077 50  0000 C CNN
+F 2 "" H 8200 4250 50  0001 C CNN
+F 3 "" H 8200 4250 50  0001 C CNN
+	1    8200 4250
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR0158
+L GPS-Hardware-rescue:GND-power #PWR0158
 U 1 1 6132077F
-P 8700 2050
-F 0 "#PWR0158" H 8700 1800 50  0001 C CNN
-F 1 "GND" H 8705 1877 50  0000 C CNN
-F 2 "" H 8700 2050 50  0001 C CNN
-F 3 "" H 8700 2050 50  0001 C CNN
-	1    8700 2050
-	-1   0    0    1   
+P 7950 5500
+F 0 "#PWR0158" H 7950 5250 50  0001 C CNN
+F 1 "GND" H 7955 5327 50  0000 C CNN
+F 2 "" H 7950 5500 50  0001 C CNN
+F 3 "" H 7950 5500 50  0001 C CNN
+	1    7950 5500
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8000 2350 8000 2450
+	7550 4050 7550 3950
 Wire Wire Line
-	8000 2450 7800 2450
-Connection ~ 8000 2450
+	7550 3950 7350 3950
+Connection ~ 7550 3950
 Wire Wire Line
-	8000 2750 8000 2450
+	8250 5000 8250 4900
 Wire Wire Line
-	8350 2350 8350 2550
+	8250 4900 7950 4900
+Connection ~ 8250 4900
 Wire Wire Line
-	8350 2550 7800 2550
-Connection ~ 8350 2550
-Wire Wire Line
-	8350 2750 8350 2550
-Wire Wire Line
-	8700 2750 8700 2650
-Wire Wire Line
-	8700 2650 7800 2650
-Connection ~ 8700 2650
-Wire Wire Line
-	8700 2350 8700 2650
-Wire Wire Line
-	8800 2450 8000 2450
-Wire Wire Line
-	8800 2550 8350 2550
-Wire Wire Line
-	8800 2650 8700 2650
-Text GLabel 7800 2550 0    50   Output ~ 0
+	7950 5200 7950 4900
+Text GLabel 7350 4750 0    50   Output ~ 0
 CLK
-Text GLabel 7800 2650 0    50   Output ~ 0
+Text GLabel 7350 4900 0    50   Output ~ 0
 IO
-Text GLabel 7800 2450 0    50   Output ~ 0
+Text GLabel 7350 3950 0    50   Output ~ 0
 RST
 $Comp
-L Device:D_TVS D3
+L GPS-Hardware-rescue:D_TVS-Device D3
 U 1 1 61320797
-P 8000 2900
-F 0 "D3" V 7954 2980 50  0000 L CNN
-F 1 "PESD0402" V 8045 2980 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 8000 2900 50  0001 C CNN
-F 3 "~" H 8000 2900 50  0001 C CNN
-	1    8000 2900
+P 7850 4100
+F 0 "D3" V 7804 4180 50  0000 L CNN
+F 1 "PESD0402" V 7895 4180 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 7850 4100 50  0001 C CNN
+F 3 "~" H 7850 4100 50  0001 C CNN
+	1    7850 4100
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_TVS D5
+L GPS-Hardware-rescue:D_TVS-Device D5
 U 1 1 6132079D
-P 8700 2900
-F 0 "D5" V 8654 2980 50  0000 L CNN
-F 1 "PESD0402" V 8745 2980 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 8700 2900 50  0001 C CNN
-F 3 "~" H 8700 2900 50  0001 C CNN
-	1    8700 2900
+P 8250 5150
+F 0 "D5" V 8204 5230 50  0000 L CNN
+F 1 "PESD0402" V 8295 5230 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 8250 5150 50  0001 C CNN
+F 3 "~" H 8250 5150 50  0001 C CNN
+	1    8250 5150
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C C28
+L GPS-Hardware-rescue:C-Device C28
 U 1 1 613207A3
-P 8350 2200
-F 0 "C28" H 8465 2246 50  0000 L CNN
-F 1 "47p" H 8465 2155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 8388 2050 50  0001 C CNN
-F 3 "~" H 8350 2200 50  0001 C CNN
-	1    8350 2200
+P 8200 4400
+F 0 "C28" H 8315 4446 50  0000 L CNN
+F 1 "47p" H 8315 4355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 8238 4250 50  0001 C CNN
+F 3 "~" H 8200 4400 50  0001 C CNN
+	1    8200 4400
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C C29
+L GPS-Hardware-rescue:C-Device C29
 U 1 1 613207A9
-P 8700 2200
-F 0 "C29" H 8815 2246 50  0000 L CNN
-F 1 "47p" H 8815 2155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 8738 2050 50  0001 C CNN
-F 3 "~" H 8700 2200 50  0001 C CNN
-	1    8700 2200
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:D_TVS D4
-U 1 1 613207AF
-P 8350 2900
-F 0 "D4" V 8304 2980 50  0000 L CNN
-F 1 "PESD0402" V 8395 2980 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 8350 2900 50  0001 C CNN
-F 3 "~" H 8350 2900 50  0001 C CNN
-	1    8350 2900
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:C C27
-U 1 1 613207B5
-P 8000 2200
-F 0 "C27" H 8115 2246 50  0000 L CNN
-F 1 "47p" H 8115 2155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 8038 2050 50  0001 C CNN
-F 3 "~" H 8000 2200 50  0001 C CNN
-	1    8000 2200
-	-1   0    0    1   
-$EndComp
-Text GLabel 10550 2450 2    50   Input ~ 0
-VSIM
-$Comp
-L power:GND #PWR0159
-U 1 1 61330E52
-P 9900 2150
-F 0 "#PWR0159" H 9900 1900 50  0001 C CNN
-F 1 "GND" H 9905 1977 50  0000 C CNN
-F 2 "" H 9900 2150 50  0001 C CNN
-F 3 "" H 9900 2150 50  0001 C CNN
-	1    9900 2150
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR0160
-U 1 1 61330E58
-P 10200 2150
-F 0 "#PWR0160" H 10200 1900 50  0001 C CNN
-F 1 "GND" H 10205 1977 50  0000 C CNN
-F 2 "" H 10200 2150 50  0001 C CNN
-F 3 "" H 10200 2150 50  0001 C CNN
-	1    10200 2150
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR0161
-U 1 1 61330E5E
-P 10550 2150
-F 0 "#PWR0161" H 10550 1900 50  0001 C CNN
-F 1 "GND" H 10555 1977 50  0000 C CNN
-F 2 "" H 10550 2150 50  0001 C CNN
-F 3 "" H 10550 2150 50  0001 C CNN
-	1    10550 2150
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9900 2450 9600 2450
-Connection ~ 9900 2450
-$Comp
-L Device:D_TVS D6
-U 1 1 61330E66
-P 9900 2300
-F 0 "D6" V 9854 2380 50  0000 L CNN
-F 1 "PESD0402" V 9945 2380 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 9900 2300 50  0001 C CNN
-F 3 "~" H 9900 2300 50  0001 C CNN
-	1    9900 2300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:C C31
-U 1 1 61330E6C
-P 10550 2300
-F 0 "C31" H 10665 2346 50  0000 L CNN
-F 1 "0u1" H 10665 2255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 10588 2150 50  0001 C CNN
-F 3 "~" H 10550 2300 50  0001 C CNN
-	1    10550 2300
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	10200 2450 9900 2450
-Wire Wire Line
-	10550 2450 10200 2450
-Connection ~ 10200 2450
-$Comp
-L Device:C C30
-U 1 1 61330E75
-P 10200 2300
-F 0 "C30" H 10315 2346 50  0000 L CNN
-F 1 "47p" H 10315 2255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 10238 2150 50  0001 C CNN
-F 3 "~" H 10200 2300 50  0001 C CNN
-	1    10200 2300
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR0162
-U 1 1 61331880
-P 9600 2650
-F 0 "#PWR0162" H 9600 2400 50  0001 C CNN
-F 1 "GND" H 9605 2477 50  0000 C CNN
-F 2 "" H 9600 2650 50  0001 C CNN
-F 3 "" H 9600 2650 50  0001 C CNN
-	1    9600 2650
+P 7950 5350
+F 0 "C29" H 8065 5396 50  0000 L CNN
+F 1 "47p" H 8065 5305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 7988 5200 50  0001 C CNN
+F 3 "~" H 7950 5350 50  0001 C CNN
+	1    7950 5350
 	1    0    0    -1  
 $EndComp
-NoConn ~ 9600 2550
 $Comp
-L Transistor_BJT:BC847 Q2
+L GPS-Hardware-rescue:D_TVS-Device D4
+U 1 1 613207AF
+P 8350 4600
+F 0 "D4" V 8304 4680 50  0000 L CNN
+F 1 "PESD0402" V 8395 4680 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 8350 4600 50  0001 C CNN
+F 3 "~" H 8350 4600 50  0001 C CNN
+	1    8350 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L GPS-Hardware-rescue:C-Device C27
+U 1 1 613207B5
+P 7550 4200
+F 0 "C27" H 7665 4246 50  0000 L CNN
+F 1 "47p" H 7665 4155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 7588 4050 50  0001 C CNN
+F 3 "~" H 7550 4200 50  0001 C CNN
+	1    7550 4200
+	-1   0    0    -1  
+$EndComp
+Text GLabel 7350 3850 0    50   Input ~ 0
+VSIM
+$Comp
+L GPS-Hardware-rescue:GND-power #PWR0159
+U 1 1 61330E52
+P 8000 3550
+F 0 "#PWR0159" H 8000 3300 50  0001 C CNN
+F 1 "GND" H 8005 3377 50  0000 C CNN
+F 2 "" H 8000 3550 50  0001 C CNN
+F 3 "" H 8000 3550 50  0001 C CNN
+	1    8000 3550
+	1    0    0    1   
+$EndComp
+$Comp
+L GPS-Hardware-rescue:GND-power #PWR0160
+U 1 1 61330E58
+P 7700 3550
+F 0 "#PWR0160" H 7700 3300 50  0001 C CNN
+F 1 "GND" H 7705 3377 50  0000 C CNN
+F 2 "" H 7700 3550 50  0001 C CNN
+F 3 "" H 7700 3550 50  0001 C CNN
+	1    7700 3550
+	1    0    0    1   
+$EndComp
+$Comp
+L GPS-Hardware-rescue:GND-power #PWR0161
+U 1 1 61330E5E
+P 7350 3550
+F 0 "#PWR0161" H 7350 3300 50  0001 C CNN
+F 1 "GND" H 7355 3377 50  0000 C CNN
+F 2 "" H 7350 3550 50  0001 C CNN
+F 3 "" H 7350 3550 50  0001 C CNN
+	1    7350 3550
+	1    0    0    1   
+$EndComp
+Connection ~ 8000 3850
+$Comp
+L GPS-Hardware-rescue:D_TVS-Device D6
+U 1 1 61330E66
+P 8000 3700
+F 0 "D6" V 7954 3780 50  0000 L CNN
+F 1 "PESD0402" V 8045 3780 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 8000 3700 50  0001 C CNN
+F 3 "~" H 8000 3700 50  0001 C CNN
+	1    8000 3700
+	0    1    -1   0   
+$EndComp
+$Comp
+L GPS-Hardware-rescue:C-Device C31
+U 1 1 61330E6C
+P 7350 3700
+F 0 "C31" H 7465 3746 50  0000 L CNN
+F 1 "0u1" H 7465 3655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 7388 3550 50  0001 C CNN
+F 3 "~" H 7350 3700 50  0001 C CNN
+	1    7350 3700
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7700 3850 8000 3850
+Wire Wire Line
+	7350 3850 7700 3850
+Connection ~ 7700 3850
+$Comp
+L GPS-Hardware-rescue:C-Device C30
+U 1 1 61330E75
+P 7700 3700
+F 0 "C30" H 7815 3746 50  0000 L CNN
+F 1 "47p" H 7815 3655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 7738 3550 50  0001 C CNN
+F 3 "~" H 7700 3700 50  0001 C CNN
+	1    7700 3700
+	1    0    0    1   
+$EndComp
+$Comp
+L GPS-Hardware-rescue:GND-power #PWR0162
+U 1 1 61331880
+P 8650 4150
+F 0 "#PWR0162" H 8650 3900 50  0001 C CNN
+F 1 "GND" H 8655 3977 50  0000 C CNN
+F 2 "" H 8650 4150 50  0001 C CNN
+F 3 "" H 8650 4150 50  0001 C CNN
+	1    8650 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L GPS-Hardware-rescue:BC847-Transistor_BJT Q2
 U 1 1 613C6B7F
 P 5050 4050
 F 0 "Q2" H 5241 4096 50  0000 L CNN
@@ -848,7 +818,7 @@ GPIO2
 Wire Wire Line
 	4750 4050 4850 4050
 $Comp
-L power:GND #PWR0104
+L GPS-Hardware-rescue:GND-power #PWR0104
 U 1 1 613D3752
 P 5150 4350
 F 0 "#PWR0104" H 5150 4100 50  0001 C CNN
@@ -861,7 +831,7 @@ $EndComp
 Wire Wire Line
 	5150 4250 5150 4350
 $Comp
-L Device:R R20
+L GPS-Hardware-rescue:R-Device R20
 U 1 1 613D777A
 P 5150 3600
 F 0 "R20" H 5220 3646 50  0000 L CNN
@@ -874,7 +844,7 @@ $EndComp
 Wire Wire Line
 	5150 3750 5150 3800
 $Comp
-L power:+3V3 #PWR0163
+L GPS-Hardware-rescue:+3V3-power #PWR0163
 U 1 1 613DE378
 P 5150 3350
 F 0 "#PWR0163" H 5150 3200 50  0001 C CNN
@@ -887,7 +857,7 @@ $EndComp
 Wire Wire Line
 	5150 3450 5150 3350
 $Comp
-L Transistor_FET:BSS84 Q3
+L GPS-Hardware-rescue:BSS84-Transistor_FET Q3
 U 1 1 613E1FB9
 P 5650 3800
 F 0 "Q3" H 5854 3754 50  0000 L CNN
@@ -913,4 +883,51 @@ Wire Wire Line
 	5750 4000 5750 4050
 Text Notes 4200 4700 0    50   ~ 0
 GPIO2 Pin has a 1ma output, no need for a resistor
+$Comp
+L GPS~Hardware:SIM8065-6-1-14-01-A_REVA1 J?
+U 1 1 616FF3CF
+P 9050 4150
+F 0 "J?" H 9280 4196 50  0000 L CNN
+F 1 "SIM8065-6-1-14-01-A_REVA1" H 9280 4105 50  0000 L CNN
+F 2 "GCT_SIM8065-6-1-14-01-A_REVA1" H 9050 4150 50  0001 L BNN
+F 3 "https://www.mouser.co.uk/datasheet/2/837/SIM8065_spec-2327472.pdf" H 9050 4150 50  0001 L BNN
+F 4 "1.37 mm" H 9050 4150 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 5 "A1" H 9050 4150 50  0001 L BNN "PARTREV"
+F 6 "GCT" H 9050 4150 50  0001 L BNN "MANUFACTURER"
+F 7 "Manufacturer Recommendations" H 9050 4150 50  0001 L BNN "STANDARD"
+	1    9050 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 3850 8650 3850
+Connection ~ 7850 3950
+Wire Wire Line
+	7850 3950 7550 3950
+Wire Wire Line
+	7850 3950 8650 3950
+Wire Wire Line
+	7350 4750 8200 4750
+Wire Wire Line
+	8200 4550 8200 4750
+Connection ~ 8200 4750
+Wire Wire Line
+	8200 4750 8350 4750
+Wire Wire Line
+	8350 4750 8500 4750
+Wire Wire Line
+	8500 4750 8500 4050
+Wire Wire Line
+	8500 4050 8650 4050
+Connection ~ 8350 4750
+Connection ~ 7950 4900
+Wire Wire Line
+	7950 4900 7350 4900
+Wire Wire Line
+	8600 4900 8600 4350
+Wire Wire Line
+	8600 4350 8650 4350
+Wire Wire Line
+	8250 4900 8600 4900
+NoConn ~ 8650 4450
+NoConn ~ 8650 4250
 $EndSCHEMATC
