@@ -1,4 +1,4 @@
-19225262078090074
+19226907806601074
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -51638,6 +51638,13 @@ RFSOLUTIONS_CON-SMA-EDGE-S
 0
 5
 5
+GPS Hardware
+SAMTEC_TSM-103-01-L-DV-P-TR
+
+
+0
+6
+6
 GPS Hardware
 SOP65P640X120-16N
 

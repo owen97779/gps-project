@@ -60,7 +60,7 @@ AR Path="/613BC23D" Ref="C?"  Part="1"
 AR Path="/613B204B/613BC23D" Ref="C1"  Part="1" 
 F 0 "C1" H 3965 1146 50  0000 L CNN
 F 1 "1u" H 3965 1055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 3888 950 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3888 950 50  0001 C CNN
 F 3 "https://www.mouser.co.uk/ProductDetail/Taiyo-Yuden/LMK107B7105KAHT?qs=CNQs48zzdnpelxTWRrWvpA%3D%3D" H 3550 1100 50  0001 L CNN
 	1    3850 1100
 	1    0    0    -1  
@@ -134,7 +134,7 @@ AR Path="/613BC276" Ref="R?"  Part="1"
 AR Path="/613B204B/613BC276" Ref="R6"  Part="1" 
 F 0 "R6" V 4000 2100 50  0000 C CNN
 F 1 "10k" V 4100 2100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 4030 2100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4030 2100 50  0001 C CNN
 F 3 "~" H 4100 2100 50  0001 C CNN
 	1    4100 2100
 	0    1    1    0   
@@ -160,7 +160,7 @@ AR Path="/613BC282" Ref="R?"  Part="1"
 AR Path="/613B204B/613BC282" Ref="R7"  Part="1" 
 F 0 "R7" V 4000 2200 50  0000 C CNN
 F 1 "10k" V 4100 2200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 4030 2200 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4030 2200 50  0001 C CNN
 F 3 "~" H 4100 2200 50  0001 C CNN
 	1    4100 2200
 	0    -1   -1   0   
@@ -186,7 +186,7 @@ AR Path="/613BC290" Ref="R?"  Part="1"
 AR Path="/613B204B/613BC290" Ref="R3"  Part="1" 
 F 0 "R3" H 3480 2554 50  0000 R CNN
 F 1 "4k7" V 3550 2650 50  0000 R CNN
-F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 3480 2600 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3480 2600 50  0001 C CNN
 F 3 "~" H 3550 2600 50  0001 C CNN
 	1    3550 2600
 	-1   0    0    1   
@@ -203,7 +203,7 @@ AR Path="/613BC298" Ref="R?"  Part="1"
 AR Path="/613B204B/613BC298" Ref="R5"  Part="1" 
 F 0 "R5" H 3980 2554 50  0000 R CNN
 F 1 "4k7" V 4050 2650 50  0000 R CNN
-F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 3980 2600 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3980 2600 50  0001 C CNN
 F 3 "~" H 4050 2600 50  0001 C CNN
 	1    4050 2600
 	-1   0    0    1   
@@ -224,7 +224,7 @@ AR Path="/613BC2A2" Ref="R?"  Part="1"
 AR Path="/613B204B/613BC2A2" Ref="R4"  Part="1" 
 F 0 "R4" H 3870 2646 50  0000 L CNN
 F 1 "4k7" V 3800 2550 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 3730 2600 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3730 2600 50  0001 C CNN
 F 3 "~" H 3800 2600 50  0001 C CNN
 	1    3800 2600
 	1    0    0    -1  
@@ -296,7 +296,7 @@ AR Path="/613BC2C6" Ref="C?"  Part="1"
 AR Path="/613B204B/613BC2C6" Ref="C3"  Part="1" 
 F 0 "C3" H 5365 1146 50  0000 L CNN
 F 1 "47n" H 5365 1055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 5288 950 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5288 950 50  0001 C CNN
 F 3 "https://www.mouser.co.uk/ProductDetail/Samsung-Electro-Mechanics/CL10B473KO8NNNC?qs=X6jEic%2FHinAEbu%2FfpWZrPQ%3D%3D" H 5250 1100 50  0001 C CNN
 	1    5250 1100
 	1    0    0    -1  
@@ -322,7 +322,7 @@ AR Path="/613BC2E0" Ref="C?"  Part="1"
 AR Path="/613B204B/613BC2E0" Ref="C6"  Part="1" 
 F 0 "C6" H 6365 1696 50  0000 L CNN
 F 1 "22u" H 6365 1605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 6288 1500 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6288 1500 50  0001 C CNN
 F 3 "https://www.mouser.co.uk/ProductDetail/Samsung-Electro-Mechanics/CL10A226MP8NRNC?qs=xZ%2FP%252Ba9zWqbykJJ6x%252BsWhA%3D%3D" H 6250 1650 50  0001 C CNN
 	1    6250 1650
 	1    0    0    -1  
@@ -365,7 +365,7 @@ AR Path="/613BC300" Ref="D?"  Part="1"
 AR Path="/613B204B/613BC300" Ref="D1"  Part="1" 
 F 0 "D1" H 5693 2117 50  0000 C CNN
 F 1 "LED" H 5693 2026 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5700 1900 50  0001 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 5700 1900 50  0001 C CNN
 F 3 "~" H 5700 1900 50  0001 C CNN
 	1    5700 1900
 	1    0    0    -1  
@@ -382,7 +382,7 @@ AR Path="/613BC308" Ref="R?"  Part="1"
 AR Path="/613B204B/613BC308" Ref="R8"  Part="1" 
 F 0 "R8" V 5200 1900 50  0000 C CNN
 F 1 "250" V 5300 1900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 5230 1900 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5230 1900 50  0001 C CNN
 F 3 "~" H 5300 1900 50  0001 C CNN
 	1    5300 1900
 	0    1    1    0   
@@ -412,7 +412,7 @@ AR Path="/613BC328" Ref="C?"  Part="1"
 AR Path="/613B204B/613BC328" Ref="C5"  Part="1" 
 F 0 "C5" H 5965 2446 50  0000 L CNN
 F 1 "10u" H 5965 2355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 5888 2250 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5888 2250 50  0001 C CNN
 F 3 "https://www.mouser.co.uk/ProductDetail/Taiyo-Yuden/JMK107ABJ106KA-T?qs=lkMpTOwszhd28fybYDECfg%3D%3D" H 5850 2400 50  0001 C CNN
 	1    5850 2400
 	1    0    0    -1  
@@ -443,7 +443,7 @@ AR Path="/613BC337" Ref="C?"  Part="1"
 AR Path="/613B204B/613BC337" Ref="C4"  Part="1" 
 F 0 "C4" H 5365 2546 50  0000 L CNN
 F 1 "4u7" H 5365 2455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 5288 2350 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5288 2350 50  0001 C CNN
 F 3 "https://www.mouser.co.uk/ProductDetail/Samsung-Electro-Mechanics/CL10A475KQ8NNWC?qs=EvNa9vf1TdZbxyCJBSuGUg%3D%3D" H 5250 2500 50  0001 C CNN
 	1    5250 2500
 	1    0    0    -1  
@@ -472,7 +472,7 @@ AR Path="/613BC347" Ref="R?"  Part="1"
 AR Path="/613B204B/613BC347" Ref="R10"  Part="1" 
 F 0 "R10" H 5670 2846 50  0000 L CNN
 F 1 "5k23" V 5600 2700 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 5530 2800 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5530 2800 50  0001 C CNN
 F 3 "~" H 5600 2800 50  0001 C CNN
 	1    5600 2800
 	1    0    0    -1  
@@ -485,7 +485,7 @@ AR Path="/613BC34D" Ref="R?"  Part="1"
 AR Path="/613B204B/613BC34D" Ref="R11"  Part="1" 
 F 0 "R11" H 5670 3146 50  0000 L CNN
 F 1 "32k" V 5600 3050 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5530 3100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5530 3100 50  0001 C CNN
 F 3 "~" H 5600 3100 50  0001 C CNN
 	1    5600 3100
 	1    0    0    -1  
@@ -555,7 +555,7 @@ U 1 1 6140FB1F
 P 3850 1550
 F 0 "C2" H 3965 1596 50  0000 L CNN
 F 1 "22u" H 3965 1505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 3888 1400 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3888 1400 50  0001 C CNN
 F 3 "https://www.mouser.co.uk/ProductDetail/Samsung-Electro-Mechanics/CL10A226MP8NRNC?qs=xZ%2FP%252Ba9zWqbykJJ6x%252BsWhA%3D%3D" H 3850 1550 50  0001 C CNN
 	1    3850 1550
 	1    0    0    -1  
@@ -617,90 +617,90 @@ Different capacitor values for low impedance at a range of frequencies
 $Comp
 L GPS-Hardware-rescue:LM3480-3.3-Regulator_Linear U4
 U 1 1 6145B119
-P 8600 1750
-F 0 "U4" H 8600 1992 50  0000 C CNN
-F 1 "LM3480-3.3" H 8600 1901 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 8600 1975 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/lm3480.pdf" H 8600 1750 50  0001 C CNN
-	1    8600 1750
+P 8550 1950
+F 0 "U4" H 8550 2192 50  0000 C CNN
+F 1 "LM3480-3.3" H 8550 2101 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8550 2175 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm3480.pdf" H 8550 1950 50  0001 C CNN
+	1    8550 1950
 	1    0    0    -1  
 $EndComp
 $Comp
 L GPS-Hardware-rescue:C-Device C8
 U 1 1 6146363C
-P 8150 1900
-F 0 "C8" H 8265 1946 50  0000 L CNN
-F 1 "0u1" H 8265 1855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 8188 1750 50  0001 C CNN
-F 3 "~" H 8150 1900 50  0001 C CNN
-	1    8150 1900
+P 8100 2100
+F 0 "C8" H 8215 2146 50  0000 L CNN
+F 1 "0u1" H 8215 2055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8138 1950 50  0001 C CNN
+F 3 "~" H 8100 2100 50  0001 C CNN
+	1    8100 2100
 	1    0    0    -1  
 $EndComp
 $Comp
 L GPS-Hardware-rescue:C-Device C9
 U 1 1 614640B3
-P 9050 1900
-F 0 "C9" H 9165 1946 50  0000 L CNN
-F 1 "0u1" H 9165 1855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 9088 1750 50  0001 C CNN
-F 3 "~" H 9050 1900 50  0001 C CNN
-	1    9050 1900
+P 9000 2100
+F 0 "C9" H 9115 2146 50  0000 L CNN
+F 1 "0u1" H 9115 2055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9038 1950 50  0001 C CNN
+F 3 "~" H 9000 2100 50  0001 C CNN
+	1    9000 2100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8150 1750 8300 1750
+	8100 1950 8250 1950
 Wire Wire Line
-	8900 1750 9050 1750
-Text GLabel 8000 1750 0    50   Input ~ 0
+	8850 1950 9000 1950
+Text GLabel 7950 1950 0    50   Input ~ 0
 VCC
 Wire Wire Line
-	8000 1750 8150 1750
-Connection ~ 8150 1750
+	7950 1950 8100 1950
+Connection ~ 8100 1950
 $Comp
 L GPS-Hardware-rescue:+3V3-power #PWR0123
 U 1 1 6146807E
-P 9250 1750
-F 0 "#PWR0123" H 9250 1600 50  0001 C CNN
-F 1 "+3V3" V 9265 1878 50  0000 L CNN
-F 2 "" H 9250 1750 50  0001 C CNN
-F 3 "" H 9250 1750 50  0001 C CNN
-	1    9250 1750
+P 9200 1950
+F 0 "#PWR0123" H 9200 1800 50  0001 C CNN
+F 1 "+3V3" V 9215 2078 50  0000 L CNN
+F 2 "" H 9200 1950 50  0001 C CNN
+F 3 "" H 9200 1950 50  0001 C CNN
+	1    9200 1950
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	9050 1750 9250 1750
-Connection ~ 9050 1750
+	9000 1950 9200 1950
+Connection ~ 9000 1950
 $Comp
 L GPS-Hardware-rescue:GND-power #PWR0124
 U 1 1 6146B115
-P 8150 2050
-F 0 "#PWR0124" H 8150 1800 50  0001 C CNN
-F 1 "GND" H 8155 1877 50  0000 C CNN
-F 2 "" H 8150 2050 50  0001 C CNN
-F 3 "" H 8150 2050 50  0001 C CNN
-	1    8150 2050
+P 8100 2250
+F 0 "#PWR0124" H 8100 2000 50  0001 C CNN
+F 1 "GND" H 8105 2077 50  0000 C CNN
+F 2 "" H 8100 2250 50  0001 C CNN
+F 3 "" H 8100 2250 50  0001 C CNN
+	1    8100 2250
 	1    0    0    -1  
 $EndComp
 $Comp
 L GPS-Hardware-rescue:GND-power #PWR0125
 U 1 1 6146BB0D
-P 9050 2050
-F 0 "#PWR0125" H 9050 1800 50  0001 C CNN
-F 1 "GND" H 9055 1877 50  0000 C CNN
-F 2 "" H 9050 2050 50  0001 C CNN
-F 3 "" H 9050 2050 50  0001 C CNN
-	1    9050 2050
+P 9000 2250
+F 0 "#PWR0125" H 9000 2000 50  0001 C CNN
+F 1 "GND" H 9005 2077 50  0000 C CNN
+F 2 "" H 9000 2250 50  0001 C CNN
+F 3 "" H 9000 2250 50  0001 C CNN
+	1    9000 2250
 	1    0    0    -1  
 $EndComp
 $Comp
 L GPS-Hardware-rescue:GND-power #PWR0126
 U 1 1 6146F41C
-P 8600 2050
-F 0 "#PWR0126" H 8600 1800 50  0001 C CNN
-F 1 "GND" H 8605 1877 50  0000 C CNN
-F 2 "" H 8600 2050 50  0001 C CNN
-F 3 "" H 8600 2050 50  0001 C CNN
-	1    8600 2050
+P 8550 2250
+F 0 "#PWR0126" H 8550 2000 50  0001 C CNN
+F 1 "GND" H 8555 2077 50  0000 C CNN
+F 2 "" H 8550 2250 50  0001 C CNN
+F 3 "" H 8550 2250 50  0001 C CNN
+	1    8550 2250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -740,7 +740,7 @@ AR Path="/613BC252" Ref="R?"  Part="1"
 AR Path="/613B204B/613BC252" Ref="R1"  Part="1" 
 F 0 "R1" V 1800 1150 50  0000 C CNN
 F 1 "5k1" V 1900 1150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 1830 1150 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1830 1150 50  0001 C CNN
 F 3 "~" H 1900 1150 50  0001 C CNN
 	1    1900 1150
 	0    1    1    0   
@@ -753,7 +753,7 @@ AR Path="/613BC258" Ref="R?"  Part="1"
 AR Path="/613B204B/613BC258" Ref="R2"  Part="1" 
 F 0 "R2" V 2000 1250 50  0000 C CNN
 F 1 "5k1" V 1900 1250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 1830 1250 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1830 1250 50  0001 C CNN
 F 3 "~" H 1900 1250 50  0001 C CNN
 	1    1900 1250
 	0    1    1    0   
