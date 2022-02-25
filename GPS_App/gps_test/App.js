@@ -19,26 +19,31 @@ const App = () => {
   const toggleSwitch2 = () => setIsEnabled2(previousState2 => !previousState2);
 
   async function foo1(){
-    fetch('http://58.233.32.234:3000/gpsdata')
+    fetch('http://193.61.207.184:3000/gpsdata')
       .then(response => response.json())
       .then(gpsdata => console.log(gpsdata));
   }
 
   async function foo2(){
     clock();
-    fetch('http://58.233.32.234:3000/gpsdata/longitude/' + longitude + '/latitude/' + latitude + '/altitude/' + altitude )
+    fetch('http://193.61.207.184:3000/gpsdata/longitude/' + longitude + '/latitude/' + latitude + '/altitude/' + altitude )
       .then(response => response.json())
       .then(gpsdata => console.log(gpsdata));
-      console.log("write")
+      console.log("write");
   }
 
   function clock(){
     var date = new Date;
-    //setTime(date.getFullYear()  + '-' + ('0' + (date.getMonth() + 1)).slice(-2) + '-' + ('0'+ date.getDate()).slice(-2) + ' ' + ('0'+ date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2) + ':' + ('0' + date.getSeconds()).slice(-2));
-    //console.log(date.toISOString().slice(0, -1)+"000");
     setTime(date.toString());
     setUTCTime(date.toISOString());
     return;
+  }
+
+  function foo3(){
+    if (gpsrefresh > 4000){
+      settest(gpsrefresh);
+      foo2();
+    }
   }
 
   async function perm() {
@@ -50,33 +55,61 @@ const App = () => {
   }
 
   async function fetchCats() {
+    let { status } = await Location.requestForegroundPermissionsAsync();
+    if (status !== 'granted') {
+      setErrorMsg('Permission to access location was denied');
+      return;
+    }
+    /*
+    try {
+      setLocation(await Location.getCurrentPositionAsync({
+          accuracy: Location.Accuracy.BestForNavigation,
+          LocationActivityType: Location.ActivityType.OtherNavigation,
+          maximumAge: 5000,
+          timeout: 15000,
+      }))
+    } catch {
+      setLocation(await Location.getLastKnownPositionAsync({
+            accuracy: Location.Accuracy.BestForNavigation,
+            LocationActivityType: Location.ActivityType.OtherNavigation,
+            maxAge: 5000,
+            timeout: 15000,
+        }))
+    }
+    */
+    ///*
     let location = await Location.getCurrentPositionAsync({
       enableHighAccuracy: true,
     });
+    //*/
       setLocation(location);
       setLongitude(JSON.stringify(location.coords.longitude));
       setLatitude(JSON.stringify(location.coords.latitude));
       setAltitude(JSON.stringify(location.coords.altitude));
-    if (gpsrefresh == 3000 || gpsrefresh == 5000){
-      //foo2();
-    }
   }
   
-
+  
+  //fetchCats();
   useEffect(()=>{
-    perm();
-    fetchCats
-    setInterval(fetchCats, 2000);
+    //fetchCats();    
     setInterval(clock, 500)
+    setInterval(fetchCats, 2000);
+    //setInterval is Isolated MUST CHANGE
     /*
+    (async () => {
+      setInterval(fetchCats, 4000);
+    })();
+    */
+
     if(isEnabled1){
-      setgpsrefresh(3000);
-    }else if(isEnabled2){
       setgpsrefresh(5000);
+    }else if(isEnabled2){
+      setgpsrefresh(10000);
     }else{
       setgpsrefresh(2000);
-    }*/
-  },[]);
+    }
+    setInterval(foo3, gpsrefresh);
+  },[isEnabled1,isEnabled2,gpsrefresh]);
 
   let text = 'Waiting..';
   if (errorMsg) {
@@ -93,20 +126,21 @@ const App = () => {
       <Text style={styles.paragraph}>latitude: {latitude}</Text>
       <Text style={styles.paragraph}>Altitude: {altitude}</Text>
       <Text style={styles.paragraph}>{gpsrefresh}</Text>
+      <Text style={styles.paragraph}>{test}</Text>
       <View style={styles.button}>
         <Button title="Read" onPress={()=>foo1()}/>
       </View>
       <View style={styles.button}>
         <Button title="Write" onPress={()=>foo2()}/>
       </View>
-        <Text>3 sec</Text>
+        <Text>5 sec</Text>
         <Switch
           trackColor={{ false: "#767577", true: "#81b0ff" }}
           thumbColor={isEnabled1 ? "#f5dd4b" : "#f4f3f4"}
           onValueChange={isEnabled2 ? toggleSwitch2 : toggleSwitch1}
           value={!isEnabled2 && isEnabled1}
         />      
-        <Text>5 sec</Text>  
+        <Text>10 sec</Text>  
         <Switch
         trackColor={{ false: "#767577", true: "#81b0ff" }}
         thumbColor={isEnabled2 ? "#f5dd4b" : "#f4f3f4"}

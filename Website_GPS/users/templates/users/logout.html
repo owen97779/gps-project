@@ -1,5 +1,6 @@
 {% extends "hello/base.html" %}
 {% block body %}
+<div class="content-section">
     <h2 class="Logged-Out">Logged Out</h2>
           <style>
               h2.Logged-Out {
@@ -11,4 +12,5 @@
             <a href="{% url 'login' %}">Log In again</a>
        </small>
     </div>
+  </div>
 {% endblock body %}

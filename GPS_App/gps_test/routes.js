@@ -34,8 +34,6 @@ app.get('/gpsdata/longitude/:lon/latitude/:lat/altitude/:alt', function(req, res
 const port = process.env.PORT || 3000;
 app.listen(port, ()=> console.log(`Go to http://localhost:${port}/gpsdata so you can see the data.`));
 
-exports.port = port;
-
 /*
 connection.connect();
 
