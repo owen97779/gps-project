@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew 5.1.10-88a1d61d58~90~ubuntu20.04.1)
+(kicad_pcb (version 20171130) (host pcbnew "(5.1.10)-1")
 
   (general
     (thickness 1.6)
@@ -340,6 +340,11 @@
       (net 1 GND))
     (pad 1 thru_hole rect (at 1.25 0.525 90) (size 1.508 1.508) (drill 1) (layers *.Cu *.Mask)
       (net 7 "Net-(C5-Pad1)"))
+    (model D:/Mohammad/B2B-XH-A_LF__SN_.step
+      (offset (xyz 0 -0.5 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 180))
+    )
   )
 
   (module "GPS Hardware:GCT_SIM8065-6-1-14-01-A_REVA1" (layer F.Cu) (tedit 616DA75A) (tstamp 616DFF94)
@@ -420,6 +425,11 @@
     (pad None np_thru_hole circle (at -3.68 -1.52 180) (size 1.2 1.2) (drill 1.2) (layers *.Cu *.Mask))
     (pad None np_thru_hole circle (at -1.14 5.88 180) (size 1.2 1.2) (drill 1.2) (layers *.Cu *.Mask))
     (pad None np_thru_hole circle (at -3.68 5.88 180) (size 1.2 1.2) (drill 1.2) (layers *.Cu *.Mask))
+    (model D:/Mohammad/SIM8065-6-1-14-01-A--3DModel-STEP-56544.STEP
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (module Connector_PinHeader_1.00mm:PinHeader_2x03_P1.00mm_Vertical_SMD (layer F.Cu) (tedit 59FED738) (tstamp 612581D3)
@@ -647,6 +657,11 @@
       (net 13 +1V8))
     (pad 16 smd rect (at 2.87 -2.275 90) (size 1.57 0.41) (layers F.Cu F.Paste F.Mask)
       (net 9 +3V3))
+    (model D:/Mohammad/SN74AVC4T774PW.STEP
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (module Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder (layer F.Cu) (tedit 5F68FEEF) (tstamp 6125EBDB)
@@ -883,6 +898,11 @@
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
+    )
+    (model D:/Mohammad/SAM-M8Q-0.STEP
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
     )
   )
 
@@ -1974,6 +1994,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model D:/Mohammad/SARA-U201.STEP
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 -90))
+    )
   )
 
   (module Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12 (layer F.Cu) (tedit 5D3C0721) (tstamp 612C3F30)
@@ -2050,6 +2075,11 @@
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
+    )
+    (model D:/Mohammad/TYPE-C-31-M-12--3DModel-STEP-56544.STEP
+      (offset (xyz 0 -1 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 90 180 180))
     )
   )
 
@@ -3120,6 +3150,11 @@
       (net 1 GND))
     (pad 2 smd rect (at 0 2.7) (size 3.5 1.5) (layers B.Cu B.Paste B.Mask)
       (net 1 GND))
+    (model "D:/Mohammad/SMA CONNECTOR--3DModel-STEP-1.STEP"
+      (offset (xyz 0.5 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 180 0 90))
+    )
   )
 
   (module "GPS Hardware:QFN40P140X180X50-10N" (layer F.Cu) (tedit 614D4DA6) (tstamp 613B4C90)
@@ -3293,6 +3328,11 @@
       (net 1 GND))
     (pad 25 smd rect (at 0 0 270) (size 2.45 2.45) (layers F.Cu F.Mask)
       (net 1 GND))
+    (model D:/Mohammad/BQ24295RGET.STEP
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (module Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder (layer F.Cu) (tedit 5F68FEEE) (tstamp 6134FE4E)
