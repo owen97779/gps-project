@@ -19,14 +19,14 @@ const App = () => {
   const toggleSwitch2 = () => setIsEnabled2(previousState2 => !previousState2);
 
   async function foo1(){
-    fetch('http://10.45.150.184:3000/gpsdata')
+    fetch('http://193.61.207.178:3000/gpsdata')
       .then(response => response.json())
       .then(gpsdata => console.log(gpsdata[gpsdata.length-1]));
   }
 
   async function foo2(){
     clock();
-    fetch('http://10.45.150.184:3000/gpsdata/longitude/' + longitude + '/latitude/' + latitude + '/altitude/' + altitude )
+    fetch('http://193.61.207.178:3000/gpsdata/longitude/' + longitude + '/latitude/' + latitude + '/altitude/' + altitude )
       .then(response => response.json())
       .then(gpsdata => console.log(gpsdata));
       console.log("write");
