@@ -1,6 +1,7 @@
 {
   "hosting": {
-    "public": "hello/templates/hello/home",
+    "public": "public",
+    "fakpublic": "hello/templates/hello/home",
     "ignore": [
       "firebase.json",
       "**/.*",

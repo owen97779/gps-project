@@ -1,15 +1,17 @@
 from django.shortcuts import render
 from .models import GpsData
+from .Services.Auth import db
 
 
 def AllGpsData(request):
     test = "sent"
-    GpsDataList = GpsData.objects.all()
+    GpsDataList = db.child('Gps Data').get().val()
     return render(request, 'hello/test/tester.html', {'GpsDataList': GpsDataList, 'test': test})
 
 
 def home(request):
-    GpsDataList = GpsData.objects.all()
+    GpsDataList = db.child('Gps Data').get().val()
+    #GpsDataList = GpsData.objects.all()
     return render(request, 'hello/home/home.html', {'GpsDataList': GpsDataList})
 
 

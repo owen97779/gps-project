@@ -1,0 +1,16 @@
+{
+  "name": "website_gps",
+  "version": "1.0.0",
+  "description": "GPS_APP contains the apps.\r The current developed app is for collecting gps test data from my own device.",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^5.2.0-beta1",
+    "firebase": "^9.8.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
