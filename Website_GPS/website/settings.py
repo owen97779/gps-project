@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'hello.apps.HelloConfig',
     'users.apps.UsersConfig',
     'crispy_forms',
 ]
@@ -80,6 +79,16 @@ WSGI_APPLICATION = 'website.wsgi.application'
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'djangodatabase',
+#         'USER': 'dbadmin',
+#         'PASSWORD': os.environ.get('dbpassword'),
+#         'HOST': 'localhost',
+#         'PORT': '3306',
+#     }
+# }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.whatever',
 #         'NAME': 'djangodatabase',
 #         'USER': 'dbadmin',
 #         'PASSWORD': os.environ.get('dbpassword'),

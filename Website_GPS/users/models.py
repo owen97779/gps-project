@@ -3,6 +3,13 @@ from django.contrib.auth.models import User
 from PIL import Image
 
 
+class GpsData(models.Model):
+    longitude = models.DecimalField(max_digits=20, decimal_places=18)
+    latitude = models.DecimalField(max_digits=20, decimal_places=18)
+    #time = models.DateTimeField(auto_now=True)
+
+    objects = models.Manager()
+
 '''
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
