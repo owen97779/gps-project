@@ -89,7 +89,7 @@ WSGI_APPLICATION = 'website.wsgi.application'
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.whatever',
-#         'NAME': 'djangodatabase',
+#         'NAME': 'we-jam-ca4be',
 #         'USER': 'dbadmin',
 #         'PASSWORD': os.environ.get('dbpassword'),
 #         'HOST': 'localhost',
