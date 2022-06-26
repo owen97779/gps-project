@@ -14,13 +14,19 @@ class UserRegisterForm(UserCreationForm):
         model = User
         fields = ['email', 'username', 'password1', 'password2']
 
-
 class UserUpdateForm(forms.ModelForm):
     email = forms.EmailField()
 
     class Meta:
         model = User
         fields = ['email', 'username']
+
+class LoginForm(forms.Form):
+    email = forms.EmailField()
+    password = forms.CharField(
+        min_length=8,
+    )
+
 
 '''
 class UserProfileUpdateForm(forms.ModelForm):

@@ -26,13 +26,12 @@ urlpatterns = [
     path('', user_views.home, name='home'),
     path('about/', user_views.about, name='about'),
     path('tester/', user_views.AllGpsData, name='tester'),
-    #path('', include('hello.urls')),
     path('index/', user_views.index, name='index'),
     path('admin/', admin.site.urls),
     path('register/', user_views.register, name='register'),
     path('profile/', user_views.profile, name='profile'),
-    path('login/', auth_views.LoginView.as_view(template_name='user/login.html'), name='login'),
-    path('logout/', auth_views.LogoutView.as_view(template_name='user/logout.html'), name='logout'),
+    path('login/', user_views.login, name='login'),
+    path('logout/', user_views.logout, name='logout'),
 
     path('password_reset/',
          auth_views.PasswordResetView.as_view(
