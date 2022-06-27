@@ -755,4 +755,7 @@ F 7 "JST Sales" H 6500 2250 50  0001 L BNN "MANUFACTURER"
 	1    6500 2250
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3450 2800 3550 2800
+Connection ~ 3550 2800
 $EndSCHEMATC

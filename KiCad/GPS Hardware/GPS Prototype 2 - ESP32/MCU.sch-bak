@@ -323,9 +323,9 @@ F 3 "" H 6100 5250 50  0001 C CNN
 	1    6100 5250
 	1    0    0    -1  
 $EndComp
-Text GLabel 5600 5850 2    50   Input ~ 0
+Text GLabel 5600 5950 2    50   Input ~ 0
 RX
-Text GLabel 5600 5950 2    50   Output ~ 0
+Text GLabel 5600 5850 2    50   Output ~ 0
 TX
 Text GLabel 5600 6050 2    50   Output ~ 0
 RTS

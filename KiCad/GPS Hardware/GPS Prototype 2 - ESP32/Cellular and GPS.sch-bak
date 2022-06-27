@@ -884,10 +884,10 @@ Wire Wire Line
 Text Notes 4200 4700 0    50   ~ 0
 GPIO2 Pin has a 1ma output, no need for a resistor
 $Comp
-L GPS~Hardware:SIM8065-6-1-14-01-A_REVA1 J?
+L GPS~Hardware:SIM8065-6-1-14-01-A_REVA1 J6
 U 1 1 616FF3CF
 P 9050 4150
-F 0 "J?" H 9280 4196 50  0000 L CNN
+F 0 "J6" H 9280 4196 50  0000 L CNN
 F 1 "SIM8065-6-1-14-01-A_REVA1" H 9280 4105 50  0000 L CNN
 F 2 "GCT_SIM8065-6-1-14-01-A_REVA1" H 9050 4150 50  0001 L BNN
 F 3 "https://www.mouser.co.uk/datasheet/2/837/SIM8065_spec-2327472.pdf" H 9050 4150 50  0001 L BNN
