@@ -27,7 +27,7 @@ F 3 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/BQ24295RGER?qs=igp
 	1    0    0    -1  
 $EndComp
 $Comp
-L GPS-Hardware-rescue:USB_C_Receptacle_USB2.0-Connector J?
+L GPS-Hardware-rescue:USB_C_Receptacle_USB2.0-Connector-GPS-Hardware-rescue J?
 U 1 1 613BC22B
 P 1150 1550
 AR Path="/613BC22B" Ref="J?"  Part="1" 
@@ -71,7 +71,7 @@ D-
 NoConn ~ 1750 2050
 NoConn ~ 1750 2150
 $Comp
-L GPS-Hardware-rescue:GND-power #PWR?
+L GPS-Hardware-rescue:GND-power-GPS-Hardware-rescue #PWR?
 U 1 1 613BC25E
 P 1150 2450
 AR Path="/613BC25E" Ref="#PWR?"  Part="1" 
@@ -84,7 +84,7 @@ F 3 "" H 1150 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GPS-Hardware-rescue:GND-power #PWR?
+L GPS-Hardware-rescue:GND-power-GPS-Hardware-rescue #PWR?
 U 1 1 613BC264
 P 5150 3050
 AR Path="/613BC264" Ref="#PWR?"  Part="1" 
@@ -110,7 +110,7 @@ F 3 "~" H 4100 2100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GPS-Hardware-rescue:GND-power #PWR?
+L GPS-Hardware-rescue:GND-power-GPS-Hardware-rescue #PWR?
 U 1 1 613BC27C
 P 3950 2100
 AR Path="/613BC27C" Ref="#PWR?"  Part="1" 
@@ -136,7 +136,7 @@ F 3 "~" H 4100 2200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GPS-Hardware-rescue:GND-power #PWR?
+L GPS-Hardware-rescue:GND-power-GPS-Hardware-rescue #PWR?
 U 1 1 613BC288
 P 3950 2200
 AR Path="/613BC288" Ref="#PWR?"  Part="1" 
@@ -219,7 +219,7 @@ Connection ~ 3800 2450
 Wire Wire Line
 	3800 2450 3550 2450
 $Comp
-L GPS-Hardware-rescue:+3.3V-power #PWR?
+L GPS-Hardware-rescue:+3.3V-power-GPS-Hardware-rescue #PWR?
 U 1 1 613BC2B4
 P 3800 2450
 AR Path="/613BC2B4" Ref="#PWR?"  Part="1" 
@@ -232,7 +232,7 @@ F 3 "" H 3800 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GPS-Hardware-rescue:GND-power #PWR?
+L GPS-Hardware-rescue:GND-power-GPS-Hardware-rescue #PWR?
 U 1 1 613BC2BA
 P 2050 1150
 AR Path="/613BC2BA" Ref="#PWR?"  Part="1" 
@@ -245,7 +245,7 @@ F 3 "" H 2050 1150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GPS-Hardware-rescue:GND-power #PWR?
+L GPS-Hardware-rescue:GND-power-GPS-Hardware-rescue #PWR?
 U 1 1 613BC2C0
 P 2050 1250
 AR Path="/613BC2C0" Ref="#PWR?"  Part="1" 
@@ -271,7 +271,7 @@ F 3 "https://www.mouser.co.uk/ProductDetail/Samsung-Electro-Mechanics/CL10B473KO
 	1    0    0    -1  
 $EndComp
 $Comp
-L GPS-Hardware-rescue:L-Device L?
+L GPS-Hardware-rescue:L-Device-GPS-Hardware-rescue L?
 U 1 1 613BC2D0
 P 5750 1300
 AR Path="/613BC2D0" Ref="L?"  Part="1" 
@@ -297,7 +297,7 @@ F 3 "https://www.mouser.co.uk/ProductDetail/Samsung-Electro-Mechanics/CL10A226MP
 	1    0    0    -1  
 $EndComp
 $Comp
-L GPS-Hardware-rescue:GND-power #PWR?
+L GPS-Hardware-rescue:GND-power-GPS-Hardware-rescue #PWR?
 U 1 1 613BC2F0
 P 6250 1800
 AR Path="/613BC2F0" Ref="#PWR?"  Part="1" 
@@ -312,7 +312,7 @@ $EndComp
 Text GLabel 6550 1600 3    50   Output ~ 0
 SYS
 $Comp
-L GPS-Hardware-rescue:GND-power #PWR?
+L GPS-Hardware-rescue:GND-power-GPS-Hardware-rescue #PWR?
 U 1 1 613BC2F9
 P 850 2450
 AR Path="/613BC2F9" Ref="#PWR?"  Part="1" 
@@ -327,7 +327,7 @@ $EndComp
 Text GLabel 5900 1900 2    50   Input ~ 0
 SYS
 $Comp
-L GPS-Hardware-rescue:LED-Device D?
+L GPS-Hardware-rescue:LED-Device-GPS-Hardware-rescue D?
 U 1 1 613BC300
 P 5700 1900
 AR Path="/613BC300" Ref="D?"  Part="1" 
@@ -361,7 +361,7 @@ SYS
 Wire Wire Line
 	5900 2000 5450 2000
 $Comp
-L GPS-Hardware-rescue:GND-power #PWR?
+L GPS-Hardware-rescue:GND-power-GPS-Hardware-rescue #PWR?
 U 1 1 613BC322
 P 6100 2350
 AR Path="/613BC322" Ref="#PWR?"  Part="1" 
@@ -392,7 +392,7 @@ Connection ~ 5850 2250
 Wire Wire Line
 	5850 2250 5150 2250
 $Comp
-L GPS-Hardware-rescue:GND-power #PWR?
+L GPS-Hardware-rescue:GND-power-GPS-Hardware-rescue #PWR?
 U 1 1 613BC331
 P 5850 2550
 AR Path="/613BC331" Ref="#PWR?"  Part="1" 
@@ -418,7 +418,7 @@ F 3 "https://www.mouser.co.uk/ProductDetail/Samsung-Electro-Mechanics/CL10A475KQ
 	1    0    0    -1  
 $EndComp
 $Comp
-L GPS-Hardware-rescue:GND-power #PWR?
+L GPS-Hardware-rescue:GND-power-GPS-Hardware-rescue #PWR?
 U 1 1 613BC33D
 P 5250 2650
 AR Path="/613BC33D" Ref="#PWR?"  Part="1" 
@@ -460,7 +460,7 @@ F 3 "~" H 5600 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GPS-Hardware-rescue:Thermistor_NTC-Device TH?
+L GPS-Hardware-rescue:Thermistor_NTC-Device-GPS-Hardware-rescue TH?
 U 1 1 613BC353
 P 6000 3100
 AR Path="/613BC353" Ref="TH?"  Part="1" 
@@ -478,7 +478,7 @@ Connection ~ 5600 2950
 Wire Wire Line
 	5600 2950 6000 2950
 $Comp
-L GPS-Hardware-rescue:GND-power #PWR?
+L GPS-Hardware-rescue:GND-power-GPS-Hardware-rescue #PWR?
 U 1 1 613BC35C
 P 5600 3250
 AR Path="/613BC35C" Ref="#PWR?"  Part="1" 
@@ -491,7 +491,7 @@ F 3 "" H 5600 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GPS-Hardware-rescue:GND-power #PWR?
+L GPS-Hardware-rescue:GND-power-GPS-Hardware-rescue #PWR?
 U 1 1 613BC362
 P 6000 3250
 AR Path="/613BC362" Ref="#PWR?"  Part="1" 
@@ -530,7 +530,7 @@ F 3 "https://www.mouser.co.uk/ProductDetail/Samsung-Electro-Mechanics/CL10A226MP
 	1    0    0    -1  
 $EndComp
 $Comp
-L GPS-Hardware-rescue:GND-power #PWR0120
+L GPS-Hardware-rescue:GND-power-GPS-Hardware-rescue #PWR0120
 U 1 1 61411635
 P 3850 1700
 F 0 "#PWR0120" H 3850 1450 50  0001 C CNN
@@ -541,7 +541,7 @@ F 3 "" H 3850 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GPS-Hardware-rescue:GND-power #PWR0121
+L GPS-Hardware-rescue:GND-power-GPS-Hardware-rescue #PWR0121
 U 1 1 614120E2
 P 3850 1250
 F 0 "#PWR0121" H 3850 1000 50  0001 C CNN
@@ -556,7 +556,7 @@ Wire Wire Line
 Wire Wire Line
 	3850 1400 4250 1400
 $Comp
-L GPS-Hardware-rescue:CP-Device C7
+L GPS-Hardware-rescue:CP-Device-GPS-Hardware-rescue C7
 U 1 1 6142C46C
 P 6850 1650
 F 0 "C7" H 6968 1696 50  0000 L CNN
@@ -567,7 +567,7 @@ F 3 "https://www.mouser.co.uk/ProductDetail/AVX/F930J227MBA?qs=sGAEpiMZZMtZ1n0r9
 	1    0    0    -1  
 $EndComp
 $Comp
-L GPS-Hardware-rescue:GND-power #PWR0122
+L GPS-Hardware-rescue:GND-power-GPS-Hardware-rescue #PWR0122
 U 1 1 6142CFD4
 P 6850 1800
 F 0 "#PWR0122" H 6850 1550 50  0001 C CNN
@@ -584,7 +584,7 @@ Wire Wire Line
 Text Notes 7500 950  0    50   ~ 0
 Different capacitor values for low impedance at a range of frequencies
 $Comp
-L GPS-Hardware-rescue:LM3480-3.3-Regulator_Linear U4
+L GPS-Hardware-rescue:LM3480-3.3-Regulator_Linear-GPS-Hardware-rescue U4
 U 1 1 6145B119
 P 8600 1750
 F 0 "U4" H 8600 1992 50  0000 C CNN
@@ -626,7 +626,7 @@ Wire Wire Line
 	8000 1750 8150 1750
 Connection ~ 8150 1750
 $Comp
-L GPS-Hardware-rescue:+3V3-power #PWR0123
+L GPS-Hardware-rescue:+3V3-power-GPS-Hardware-rescue #PWR0123
 U 1 1 6146807E
 P 9250 1750
 F 0 "#PWR0123" H 9250 1600 50  0001 C CNN
@@ -640,7 +640,7 @@ Wire Wire Line
 	9050 1750 9250 1750
 Connection ~ 9050 1750
 $Comp
-L GPS-Hardware-rescue:GND-power #PWR0124
+L GPS-Hardware-rescue:GND-power-GPS-Hardware-rescue #PWR0124
 U 1 1 6146B115
 P 8150 2050
 F 0 "#PWR0124" H 8150 1800 50  0001 C CNN
@@ -651,7 +651,7 @@ F 3 "" H 8150 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GPS-Hardware-rescue:GND-power #PWR0125
+L GPS-Hardware-rescue:GND-power-GPS-Hardware-rescue #PWR0125
 U 1 1 6146BB0D
 P 9050 2050
 F 0 "#PWR0125" H 9050 1800 50  0001 C CNN
@@ -662,7 +662,7 @@ F 3 "" H 9050 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GPS-Hardware-rescue:GND-power #PWR0126
+L GPS-Hardware-rescue:GND-power-GPS-Hardware-rescue #PWR0126
 U 1 1 6146F41C
 P 8600 2050
 F 0 "#PWR0126" H 8600 1800 50  0001 C CNN
@@ -755,4 +755,7 @@ F 7 "JST Sales" H 6500 2250 50  0001 L BNN "MANUFACTURER"
 	1    6500 2250
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3450 2800 3550 2800
+Connection ~ 3550 2800
 $EndSCHEMATC
