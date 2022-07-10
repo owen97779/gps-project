@@ -930,4 +930,49 @@ Wire Wire Line
 	8250 4900 8600 4900
 NoConn ~ 8650 4450
 NoConn ~ 8650 4250
+$Comp
+L GPS-Hardware-rescue:C-Device C13
+U 1 1 62C636CA
+P 6000 5600
+F 0 "C13" V 5748 5600 50  0000 C CNN
+F 1 "4u7" V 5839 5600 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 6038 5450 50  0001 C CNN
+F 3 "~" H 6000 5600 50  0001 C CNN
+	1    6000 5600
+	-1   0    0    1   
+$EndComp
+$Comp
+L GPS-Hardware-rescue:C-Device C14
+U 1 1 62C6483D
+P 6100 5600
+F 0 "C14" V 5848 5600 50  0000 C CNN
+F 1 "4u7" V 5939 5600 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 6138 5450 50  0001 C CNN
+F 3 "~" H 6100 5600 50  0001 C CNN
+	1    6100 5600
+	-1   0    0    1   
+$EndComp
+Connection ~ 6100 5750
+$Comp
+L GPS-Hardware-rescue:GND-power-GPS-Hardware-rescue #PWR07
+U 1 1 62C65505
+P 6000 5450
+F 0 "#PWR07" H 6000 5200 50  0001 C CNN
+F 1 "GND" V 6005 5322 50  0000 R CNN
+F 2 "" H 6000 5450 50  0001 C CNN
+F 3 "" H 6000 5450 50  0001 C CNN
+	1    6000 5450
+	-1   0    0    1   
+$EndComp
+$Comp
+L GPS-Hardware-rescue:GND-power-GPS-Hardware-rescue #PWR08
+U 1 1 62C65DF6
+P 6100 5450
+F 0 "#PWR08" H 6100 5200 50  0001 C CNN
+F 1 "GND" V 6105 5322 50  0000 R CNN
+F 2 "" H 6100 5450 50  0001 C CNN
+F 3 "" H 6100 5450 50  0001 C CNN
+	1    6100 5450
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC

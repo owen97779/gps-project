@@ -331,9 +331,9 @@ Text GLabel 5600 6050 2    50   Output ~ 0
 RTS
 Text GLabel 5600 6150 2    50   Input ~ 0
 CTS
-Text GLabel 5600 6450 2    50   Input ~ 0
+Text GLabel 5600 6550 2    50   Input ~ 0
 RESET_Cellular
-Text GLabel 5600 6550 2    50   Output ~ 0
+Text GLabel 5600 6450 2    50   Output ~ 0
 PWR_Cellular
 NoConn ~ 4400 6050
 NoConn ~ 4400 6150
@@ -355,14 +355,14 @@ AR Path="/629C2CA6" Ref="J2"  Part="1"
 AR Path="/613BCFBA/629C2CA6" Ref="J2"  Part="1" 
 F 0 "J2" H 7908 5181 50  0000 C CNN
 F 1 "Conn_01x04_Male" H 7908 5090 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7800 4900 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical_SMD_Pin1Left" H 7800 4900 50  0001 C CNN
 F 3 "~" H 7800 4900 50  0001 C CNN
 	1    7800 4900
 	1    0    0    -1  
 $EndComp
-Text GLabel 8000 4900 2    50   Input ~ 0
+Text GLabel 8000 5000 2    50   Input ~ 0
 TX_MCU
-Text GLabel 8000 5000 2    50   Output ~ 0
+Text GLabel 8000 4900 2    50   Output ~ 0
 RX_MCU
 $Comp
 L GPS-Hardware-rescue:+3V3-power-GPS-Hardware-rescue #PWR0134
@@ -412,36 +412,25 @@ Text Label 4400 5050 2    50   ~ 0
 SENS_VP
 Text Label 4400 5150 2    50   ~ 0
 SENS_VN
-$Comp
-L GPS-Hardware-rescue:Conn_01x13_Male-Connector J4
-U 1 1 629CB424
-P 8750 5400
-F 0 "J4" H 8858 6181 50  0000 C CNN
-F 1 "Conn_01x13_Male" H 8858 6090 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x13_P2.54mm_Vertical" H 8750 5400 50  0001 C CNN
-F 3 "~" H 8750 5400 50  0001 C CNN
-	1    8750 5400
-	1    0    0    -1  
-$EndComp
 Text Label 8950 5000 0    50   ~ 0
 IO2
 Text Label 8950 4800 0    50   ~ 0
 IO4
 Text Label 8950 4900 0    50   ~ 0
 IO5
-Text Label 8950 5300 0    50   ~ 0
+Text Label 9750 5300 0    50   ~ 0
 IO12
 Text Label 8950 5200 0    50   ~ 0
 IO13
-Text Label 8950 5400 0    50   ~ 0
+Text Label 9750 5400 0    50   ~ 0
 IO14
 Text Label 8950 5100 0    50   ~ 0
 IO15
-Text Label 8950 5500 0    50   ~ 0
+Text Label 9750 5500 0    50   ~ 0
 IO27
-Text Label 8950 5700 0    50   ~ 0
+Text Label 9750 5700 0    50   ~ 0
 IO32
-Text Label 8950 5600 0    50   ~ 0
+Text Label 9750 5600 0    50   ~ 0
 IO33
 $Comp
 L GPS-Hardware-rescue:C-Device C11
@@ -534,10 +523,32 @@ F 3 "" H 7100 5250 50  0001 C CNN
 	1    7100 5250
 	1    0    0    -1  
 $EndComp
-Text Label 8950 5800 0    50   ~ 0
+Text Label 9750 5800 0    50   ~ 0
 IO35
-Text Label 8950 5900 0    50   ~ 0
+Text Label 9750 5900 0    50   ~ 0
 SENS_VN
-Text Label 8950 6000 0    50   ~ 0
+Text Label 9750 6000 0    50   ~ 0
 SENS_VP
+$Comp
+L Connector:Conn_01x08_Male J7
+U 1 1 62BC985B
+P 9550 5600
+F 0 "J7" H 9658 6081 50  0000 C CNN
+F 1 "Conn_01x08_Male" H 9658 5990 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical_SMD_Pin1Left" H 9550 5600 50  0001 C CNN
+F 3 "~" H 9550 5600 50  0001 C CNN
+	1    9550 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x05_Male J4
+U 1 1 62BD8C7B
+P 8750 5000
+F 0 "J4" H 8858 5381 50  0000 C CNN
+F 1 "Conn_01x05_Male" H 8858 5290 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical_SMD_Pin1Left" H 8750 5000 50  0001 C CNN
+F 3 "~" H 8750 5000 50  0001 C CNN
+	1    8750 5000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
