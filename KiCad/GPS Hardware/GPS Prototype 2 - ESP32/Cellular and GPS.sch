@@ -568,39 +568,6 @@ F 3 "" H 3900 1750 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GPS-Hardware-rescue:GND-power-GPS-Hardware-rescue #PWR0114
-U 1 1 61320761
-P 7850 4250
-F 0 "#PWR0114" H 7850 4000 50  0001 C CNN
-F 1 "GND" H 7855 4077 50  0000 C CNN
-F 2 "" H 7850 4250 50  0001 C CNN
-F 3 "" H 7850 4250 50  0001 C CNN
-	1    7850 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L GPS-Hardware-rescue:GND-power-GPS-Hardware-rescue #PWR0128
-U 1 1 61320767
-P 8350 4450
-F 0 "#PWR0128" H 8350 4200 50  0001 C CNN
-F 1 "GND" H 8355 4277 50  0000 C CNN
-F 2 "" H 8350 4450 50  0001 C CNN
-F 3 "" H 8350 4450 50  0001 C CNN
-	1    8350 4450
-	-1   0    0    1   
-$EndComp
-$Comp
-L GPS-Hardware-rescue:GND-power-GPS-Hardware-rescue #PWR0129
-U 1 1 6132076D
-P 8250 5300
-F 0 "#PWR0129" H 8250 5050 50  0001 C CNN
-F 1 "GND" H 8255 5127 50  0000 C CNN
-F 2 "" H 8250 5300 50  0001 C CNN
-F 3 "" H 8250 5300 50  0001 C CNN
-	1    8250 5300
-	1    0    0    -1  
-$EndComp
-$Comp
 L GPS-Hardware-rescue:GND-power-GPS-Hardware-rescue #PWR0133
 U 1 1 61320773
 P 7550 4350
@@ -639,11 +606,6 @@ Wire Wire Line
 	7550 3950 7350 3950
 Connection ~ 7550 3950
 Wire Wire Line
-	8250 5000 8250 4900
-Wire Wire Line
-	8250 4900 7950 4900
-Connection ~ 8250 4900
-Wire Wire Line
 	7950 5200 7950 4900
 Text GLabel 7350 4750 0    50   Output ~ 0
 CLK
@@ -651,28 +613,6 @@ Text GLabel 7350 4900 0    50   Output ~ 0
 IO
 Text GLabel 7350 3950 0    50   Output ~ 0
 RST
-$Comp
-L GPS-Hardware-rescue:D_TVS-Device-GPS-Hardware-rescue D3
-U 1 1 61320797
-P 7850 4100
-F 0 "D3" V 7804 4180 50  0000 L CNN
-F 1 "PESD0402" V 7895 4180 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 7850 4100 50  0001 C CNN
-F 3 "~" H 7850 4100 50  0001 C CNN
-	1    7850 4100
-	0    -1   -1   0   
-$EndComp
-$Comp
-L GPS-Hardware-rescue:D_TVS-Device-GPS-Hardware-rescue D5
-U 1 1 6132079D
-P 8250 5150
-F 0 "D5" V 8204 5230 50  0000 L CNN
-F 1 "PESD0402" V 8295 5230 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 8250 5150 50  0001 C CNN
-F 3 "~" H 8250 5150 50  0001 C CNN
-	1    8250 5150
-	0    -1   -1   0   
-$EndComp
 $Comp
 L GPS-Hardware-rescue:C-Device C28
 U 1 1 613207A3
@@ -696,17 +636,6 @@ F 3 "~" H 7950 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GPS-Hardware-rescue:D_TVS-Device-GPS-Hardware-rescue D4
-U 1 1 613207AF
-P 8350 4600
-F 0 "D4" V 8304 4680 50  0000 L CNN
-F 1 "PESD0402" V 8395 4680 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 8350 4600 50  0001 C CNN
-F 3 "~" H 8350 4600 50  0001 C CNN
-	1    8350 4600
-	0    1    1    0   
-$EndComp
-$Comp
 L GPS-Hardware-rescue:C-Device C27
 U 1 1 613207B5
 P 7550 4200
@@ -719,17 +648,6 @@ F 3 "~" H 7550 4200 50  0001 C CNN
 $EndComp
 Text GLabel 7350 3850 0    50   Input ~ 0
 VSIM
-$Comp
-L GPS-Hardware-rescue:GND-power-GPS-Hardware-rescue #PWR0159
-U 1 1 61330E52
-P 8000 3550
-F 0 "#PWR0159" H 8000 3300 50  0001 C CNN
-F 1 "GND" H 8005 3377 50  0000 C CNN
-F 2 "" H 8000 3550 50  0001 C CNN
-F 3 "" H 8000 3550 50  0001 C CNN
-	1    8000 3550
-	1    0    0    1   
-$EndComp
 $Comp
 L GPS-Hardware-rescue:GND-power-GPS-Hardware-rescue #PWR0160
 U 1 1 61330E58
@@ -752,18 +670,6 @@ F 3 "" H 7350 3550 50  0001 C CNN
 	1    7350 3550
 	1    0    0    1   
 $EndComp
-Connection ~ 8000 3850
-$Comp
-L GPS-Hardware-rescue:D_TVS-Device-GPS-Hardware-rescue D6
-U 1 1 61330E66
-P 8000 3700
-F 0 "D6" V 7954 3780 50  0000 L CNN
-F 1 "PESD0402" V 8045 3780 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 8000 3700 50  0001 C CNN
-F 3 "~" H 8000 3700 50  0001 C CNN
-	1    8000 3700
-	0    1    -1   0   
-$EndComp
 $Comp
 L GPS-Hardware-rescue:C-Device C31
 U 1 1 61330E6C
@@ -775,8 +681,6 @@ F 3 "~" H 7350 3700 50  0001 C CNN
 	1    7350 3700
 	1    0    0    1   
 $EndComp
-Wire Wire Line
-	7700 3850 8000 3850
 Wire Wire Line
 	7350 3850 7700 3850
 Connection ~ 7700 3850
@@ -899,26 +803,14 @@ F 7 "Manufacturer Recommendations" H 9050 4150 50  0001 L BNN "STANDARD"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8000 3850 8650 3850
-Connection ~ 7850 3950
-Wire Wire Line
-	7850 3950 7550 3950
-Wire Wire Line
-	7850 3950 8650 3950
-Wire Wire Line
 	7350 4750 8200 4750
 Wire Wire Line
 	8200 4550 8200 4750
 Connection ~ 8200 4750
 Wire Wire Line
-	8200 4750 8350 4750
-Wire Wire Line
-	8350 4750 8500 4750
-Wire Wire Line
 	8500 4750 8500 4050
 Wire Wire Line
 	8500 4050 8650 4050
-Connection ~ 8350 4750
 Connection ~ 7950 4900
 Wire Wire Line
 	7950 4900 7350 4900
@@ -926,8 +818,6 @@ Wire Wire Line
 	8600 4900 8600 4350
 Wire Wire Line
 	8600 4350 8650 4350
-Wire Wire Line
-	8250 4900 8600 4900
 NoConn ~ 8650 4450
 NoConn ~ 8650 4250
 $Comp
@@ -975,4 +865,12 @@ F 3 "" H 6100 5450 50  0001 C CNN
 	1    6100 5450
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	7700 3850 8650 3850
+Wire Wire Line
+	7550 3950 8650 3950
+Wire Wire Line
+	8200 4750 8500 4750
+Wire Wire Line
+	7950 4900 8600 4900
 $EndSCHEMATC

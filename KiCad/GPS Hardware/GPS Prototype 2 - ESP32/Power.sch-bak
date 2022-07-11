@@ -794,32 +794,36 @@ F 3 "" H 8950 1800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8950 1700 8950 1800
-$Comp
-L GPS~Hardware:ESDS302DBVR U4
-U 1 1 62C79C20
-P 2650 1600
-F 0 "U4" H 2650 1285 50  0000 C CNN
-F 1 "ESDS302DBVR" H 2650 1376 50  0000 C CNN
-F 2 "GPS Hardware:SOT95P240X120-3N" H 2600 1600 50  0001 C CNN
-F 3 "" H 2600 1600 50  0001 C CNN
-	1    2650 1600
-	-1   0    0    1   
-$EndComp
-Text GLabel 2350 1500 0    50   Input ~ 0
+Text GLabel 2200 1550 0    50   Input ~ 0
 D+
-Text GLabel 2350 1700 0    50   Input ~ 0
+Text GLabel 2200 1650 0    50   Input ~ 0
 D-
-NoConn ~ 2950 1500
-NoConn ~ 2950 1700
 $Comp
-L GPS-Hardware-rescue:GND-power-GPS-Hardware-rescue #PWR?
+L GPS-Hardware-rescue:GND-power-GPS-Hardware-rescue #PWR0123
 U 1 1 62C7F4C3
-P 2950 1600
-F 0 "#PWR?" H 2950 1350 50  0001 C CNN
-F 1 "GND" H 2955 1427 50  0000 C CNN
-F 2 "" H 2950 1600 50  0001 C CNN
-F 3 "" H 2950 1600 50  0001 C CNN
-	1    2950 1600
+P 3400 1550
+F 0 "#PWR0123" H 3400 1300 50  0001 C CNN
+F 1 "GND" H 3405 1377 50  0000 C CNN
+F 2 "" H 3400 1550 50  0001 C CNN
+F 3 "" H 3400 1550 50  0001 C CNN
+	1    3400 1550
 	0    -1   -1   0   
+$EndComp
+$Comp
+L GPS~Hardware:SP712-02HTG D7
+U 1 1 62CA71B2
+P 2200 1550
+F 0 "D7" H 2800 1815 50  0000 C CNN
+F 1 "SP712-02HTG" H 2800 1724 50  0000 C CNN
+F 2 "GPS Hardware:SOT95P237X115-3N" H 3250 1650 50  0001 L CNN
+F 3 "https://www.littelfuse.com/~/media/electronics/datasheets/tvs_diode_arrays/littelfuse_tvs_diode_array_sp712_datasheet.pdf.pdf" H 3250 1550 50  0001 L CNN
+F 4 "ESD Suppressors / TVS Diodes SP712 12V 20A 30kV SOT23-3L" H 3250 1450 50  0001 L CNN "Description"
+F 5 "1.15" H 3250 1350 50  0001 L CNN "Height"
+F 6 "576-SP712-02HTG" H 3250 1250 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Littelfuse/SP712-02HTG?qs=GBLSl2AkiruqudcLsbr7vw%3D%3D" H 3250 1150 50  0001 L CNN "Mouser Price/Stock"
+F 8 "LITTELFUSE" H 3250 1050 50  0001 L CNN "Manufacturer_Name"
+F 9 "SP712-02HTG" H 3250 950 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2200 1550
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
