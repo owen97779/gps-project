@@ -1,16 +1,25 @@
 #include <Arduino.h>
+#include <SoftwareSerial.h>
+#include <string.h>
+
+char incoming_char = 0;
+SoftwareSerial mySerial(2, 15); //(RX, TX)
 
 void setup()
 {
-  // initialize digital pin LED_BUILTIN as an output.
-  pinMode(LED_BUILTIN, OUTPUT);
+  Serial.begin(9600);
+  while (!Serial)
+  {
+    Serial.println("Type something!");
+  }
+  mySerial.begin(115200);
+  mySerial.println("115200");
 }
 
-// the loop function runs over and over again forever
 void loop()
 {
-  digitalWrite(LED_BUILTIN, HIGH); // turn the LED on (HIGH is the voltage level)
-  delay(1000);                     // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);  // turn the LED off by making the voltage LOW
-  delay(1000);                     // wait for a second
+  if (mySerial.available())
+    Serial.write(mySerial.read());
+  if (Serial.available())
+    mySerial.write(Serial.read());
 }
