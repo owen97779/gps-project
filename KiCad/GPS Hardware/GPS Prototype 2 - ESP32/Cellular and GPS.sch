@@ -60,7 +60,7 @@ F 3 "" H 3200 1750 50  0001 C CNN
 	1    3200 1750
 	1    0    0    -1  
 $EndComp
-Text GLabel 2500 3050 0    50   Output ~ 0
+Text GLabel 1400 3250 0    50   Output ~ 0
 RESET_Cellular
 Wire Wire Line
 	1700 2850 2500 2850
@@ -240,8 +240,6 @@ F 3 "https://www.u-blox.com/sites/default/files/SAM-M8Q_DataSheet_%28UBX-1601261
 	1    6000 6250
 	1    0    0    -1  
 $EndComp
-Text GLabel 3700 2950 2    50   Output ~ 0
-GPIO2
 $Comp
 L GPS~Hardware:74AVC2T245GU-Q100X U7
 U 1 1 6152A9DA
@@ -275,8 +273,6 @@ F 3 "" H 2300 5600 50  0001 C CNN
 	1    2300 5600
 	0    1    1    0   
 $EndComp
-Text GLabel 1900 5500 1    50   Input ~ 0
-VCC_GPS
 Wire Wire Line
 	1900 5500 1900 5700
 Wire Wire Line
@@ -343,8 +339,6 @@ F 3 "" H 3950 5900 50  0001 C CNN
 	1    3950 5900
 	1    0    0    -1  
 $EndComp
-Text GLabel 4200 5600 2    50   Input ~ 0
-VCC_GPS
 Wire Wire Line
 	4200 5600 3950 5600
 Connection ~ 3950 5600
@@ -406,15 +400,12 @@ F 3 "" H 5600 5700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5900 5700 5900 5750
-Text GLabel 5900 5650 1    50   Input ~ 0
-VCC_GPS
 Wire Wire Line
 	6100 5750 6000 5750
 Wire Wire Line
 	6000 5750 5900 5750
 Connection ~ 6000 5750
 Connection ~ 5900 5750
-NoConn ~ 5500 6250
 NoConn ~ 5500 6350
 NoConn ~ 5500 6450
 Connection ~ 5900 5700
@@ -515,7 +506,7 @@ P 4450 2200
 AR Path="/613BCFBA/615E2B7B" Ref="R?"  Part="1" 
 AR Path="/613BCFF5/615E2B7B" Ref="R19"  Part="1" 
 F 0 "R19" H 4520 2246 50  0000 L CNN
-F 1 "250" V 4450 2150 50  0000 L CNN
+F 1 "820" V 4450 2150 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 4380 2200 50  0001 C CNN
 F 3 "~" H 4450 2200 50  0001 C CNN
 	1    4450 2200
@@ -706,86 +697,7 @@ F 3 "" H 8650 4150 50  0001 C CNN
 	1    8650 4150
 	0    1    1    0   
 $EndComp
-$Comp
-L GPS-Hardware-rescue:BC847-Transistor_BJT-GPS-Hardware-rescue Q2
-U 1 1 613C6B7F
-P 5050 4050
-F 0 "Q2" H 5241 4096 50  0000 L CNN
-F 1 "BC847" H 5241 4005 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 5250 3975 50  0001 L CIN
-F 3 "https://www.mouser.co.uk/datasheet/2/308/1/BC846ALT1_D-2310268.pdf" H 5050 4050 50  0001 L CNN
-	1    5050 4050
-	1    0    0    -1  
-$EndComp
-Text GLabel 4750 4050 0    50   Input ~ 0
-GPIO2
-Wire Wire Line
-	4750 4050 4850 4050
-$Comp
-L GPS-Hardware-rescue:GND-power-GPS-Hardware-rescue #PWR0104
-U 1 1 613D3752
-P 5150 4350
-F 0 "#PWR0104" H 5150 4100 50  0001 C CNN
-F 1 "GND" H 5155 4177 50  0000 C CNN
-F 2 "" H 5150 4350 50  0001 C CNN
-F 3 "" H 5150 4350 50  0001 C CNN
-	1    5150 4350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5150 4250 5150 4350
-$Comp
-L GPS-Hardware-rescue:R-Device R20
-U 1 1 613D777A
-P 5150 3600
-F 0 "R20" H 5220 3646 50  0000 L CNN
-F 1 "47k" H 5220 3555 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 5080 3600 50  0001 C CNN
-F 3 "~" H 5150 3600 50  0001 C CNN
-	1    5150 3600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5150 3750 5150 3800
-$Comp
-L GPS-Hardware-rescue:+3V3-power-GPS-Hardware-rescue #PWR0163
-U 1 1 613DE378
-P 5150 3350
-F 0 "#PWR0163" H 5150 3200 50  0001 C CNN
-F 1 "+3V3" H 5165 3523 50  0000 C CNN
-F 2 "" H 5150 3350 50  0001 C CNN
-F 3 "" H 5150 3350 50  0001 C CNN
-	1    5150 3350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5150 3450 5150 3350
-$Comp
-L GPS-Hardware-rescue:BSS84-Transistor_FET-GPS-Hardware-rescue Q3
-U 1 1 613E1FB9
-P 5650 3800
-F 0 "Q3" H 5854 3754 50  0000 L CNN
-F 1 "BSS84" H 5854 3845 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 5850 3725 50  0001 L CIN
-F 3 "http://assets.nexperia.com/documents/data-sheet/BSS84.pdf" H 5650 3800 50  0001 L CNN
-	1    5650 3800
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	5450 3800 5150 3800
-Connection ~ 5150 3800
-Wire Wire Line
-	5150 3800 5150 3850
-Wire Wire Line
-	5150 3450 5750 3450
-Wire Wire Line
-	5750 3450 5750 3600
-Connection ~ 5150 3450
-Text GLabel 5750 4050 3    50   Output ~ 0
-VCC_GPS
-Wire Wire Line
-	5750 4000 5750 4050
-Text Notes 4200 4700 0    50   ~ 0
+Text Notes 5050 2850 0    50   ~ 0
 GPIO2 Pin has a 1ma output, no need for a resistor
 $Comp
 L GPS~Hardware:SIM8065-6-1-14-01-A_REVA1 J6
@@ -873,4 +785,107 @@ Wire Wire Line
 	8200 4750 8500 4750
 Wire Wire Line
 	7950 4900 8600 4900
+NoConn ~ 3700 2950
+$Comp
+L GPS-Hardware-rescue:+3V3-power-GPS-Hardware-rescue #PWR?
+U 1 1 62EFB8D4
+P 1900 5500
+AR Path="/613BCFBA/62EFB8D4" Ref="#PWR?"  Part="1" 
+AR Path="/613BCFF5/62EFB8D4" Ref="#PWR0114"  Part="1" 
+F 0 "#PWR0114" H 1900 5350 50  0001 C CNN
+F 1 "+3V3" H 1915 5673 50  0000 C CNN
+F 2 "" H 1900 5500 50  0001 C CNN
+F 3 "" H 1900 5500 50  0001 C CNN
+	1    1900 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GPS-Hardware-rescue:+3V3-power-GPS-Hardware-rescue #PWR?
+U 1 1 62EFC3B1
+P 5900 5650
+AR Path="/613BCFBA/62EFC3B1" Ref="#PWR?"  Part="1" 
+AR Path="/613BCFF5/62EFC3B1" Ref="#PWR0124"  Part="1" 
+F 0 "#PWR0124" H 5900 5500 50  0001 C CNN
+F 1 "+3V3" H 5915 5823 50  0000 C CNN
+F 2 "" H 5900 5650 50  0001 C CNN
+F 3 "" H 5900 5650 50  0001 C CNN
+	1    5900 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GPS-Hardware-rescue:+3V3-power-GPS-Hardware-rescue #PWR?
+U 1 1 62EFD51B
+P 4200 5600
+AR Path="/613BCFBA/62EFD51B" Ref="#PWR?"  Part="1" 
+AR Path="/613BCFF5/62EFD51B" Ref="#PWR0125"  Part="1" 
+F 0 "#PWR0125" H 4200 5450 50  0001 C CNN
+F 1 "+3V3" H 4215 5773 50  0000 C CNN
+F 2 "" H 4200 5600 50  0001 C CNN
+F 3 "" H 4200 5600 50  0001 C CNN
+	1    4200 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R15
+U 1 1 62F08847
+P 5000 6250
+F 0 "R15" V 4793 6250 50  0000 C CNN
+F 1 "1k" V 4884 6250 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 4930 6250 50  0001 C CNN
+F 3 "~" H 5000 6250 50  0001 C CNN
+	1    5000 6250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 62F09DE8
+P 4650 6250
+F 0 "D3" H 4643 6467 50  0000 C CNN
+F 1 "LED" H 4643 6376 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4650 6250 50  0001 C CNN
+F 3 "~" H 4650 6250 50  0001 C CNN
+	1    4650 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GPS-Hardware-rescue:GND-power-GPS-Hardware-rescue #PWR0126
+U 1 1 62F0AFD7
+P 4500 6250
+F 0 "#PWR0126" H 4500 6000 50  0001 C CNN
+F 1 "GND" V 4505 6122 50  0000 R CNN
+F 2 "" H 4500 6250 50  0001 C CNN
+F 3 "" H 4500 6250 50  0001 C CNN
+	1    4500 6250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4800 6250 4850 6250
+Wire Wire Line
+	5150 6250 5500 6250
+$Comp
+L Transistor_FET:2N7002 Q2
+U 1 1 62F10032
+P 1600 3250
+F 0 "Q2" H 1804 3296 50  0000 L CNN
+F 1 "2N7002" H 1804 3205 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1800 3175 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 1600 3250 50  0001 L CNN
+	1    1600 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 3050 2500 3050
+$Comp
+L GPS-Hardware-rescue:GND-power-GPS-Hardware-rescue #PWR?
+U 1 1 62F1930C
+P 1700 3450
+AR Path="/613BCFBA/62F1930C" Ref="#PWR?"  Part="1" 
+AR Path="/613BCFF5/62F1930C" Ref="#PWR0128"  Part="1" 
+F 0 "#PWR0128" H 1700 3200 50  0001 C CNN
+F 1 "GND" H 1705 3277 50  0000 C CNN
+F 2 "" H 1700 3450 50  0001 C CNN
+F 3 "" H 1700 3450 50  0001 C CNN
+	1    1700 3450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
