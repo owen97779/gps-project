@@ -44,7 +44,7 @@ void scan()
   Serial.println("");
 
   // Wait a bit before scanning again
-  delay(5000);
+  //delay(5000);
 }
 
 void initWiFi()
