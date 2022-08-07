@@ -101,9 +101,9 @@ void loop()
   if ((WiFi.status() != WL_CONNECTED) && (currentMillis - previousMillis >= interval))
   {
     Serial.print(millis());
-    Serial.println("Reconnecting to WiFi...");
-    WiFi.disconnect();
-    WiFi.reconnect();
+    Serial.println(" Reconnecting to WiFi...");
+    initWiFi();
+    //WiFi.reconnect();
     previousMillis = currentMillis;
   }
 }
