@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from users.Secret.secret import config_firebase
 from .forms import UserRegisterForm, UserUpdateForm, LoginForm
 
 #from .forms import UserProfileUpdateForm
@@ -9,17 +10,7 @@ from .forms import UserRegisterForm, UserUpdateForm, LoginForm
 
 import pyrebase
 
-config = {
-  "apiKey": "AIzaSyBme8wIgtcwo7YonGht7-hJSu3N6-0ILBg",
-  "authDomain": "nullatlas-94d61.firebaseapp.com",
-  "databaseURL": "https://we-jam-ca4be-default-rtdb.europe-west1.firebasedatabase.app/",
-  "projectId": "nullatlas-94d61",
-  "storageBucket": "nullatlas-94d61.appspot.com",
-  "messagingSenderId": "833806336360",
-  "appId": "1:833806336360:web:a7a29ec9474b2ec22756dd",
-  "measurementId": "G-08X3R097W3"
-}
-firebase = pyrebase.initialize_app(config)
+firebase = pyrebase.initialize_app(config_firebase)
 auth = firebase.auth()
 db = firebase.database()
 # ref = db.reference('User')

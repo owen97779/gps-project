@@ -1,3 +1,6 @@
+#Secret ignore
+secret.*
+
 # Logs
 logs
 *.log
