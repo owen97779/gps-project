@@ -2,18 +2,20 @@
 #include "text.h"
 int Rx = 2;
 int Tx = 15;
-int clocks = 212;
+int clocks = 104;
 
 void onee()
 {
     digitalWrite(Tx, HIGH);
     delayMicroseconds(clocks);
+    Serial.println(digitalRead(Rx));
 }
 
 void zeroo()
 {
     digitalWrite(Tx, LOW);
     delayMicroseconds(clocks);
+    Serial.println(digitalRead(Rx));
 }
 
 void excl()
@@ -29,7 +31,6 @@ void excl()
     zeroo();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void dquote()
 {
@@ -44,7 +45,6 @@ void dquote()
     zeroo();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void hash()
 {
@@ -59,7 +59,6 @@ void hash()
     zeroo();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void $()
 {
@@ -74,7 +73,6 @@ void $()
     zeroo();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void percent()
 {
@@ -89,7 +87,6 @@ void percent()
     zeroo();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void an()
 {
@@ -104,7 +101,6 @@ void an()
     zeroo();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void squote()
 {
@@ -119,7 +115,6 @@ void squote()
     zeroo();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void popen()
 {
@@ -134,7 +129,6 @@ void popen()
     zeroo();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void pclose()
 {
@@ -149,7 +143,6 @@ void pclose()
     zeroo();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void astr()
 {
@@ -164,7 +157,6 @@ void astr()
     zeroo();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void plus()
 {
@@ -179,7 +171,6 @@ void plus()
     zeroo();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void comma()
 {
@@ -194,7 +185,6 @@ void comma()
     zeroo();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void minus()
 {
@@ -209,7 +199,6 @@ void minus()
     zeroo();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void dot()
 {
@@ -224,7 +213,6 @@ void dot()
     zeroo();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void fslash()
 {
@@ -239,7 +227,6 @@ void fslash()
     zeroo();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void zero()
 {
@@ -254,7 +241,6 @@ void zero()
     zeroo();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void one()
 {
@@ -269,7 +255,6 @@ void one()
     zeroo();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void two()
 {
@@ -284,7 +269,6 @@ void two()
     zeroo();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void three()
 {
@@ -299,7 +283,6 @@ void three()
     zeroo();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void four()
 {
@@ -314,7 +297,6 @@ void four()
     zeroo();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void five()
 {
@@ -329,7 +311,6 @@ void five()
     zeroo();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void six()
 {
@@ -344,7 +325,6 @@ void six()
     zeroo();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void seven()
 {
@@ -359,7 +339,6 @@ void seven()
     zeroo();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void eight()
 {
@@ -374,7 +353,6 @@ void eight()
     zeroo();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void nine()
 {
@@ -389,7 +367,6 @@ void nine()
     zeroo();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void colon()
 {
@@ -404,7 +381,6 @@ void colon()
     zeroo();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void semi()
 {
@@ -419,7 +395,6 @@ void semi()
     zeroo();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void less()
 {
@@ -434,7 +409,6 @@ void less()
     zeroo();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void equall()
 {
@@ -449,7 +423,6 @@ void equall()
     zeroo();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void great()
 {
@@ -464,7 +437,6 @@ void great()
     zeroo();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void quest()
 {
@@ -479,7 +451,6 @@ void quest()
     zeroo();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void at()
 {
@@ -494,7 +465,6 @@ void at()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void A()
 {
@@ -509,7 +479,6 @@ void A()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void B()
 {
@@ -524,7 +493,6 @@ void B()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void C()
 {
@@ -539,7 +507,6 @@ void C()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void D()
 {
@@ -554,7 +521,6 @@ void D()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void E()
 {
@@ -569,7 +535,6 @@ void E()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void F()
 {
@@ -584,7 +549,6 @@ void F()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void G()
 {
@@ -599,7 +563,6 @@ void G()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void H()
 {
@@ -614,7 +577,6 @@ void H()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void I()
 {
@@ -629,7 +591,6 @@ void I()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void J()
 {
@@ -644,7 +605,6 @@ void J()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void K()
 {
@@ -659,7 +619,6 @@ void K()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void L()
 {
@@ -674,7 +633,6 @@ void L()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void M()
 {
@@ -689,7 +647,6 @@ void M()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void N()
 {
@@ -704,7 +661,6 @@ void N()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void O()
 {
@@ -719,7 +675,6 @@ void O()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void P()
 {
@@ -734,7 +689,6 @@ void P()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void Q()
 {
@@ -749,7 +703,6 @@ void Q()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void R()
 {
@@ -764,7 +717,6 @@ void R()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void S()
 {
@@ -779,7 +731,6 @@ void S()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void T()
 {
@@ -794,7 +745,6 @@ void T()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void U()
 {
@@ -809,7 +759,6 @@ void U()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void V()
 {
@@ -824,7 +773,6 @@ void V()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void W()
 {
@@ -839,7 +787,6 @@ void W()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void X()
 {
@@ -854,7 +801,6 @@ void X()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void Y()
 {
@@ -869,7 +815,6 @@ void Y()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void Z()
 {
@@ -884,7 +829,6 @@ void Z()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void sopen()
 {
@@ -899,7 +843,6 @@ void sopen()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void bslash()
 {
@@ -914,7 +857,6 @@ void bslash()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void sclose()
 {
@@ -929,7 +871,6 @@ void sclose()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void power()
 {
@@ -944,7 +885,6 @@ void power()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void _()
 {
@@ -959,7 +899,6 @@ void _()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void grave()
 {
@@ -974,7 +913,6 @@ void grave()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void a()
 {
@@ -989,7 +927,6 @@ void a()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void b()
 {
@@ -1004,7 +941,6 @@ void b()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void c()
 {
@@ -1019,7 +955,6 @@ void c()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void d()
 {
@@ -1034,7 +969,6 @@ void d()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void e()
 {
@@ -1049,7 +983,6 @@ void e()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void f()
 {
@@ -1064,7 +997,6 @@ void f()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void g()
 {
@@ -1079,7 +1011,6 @@ void g()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void h()
 {
@@ -1094,7 +1025,6 @@ void h()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void i()
 {
@@ -1109,7 +1039,6 @@ void i()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void j()
 {
@@ -1124,7 +1053,6 @@ void j()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void k()
 {
@@ -1139,7 +1067,6 @@ void k()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void l()
 {
@@ -1154,7 +1081,6 @@ void l()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void m()
 {
@@ -1169,7 +1095,6 @@ void m()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void n()
 {
@@ -1184,7 +1109,6 @@ void n()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void o()
 {
@@ -1199,7 +1123,6 @@ void o()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void p()
 {
@@ -1214,7 +1137,6 @@ void p()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void q()
 {
@@ -1229,7 +1151,6 @@ void q()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void r()
 {
@@ -1244,7 +1165,6 @@ void r()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void s()
 {
@@ -1259,7 +1179,6 @@ void s()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void t()
 {
@@ -1274,7 +1193,6 @@ void t()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void u()
 {
@@ -1289,7 +1207,6 @@ void u()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void v()
 {
@@ -1304,7 +1221,6 @@ void v()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void w()
 {
@@ -1319,7 +1235,6 @@ void w()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void x()
 {
@@ -1334,7 +1249,6 @@ void x()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void y()
 {
@@ -1349,7 +1263,6 @@ void y()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void z()
 {
@@ -1364,7 +1277,6 @@ void z()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void copen()
 {
@@ -1379,7 +1291,6 @@ void copen()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void bar()
 {
@@ -1394,7 +1305,6 @@ void bar()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void cclose()
 {
@@ -1409,7 +1319,6 @@ void cclose()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }
 void tilde()
 {
@@ -1424,5 +1333,4 @@ void tilde()
     onee();
     zeroo();
     onee(); // End Bit
-    onee();
 }

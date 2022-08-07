@@ -1,25 +1,52 @@
 #include <Arduino.h>
-#include <SoftwareSerial.h>
-#include <string.h>
-
-char incoming_char = 0;
-SoftwareSerial mySerial(2, 15); //(RX, TX)
+#include <Adafruit_I2CDevice.h>
+#include <SPI.h>
+#include <FS.h>
+#include "WiFi.h"
+#include "SPIFFS.h"
 
 void setup()
 {
-  Serial.begin(9600);
-  while (!Serial)
-  {
-    Serial.println("Type something!");
-  }
-  mySerial.begin(115200);
-  mySerial.println("115200");
+  Serial.begin(115200);
+
+  // Set WiFi to station mode and disconnect from an AP if it was previously connected
+  WiFi.mode(WIFI_STA);
+  WiFi.disconnect();
+  delay(100);
+
+  Serial.println("Setup done");
 }
 
 void loop()
 {
-  if (mySerial.available())
-    Serial.write(mySerial.read());
-  if (Serial.available())
-    mySerial.write(Serial.read());
+  Serial.println("scan start");
+
+  // WiFi.scanNetworks will return the number of networks found
+  int n = WiFi.scanNetworks();
+  Serial.println("scan done");
+  if (n == 0)
+  {
+    Serial.println("no networks found");
+  }
+  else
+  {
+    Serial.print(n);
+    Serial.println(" networks found");
+    for (int i = 0; i < n; ++i)
+    {
+      // Print SSID and RSSI for each network found
+      Serial.print(i + 1);
+      Serial.print(": ");
+      Serial.print(WiFi.SSID(i));
+      Serial.print(" (");
+      Serial.print(WiFi.RSSI(i));
+      Serial.print(")");
+      Serial.println((WiFi.encryptionType(i) == WIFI_AUTH_OPEN) ? " " : "*");
+      delay(10);
+    }
+  }
+  Serial.println("");
+
+  // Wait a bit before scanning again
+  delay(5000);
 }

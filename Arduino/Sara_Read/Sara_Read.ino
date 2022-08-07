@@ -1,4 +1,4 @@
-char input[64];
+char input;
 //String input;
 bool isAllBlank(const char *str)
 {
@@ -11,7 +11,7 @@ bool isAllBlank(const char *str)
 }
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(4800);
   delay(2000);
 
   Serial.println("Type something!");
@@ -19,7 +19,7 @@ void setup() {
 
 void loop() {
   if (Serial.available()) {
-    //input = Serial.readString();
-    Serial.println(Serial.readStringUntil('+'));
+    input = Serial.read();
+    Serial.println(input);
   }
 }

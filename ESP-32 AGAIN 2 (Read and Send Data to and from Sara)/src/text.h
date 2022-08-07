@@ -2,9 +2,9 @@
 extern int Rx;
 extern int Tx;
 extern int clocks;
+
 void onee();
 void zeroo();
-
 void excl();
 void dquote();
 void hash();

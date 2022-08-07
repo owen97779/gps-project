@@ -10,7 +10,7 @@ uint8_t RTS = 12; // REQUEST TO SEND
 
 void setup()
 {
-  Serial.begin(4800);
+  Serial.begin(9600);
   pinMode(Rx, INPUT);
   pinMode(Tx, OUTPUT);
   // while (!Serial)
@@ -22,7 +22,9 @@ void setup()
 void loop()
 {
   A();
+  //Serial.println(digitalRead(Rx));
   T();
-  semi();
-  delay(50);
+  //plus();
+  //Serial.println(digitalRead(Rx));
+  delay(100);
 }
