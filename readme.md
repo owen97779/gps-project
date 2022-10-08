@@ -25,3 +25,6 @@ The aim of the project is to design an open-source IoT-enabled GPS that can be u
 
 ## Design
 Multiple prototypes are being developed, each prototype with the aim of improving each design based on the limitations of the current in achieving the goals outlined above. The process can be viewed on [my blog](https://owen97779.github.io/GPS.html).
+
+## Repository Branches
+There are multiple branches working on different aspects of the project. Finalised builds will be merged onto the main branch.
