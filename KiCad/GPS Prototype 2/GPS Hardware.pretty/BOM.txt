@@ -1,3 +1,0 @@
-3DX_CUI_DEVICES_Supplier: CUI Devices
-3DX_CUI_DEVICES_Description: 6 x 6 mm, 5.5 mm Actuator Height, 160 gf, Black, Surface Mount, SPST, Tactile Switch
-3DX_CUI_DEVICES_Model Number: TS04-66-55-BK-160-SMT
