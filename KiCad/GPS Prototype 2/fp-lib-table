@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name "GPS Hardware")(type KiCad)(uri "${KIPRJMOD}/GPS Hardware.pretty")(options "")(descr ""))
-)
