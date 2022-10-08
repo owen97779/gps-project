@@ -1,0 +1,789 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GPS~Hardware:BQ24295 U?
+U 1 1 613BC225
+P 4700 2000
+AR Path="/613BC225" Ref="U?"  Part="1" 
+AR Path="/613B204B/613BC225" Ref="U3"  Part="1" 
+F 0 "U3" H 4700 3250 50  0000 C CNN
+F 1 "BQ24295" H 4700 3150 50  0000 C CNN
+F 2 "GPS Hardware:QFN50P400X400X100-25N" H 4750 2400 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/BQ24295RGER?qs=igp4D3uu33JuaPeRfsSg2w%3D%3D" H 4750 2400 50  0001 C CNN
+	1    4700 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GPS-Hardware-rescue:USB_C_Receptacle_USB2.0-Connector J?
+U 1 1 613BC22B
+P 1150 1550
+AR Path="/613BC22B" Ref="J?"  Part="1" 
+AR Path="/613B204B/613BC22B" Ref="J1"  Part="1" 
+F 0 "J1" H 1257 2417 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 1257 2326 50  0000 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 1300 1550 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1300 1550 50  0001 C CNN
+	1    1150 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GPS~Hardware:ESD122DMX U?
+U 1 1 613BC237
+P 2900 1100
+AR Path="/613BC237" Ref="U?"  Part="1" 
+AR Path="/613B204B/613BC237" Ref="U1"  Part="1" 
+F 0 "U1" H 2900 1475 50  0000 C CNN
+F 1 "ESD122DMX" H 2900 1384 50  0000 C CNN
+F 2 "GPS Hardware:IC_ESD122DMXR" H 2900 1150 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/ESD122DMXR?qs=%2Fha2pyFaduihn3aKw32kKFOpmmjnpuflw4tqhxDwaDnOkPWXZway8Q%3D%3D" H 2900 1150 50  0001 C CNN
+	1    2900 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GPS-Hardware-rescue:C-Device C?
+U 1 1 613BC23D
+P 3850 1100
+AR Path="/613BC23D" Ref="C?"  Part="1" 
+AR Path="/613B204B/613BC23D" Ref="C1"  Part="1" 
+F 0 "C1" H 3965 1146 50  0000 L CNN
+F 1 "1u" H 3965 1055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 3888 950 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/ProductDetail/Taiyo-Yuden/LMK107B7105KAHT?qs=CNQs48zzdnpelxTWRrWvpA%3D%3D" H 3550 1100 50  0001 L CNN
+	1    3850 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 1550 1750 1500
+Wire Wire Line
+	1750 1650 1750 1700
+Text GLabel 1750 950  2    50   Output ~ 0
+VBUS
+Text GLabel 3750 950  0    50   Input ~ 0
+VBUS
+Text GLabel 1800 1700 2    50   Output ~ 0
+D+
+Text GLabel 1800 1500 2    50   Output ~ 0
+D-
+Text GLabel 2600 950  0    50   BiDi ~ 0
+D+
+Text GLabel 2600 1050 0    50   BiDi ~ 0
+D-
+Text GLabel 4250 1800 0    50   Input ~ 0
+D+
+Text GLabel 4250 1900 0    50   Input ~ 0
+D-
+NoConn ~ 1750 2050
+NoConn ~ 1750 2150
+$Comp
+L GPS-Hardware-rescue:GND-power #PWR?
+U 1 1 613BC25E
+P 1150 2450
+AR Path="/613BC25E" Ref="#PWR?"  Part="1" 
+AR Path="/613B204B/613BC25E" Ref="#PWR0101"  Part="1" 
+F 0 "#PWR0101" H 1150 2200 50  0001 C CNN
+F 1 "GND" H 1155 2277 50  0000 C CNN
+F 2 "" H 1150 2450 50  0001 C CNN
+F 3 "" H 1150 2450 50  0001 C CNN
+	1    1150 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GPS-Hardware-rescue:GND-power #PWR?
+U 1 1 613BC264
+P 5150 3050
+AR Path="/613BC264" Ref="#PWR?"  Part="1" 
+AR Path="/613B204B/613BC264" Ref="#PWR0102"  Part="1" 
+F 0 "#PWR0102" H 5150 2800 50  0001 C CNN
+F 1 "GND" H 5155 2877 50  0000 C CNN
+F 2 "" H 5150 3050 50  0001 C CNN
+F 3 "" H 5150 3050 50  0001 C CNN
+	1    5150 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GPS-Hardware-rescue:GND-power #PWR?
+U 1 1 613BC26A
+P 3200 1250
+AR Path="/613BC26A" Ref="#PWR?"  Part="1" 
+AR Path="/613B204B/613BC26A" Ref="#PWR0103"  Part="1" 
+F 0 "#PWR0103" H 3200 1000 50  0001 C CNN
+F 1 "GND" H 3205 1077 50  0000 C CNN
+F 2 "" H 3200 1250 50  0001 C CNN
+F 3 "" H 3200 1250 50  0001 C CNN
+	1    3200 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GPS-Hardware-rescue:R-Device R?
+U 1 1 613BC276
+P 4100 2100
+AR Path="/613BC276" Ref="R?"  Part="1" 
+AR Path="/613B204B/613BC276" Ref="R6"  Part="1" 
+F 0 "R6" V 4000 2100 50  0000 C CNN
+F 1 "10k" V 4100 2100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 4030 2100 50  0001 C CNN
+F 3 "~" H 4100 2100 50  0001 C CNN
+	1    4100 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L GPS-Hardware-rescue:GND-power #PWR?
+U 1 1 613BC27C
+P 3950 2100
+AR Path="/613BC27C" Ref="#PWR?"  Part="1" 
+AR Path="/613B204B/613BC27C" Ref="#PWR0105"  Part="1" 
+F 0 "#PWR0105" H 3950 1850 50  0001 C CNN
+F 1 "GND" V 3955 1972 50  0000 R CNN
+F 2 "" H 3950 2100 50  0001 C CNN
+F 3 "" H 3950 2100 50  0001 C CNN
+	1    3950 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L GPS-Hardware-rescue:R-Device R?
+U 1 1 613BC282
+P 4100 2200
+AR Path="/613BC282" Ref="R?"  Part="1" 
+AR Path="/613B204B/613BC282" Ref="R7"  Part="1" 
+F 0 "R7" V 4000 2200 50  0000 C CNN
+F 1 "10k" V 4100 2200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 4030 2200 50  0001 C CNN
+F 3 "~" H 4100 2200 50  0001 C CNN
+	1    4100 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GPS-Hardware-rescue:GND-power #PWR?
+U 1 1 613BC288
+P 3950 2200
+AR Path="/613BC288" Ref="#PWR?"  Part="1" 
+AR Path="/613B204B/613BC288" Ref="#PWR0106"  Part="1" 
+F 0 "#PWR0106" H 3950 1950 50  0001 C CNN
+F 1 "GND" V 3955 2072 50  0000 R CNN
+F 2 "" H 3950 2200 50  0001 C CNN
+F 3 "" H 3950 2200 50  0001 C CNN
+	1    3950 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L GPS-Hardware-rescue:R-Device R?
+U 1 1 613BC290
+P 3550 2600
+AR Path="/613BC290" Ref="R?"  Part="1" 
+AR Path="/613B204B/613BC290" Ref="R3"  Part="1" 
+F 0 "R3" H 3480 2554 50  0000 R CNN
+F 1 "4k7" V 3550 2650 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 3480 2600 50  0001 C CNN
+F 3 "~" H 3550 2600 50  0001 C CNN
+	1    3550 2600
+	-1   0    0    1   
+$EndComp
+Text GLabel 3450 2800 0    50   Input ~ 0
+SCL_Power
+Text GLabel 3450 2900 0    50   BiDi ~ 0
+SDA_Power
+$Comp
+L GPS-Hardware-rescue:R-Device R?
+U 1 1 613BC298
+P 4050 2600
+AR Path="/613BC298" Ref="R?"  Part="1" 
+AR Path="/613B204B/613BC298" Ref="R5"  Part="1" 
+F 0 "R5" H 3980 2554 50  0000 R CNN
+F 1 "4k7" V 4050 2650 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 3980 2600 50  0001 C CNN
+F 3 "~" H 4050 2600 50  0001 C CNN
+	1    4050 2600
+	-1   0    0    1   
+$EndComp
+Text GLabel 3450 3000 0    50   Output ~ 0
+INT_Power
+Wire Wire Line
+	4250 2800 3550 2800
+Wire Wire Line
+	4250 2900 3800 2900
+Wire Wire Line
+	4250 3000 4050 3000
+$Comp
+L GPS-Hardware-rescue:R-Device R?
+U 1 1 613BC2A2
+P 3800 2600
+AR Path="/613BC2A2" Ref="R?"  Part="1" 
+AR Path="/613B204B/613BC2A2" Ref="R4"  Part="1" 
+F 0 "R4" H 3870 2646 50  0000 L CNN
+F 1 "4k7" V 3800 2550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 3730 2600 50  0001 C CNN
+F 3 "~" H 3800 2600 50  0001 C CNN
+	1    3800 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 2750 3550 2800
+Connection ~ 3550 2800
+Wire Wire Line
+	3550 2800 3450 2800
+Wire Wire Line
+	3800 2750 3800 2900
+Connection ~ 3800 2900
+Wire Wire Line
+	3800 2900 3450 2900
+Wire Wire Line
+	4050 2750 4050 3000
+Connection ~ 4050 3000
+Wire Wire Line
+	4050 3000 3450 3000
+Wire Wire Line
+	4050 2450 3800 2450
+Connection ~ 3800 2450
+Wire Wire Line
+	3800 2450 3550 2450
+$Comp
+L GPS-Hardware-rescue:+3.3V-power #PWR?
+U 1 1 613BC2B4
+P 3800 2450
+AR Path="/613BC2B4" Ref="#PWR?"  Part="1" 
+AR Path="/613B204B/613BC2B4" Ref="#PWR0107"  Part="1" 
+F 0 "#PWR0107" H 3800 2300 50  0001 C CNN
+F 1 "+3.3V" H 3815 2623 50  0000 C CNN
+F 2 "" H 3800 2450 50  0001 C CNN
+F 3 "" H 3800 2450 50  0001 C CNN
+	1    3800 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GPS-Hardware-rescue:GND-power #PWR?
+U 1 1 613BC2BA
+P 2050 1150
+AR Path="/613BC2BA" Ref="#PWR?"  Part="1" 
+AR Path="/613B204B/613BC2BA" Ref="#PWR0108"  Part="1" 
+F 0 "#PWR0108" H 2050 900 50  0001 C CNN
+F 1 "GND" V 2055 1022 50  0000 R CNN
+F 2 "" H 2050 1150 50  0001 C CNN
+F 3 "" H 2050 1150 50  0001 C CNN
+	1    2050 1150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GPS-Hardware-rescue:GND-power #PWR?
+U 1 1 613BC2C0
+P 2050 1250
+AR Path="/613BC2C0" Ref="#PWR?"  Part="1" 
+AR Path="/613B204B/613BC2C0" Ref="#PWR0109"  Part="1" 
+F 0 "#PWR0109" H 2050 1000 50  0001 C CNN
+F 1 "GND" V 2055 1122 50  0000 R CNN
+F 2 "" H 2050 1250 50  0001 C CNN
+F 3 "" H 2050 1250 50  0001 C CNN
+	1    2050 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GPS-Hardware-rescue:C-Device C?
+U 1 1 613BC2C6
+P 5250 1100
+AR Path="/613BC2C6" Ref="C?"  Part="1" 
+AR Path="/613B204B/613BC2C6" Ref="C3"  Part="1" 
+F 0 "C3" H 5365 1146 50  0000 L CNN
+F 1 "47n" H 5365 1055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 5288 950 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/ProductDetail/Samsung-Electro-Mechanics/CL10B473KO8NNNC?qs=X6jEic%2FHinAEbu%2FfpWZrPQ%3D%3D" H 5250 1100 50  0001 C CNN
+	1    5250 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GPS-Hardware-rescue:L-Device L?
+U 1 1 613BC2D0
+P 5750 1300
+AR Path="/613BC2D0" Ref="L?"  Part="1" 
+AR Path="/613B204B/613BC2D0" Ref="L1"  Part="1" 
+F 0 "L1" V 5940 1300 50  0000 C CNN
+F 1 "2u2" V 5849 1300 50  0000 C CNN
+F 2 "GPS Hardware:IND_SRP0312-2R2K" H 5750 1300 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/ProductDetail/Bourns/SRP0312-2R2K?qs=OlC7AqGiEDm3h2uD5NkxPQ%3D%3D" H 5750 1300 50  0001 C CNN
+	1    5750 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GPS-Hardware-rescue:C-Device C?
+U 1 1 613BC2E0
+P 6250 1650
+AR Path="/613BC2E0" Ref="C?"  Part="1" 
+AR Path="/613B204B/613BC2E0" Ref="C6"  Part="1" 
+F 0 "C6" H 6365 1696 50  0000 L CNN
+F 1 "22u" H 6365 1605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 6288 1500 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/ProductDetail/Samsung-Electro-Mechanics/CL10A226MP8NRNC?qs=xZ%2FP%252Ba9zWqbykJJ6x%252BsWhA%3D%3D" H 6250 1650 50  0001 C CNN
+	1    6250 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GPS-Hardware-rescue:GND-power #PWR?
+U 1 1 613BC2F0
+P 6250 1800
+AR Path="/613BC2F0" Ref="#PWR?"  Part="1" 
+AR Path="/613B204B/613BC2F0" Ref="#PWR0111"  Part="1" 
+F 0 "#PWR0111" H 6250 1550 50  0001 C CNN
+F 1 "GND" H 6255 1627 50  0000 C CNN
+F 2 "" H 6250 1800 50  0001 C CNN
+F 3 "" H 6250 1800 50  0001 C CNN
+	1    6250 1800
+	1    0    0    -1  
+$EndComp
+Text GLabel 6550 1600 3    50   Output ~ 0
+SYS
+$Comp
+L GPS-Hardware-rescue:GND-power #PWR?
+U 1 1 613BC2F9
+P 850 2450
+AR Path="/613BC2F9" Ref="#PWR?"  Part="1" 
+AR Path="/613B204B/613BC2F9" Ref="#PWR0112"  Part="1" 
+F 0 "#PWR0112" H 850 2200 50  0001 C CNN
+F 1 "GND" H 855 2277 50  0000 C CNN
+F 2 "" H 850 2450 50  0001 C CNN
+F 3 "" H 850 2450 50  0001 C CNN
+	1    850  2450
+	1    0    0    -1  
+$EndComp
+Text GLabel 5900 1900 2    50   Input ~ 0
+SYS
+$Comp
+L GPS-Hardware-rescue:LED-Device D?
+U 1 1 613BC300
+P 5700 1900
+AR Path="/613BC300" Ref="D?"  Part="1" 
+AR Path="/613B204B/613BC300" Ref="D1"  Part="1" 
+F 0 "D1" H 5693 2117 50  0000 C CNN
+F 1 "LED" H 5693 2026 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5700 1900 50  0001 C CNN
+F 3 "~" H 5700 1900 50  0001 C CNN
+	1    5700 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 1900 5850 1900
+Wire Wire Line
+	5550 1900 5450 1900
+$Comp
+L GPS-Hardware-rescue:R-Device R?
+U 1 1 613BC308
+P 5300 1900
+AR Path="/613BC308" Ref="R?"  Part="1" 
+AR Path="/613B204B/613BC308" Ref="R8"  Part="1" 
+F 0 "R8" V 5200 1900 50  0000 C CNN
+F 1 "250" V 5300 1900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 5230 1900 50  0001 C CNN
+F 3 "~" H 5300 1900 50  0001 C CNN
+	1    5300 1900
+	0    1    1    0   
+$EndComp
+Text GLabel 5900 2000 2    50   Input ~ 0
+SYS
+Wire Wire Line
+	5900 2000 5450 2000
+$Comp
+L GPS-Hardware-rescue:GND-power #PWR?
+U 1 1 613BC322
+P 6100 2350
+AR Path="/613BC322" Ref="#PWR?"  Part="1" 
+AR Path="/613B204B/613BC322" Ref="#PWR0115"  Part="1" 
+F 0 "#PWR0115" H 6100 2100 50  0001 C CNN
+F 1 "GND" H 6105 2177 50  0000 C CNN
+F 2 "" H 6100 2350 50  0001 C CNN
+F 3 "" H 6100 2350 50  0001 C CNN
+	1    6100 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GPS-Hardware-rescue:C-Device C?
+U 1 1 613BC328
+P 5850 2400
+AR Path="/613BC328" Ref="C?"  Part="1" 
+AR Path="/613B204B/613BC328" Ref="C5"  Part="1" 
+F 0 "C5" H 5965 2446 50  0000 L CNN
+F 1 "10u" H 5965 2355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 5888 2250 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/ProductDetail/Taiyo-Yuden/JMK107ABJ106KA-T?qs=lkMpTOwszhd28fybYDECfg%3D%3D" H 5850 2400 50  0001 C CNN
+	1    5850 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 2250 5850 2250
+Connection ~ 5850 2250
+Wire Wire Line
+	5850 2250 5150 2250
+$Comp
+L GPS-Hardware-rescue:GND-power #PWR?
+U 1 1 613BC331
+P 5850 2550
+AR Path="/613BC331" Ref="#PWR?"  Part="1" 
+AR Path="/613B204B/613BC331" Ref="#PWR0116"  Part="1" 
+F 0 "#PWR0116" H 5850 2300 50  0001 C CNN
+F 1 "GND" H 5855 2377 50  0000 C CNN
+F 2 "" H 5850 2550 50  0001 C CNN
+F 3 "" H 5850 2550 50  0001 C CNN
+	1    5850 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GPS-Hardware-rescue:C-Device C?
+U 1 1 613BC337
+P 5250 2500
+AR Path="/613BC337" Ref="C?"  Part="1" 
+AR Path="/613B204B/613BC337" Ref="C4"  Part="1" 
+F 0 "C4" H 5365 2546 50  0000 L CNN
+F 1 "4u7" H 5365 2455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 5288 2350 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/ProductDetail/Samsung-Electro-Mechanics/CL10A475KQ8NNWC?qs=EvNa9vf1TdZbxyCJBSuGUg%3D%3D" H 5250 2500 50  0001 C CNN
+	1    5250 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GPS-Hardware-rescue:GND-power #PWR?
+U 1 1 613BC33D
+P 5250 2650
+AR Path="/613BC33D" Ref="#PWR?"  Part="1" 
+AR Path="/613B204B/613BC33D" Ref="#PWR0117"  Part="1" 
+F 0 "#PWR0117" H 5250 2400 50  0001 C CNN
+F 1 "GND" H 5255 2477 50  0000 C CNN
+F 2 "" H 5250 2650 50  0001 C CNN
+F 3 "" H 5250 2650 50  0001 C CNN
+	1    5250 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 2350 5250 2350
+Connection ~ 5250 2350
+$Comp
+L GPS-Hardware-rescue:R-Device R?
+U 1 1 613BC347
+P 5600 2800
+AR Path="/613BC347" Ref="R?"  Part="1" 
+AR Path="/613B204B/613BC347" Ref="R10"  Part="1" 
+F 0 "R10" H 5670 2846 50  0000 L CNN
+F 1 "5k23" V 5600 2700 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 5530 2800 50  0001 C CNN
+F 3 "~" H 5600 2800 50  0001 C CNN
+	1    5600 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GPS-Hardware-rescue:R-Device R?
+U 1 1 613BC34D
+P 5600 3100
+AR Path="/613BC34D" Ref="R?"  Part="1" 
+AR Path="/613B204B/613BC34D" Ref="R11"  Part="1" 
+F 0 "R11" H 5670 3146 50  0000 L CNN
+F 1 "32k" V 5600 3050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5530 3100 50  0001 C CNN
+F 3 "~" H 5600 3100 50  0001 C CNN
+	1    5600 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GPS-Hardware-rescue:Thermistor_NTC-Device TH?
+U 1 1 613BC353
+P 6000 3100
+AR Path="/613BC353" Ref="TH?"  Part="1" 
+AR Path="/613B204B/613BC353" Ref="TH1"  Part="1" 
+F 0 "TH1" H 6098 3146 50  0000 L CNN
+F 1 "Thermistor_NTC 10K" H 6098 3055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 6000 3150 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/NCP21XV103J03RA?qs=X7SGqsckn%2FJexuhMPnYgzQ%3D%3D" H 6000 3150 50  0001 C CNN
+	1    6000 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 2950 5600 2950
+Connection ~ 5600 2950
+Wire Wire Line
+	5600 2950 6000 2950
+$Comp
+L GPS-Hardware-rescue:GND-power #PWR?
+U 1 1 613BC35C
+P 5600 3250
+AR Path="/613BC35C" Ref="#PWR?"  Part="1" 
+AR Path="/613B204B/613BC35C" Ref="#PWR0118"  Part="1" 
+F 0 "#PWR0118" H 5600 3000 50  0001 C CNN
+F 1 "GND" H 5605 3077 50  0000 C CNN
+F 2 "" H 5600 3250 50  0001 C CNN
+F 3 "" H 5600 3250 50  0001 C CNN
+	1    5600 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GPS-Hardware-rescue:GND-power #PWR?
+U 1 1 613BC362
+P 6000 3250
+AR Path="/613BC362" Ref="#PWR?"  Part="1" 
+AR Path="/613B204B/613BC362" Ref="#PWR0119"  Part="1" 
+F 0 "#PWR0119" H 6000 3000 50  0001 C CNN
+F 1 "GND" H 6005 3077 50  0000 C CNN
+F 2 "" H 6000 3250 50  0001 C CNN
+F 3 "" H 6000 3250 50  0001 C CNN
+	1    6000 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 1500 1800 1500
+Connection ~ 1750 1500
+Wire Wire Line
+	1750 1500 1750 1450
+Wire Wire Line
+	1750 1700 1800 1700
+Connection ~ 1750 1700
+Wire Wire Line
+	1750 1700 1750 1750
+Text GLabel 7100 1500 2    50   Output ~ 0
+VCC
+Text Notes 5900 800  0    50   ~ 0
+Check if switch is required
+NoConn ~ 4250 2300
+$Comp
+L GPS-Hardware-rescue:C-Device C2
+U 1 1 6140FB1F
+P 3850 1550
+F 0 "C2" H 3965 1596 50  0000 L CNN
+F 1 "22u" H 3965 1505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 3888 1400 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/ProductDetail/Samsung-Electro-Mechanics/CL10A226MP8NRNC?qs=xZ%2FP%252Ba9zWqbykJJ6x%252BsWhA%3D%3D" H 3850 1550 50  0001 C CNN
+	1    3850 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GPS-Hardware-rescue:GND-power #PWR0120
+U 1 1 61411635
+P 3850 1700
+F 0 "#PWR0120" H 3850 1450 50  0001 C CNN
+F 1 "GND" H 3855 1527 50  0000 C CNN
+F 2 "" H 3850 1700 50  0001 C CNN
+F 3 "" H 3850 1700 50  0001 C CNN
+	1    3850 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GPS-Hardware-rescue:GND-power #PWR0121
+U 1 1 614120E2
+P 3850 1250
+F 0 "#PWR0121" H 3850 1000 50  0001 C CNN
+F 1 "GND" H 3855 1077 50  0000 C CNN
+F 2 "" H 3850 1250 50  0001 C CNN
+F 3 "" H 3850 1250 50  0001 C CNN
+	1    3850 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 950  4250 950 
+Wire Wire Line
+	3850 1400 4250 1400
+$Comp
+L GPS-Hardware-rescue:CP-Device C7
+U 1 1 6142C46C
+P 6850 1650
+F 0 "C7" H 6968 1696 50  0000 L CNN
+F 1 "220u" H 6968 1605 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-12_Kemet-T_Pad1.50x2.35mm_HandSolder" H 6888 1500 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/ProductDetail/AVX/F930J227MBA?qs=sGAEpiMZZMtZ1n0r9vR22dQtzANU%252BEXpnQ1Vtzj%2FLbk%3D" H 6850 1650 50  0001 C CNN
+	1    6850 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GPS-Hardware-rescue:GND-power #PWR0122
+U 1 1 6142CFD4
+P 6850 1800
+F 0 "#PWR0122" H 6850 1550 50  0001 C CNN
+F 1 "GND" H 6855 1627 50  0000 C CNN
+F 2 "" H 6850 1800 50  0001 C CNN
+F 3 "" H 6850 1800 50  0001 C CNN
+	1    6850 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 2350 5600 2650
+Wire Wire Line
+	5250 2350 5600 2350
+Text Notes 7500 950  0    50   ~ 0
+Different capacitor values for low impedance at a range of frequencies
+$Comp
+L GPS-Hardware-rescue:LM3480-3.3-Regulator_Linear U4
+U 1 1 6145B119
+P 8600 1750
+F 0 "U4" H 8600 1992 50  0000 C CNN
+F 1 "LM3480-3.3" H 8600 1901 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8600 1975 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm3480.pdf" H 8600 1750 50  0001 C CNN
+	1    8600 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GPS-Hardware-rescue:C-Device C8
+U 1 1 6146363C
+P 8150 1900
+F 0 "C8" H 8265 1946 50  0000 L CNN
+F 1 "0u1" H 8265 1855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 8188 1750 50  0001 C CNN
+F 3 "~" H 8150 1900 50  0001 C CNN
+	1    8150 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GPS-Hardware-rescue:C-Device C9
+U 1 1 614640B3
+P 9050 1900
+F 0 "C9" H 9165 1946 50  0000 L CNN
+F 1 "0u1" H 9165 1855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 9088 1750 50  0001 C CNN
+F 3 "~" H 9050 1900 50  0001 C CNN
+	1    9050 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 1750 8300 1750
+Wire Wire Line
+	8900 1750 9050 1750
+Text GLabel 8000 1750 0    50   Input ~ 0
+VCC
+Wire Wire Line
+	8000 1750 8150 1750
+Connection ~ 8150 1750
+$Comp
+L GPS-Hardware-rescue:+3V3-power #PWR0123
+U 1 1 6146807E
+P 9250 1750
+F 0 "#PWR0123" H 9250 1600 50  0001 C CNN
+F 1 "+3V3" V 9265 1878 50  0000 L CNN
+F 2 "" H 9250 1750 50  0001 C CNN
+F 3 "" H 9250 1750 50  0001 C CNN
+	1    9250 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9050 1750 9250 1750
+Connection ~ 9050 1750
+$Comp
+L GPS-Hardware-rescue:GND-power #PWR0124
+U 1 1 6146B115
+P 8150 2050
+F 0 "#PWR0124" H 8150 1800 50  0001 C CNN
+F 1 "GND" H 8155 1877 50  0000 C CNN
+F 2 "" H 8150 2050 50  0001 C CNN
+F 3 "" H 8150 2050 50  0001 C CNN
+	1    8150 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GPS-Hardware-rescue:GND-power #PWR0125
+U 1 1 6146BB0D
+P 9050 2050
+F 0 "#PWR0125" H 9050 1800 50  0001 C CNN
+F 1 "GND" H 9055 1877 50  0000 C CNN
+F 2 "" H 9050 2050 50  0001 C CNN
+F 3 "" H 9050 2050 50  0001 C CNN
+	1    9050 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GPS-Hardware-rescue:GND-power #PWR0126
+U 1 1 6146F41C
+P 8600 2050
+F 0 "#PWR0126" H 8600 1800 50  0001 C CNN
+F 1 "GND" H 8605 1877 50  0000 C CNN
+F 2 "" H 8600 2050 50  0001 C CNN
+F 3 "" H 8600 2050 50  0001 C CNN
+	1    8600 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 950  3850 950 
+Connection ~ 3850 950 
+Wire Wire Line
+	5150 950  5250 950 
+Wire Wire Line
+	5150 1300 5250 1300
+Wire Wire Line
+	5250 1300 5250 1250
+Connection ~ 5250 1300
+Wire Wire Line
+	5150 1500 6250 1500
+Wire Wire Line
+	6250 1500 6250 1300
+Connection ~ 6250 1500
+Wire Wire Line
+	5250 1300 5600 1300
+Wire Wire Line
+	5900 1300 6250 1300
+Wire Wire Line
+	6250 1500 6550 1500
+Wire Wire Line
+	6550 1500 6550 1600
+Wire Wire Line
+	6850 1500 6550 1500
+Connection ~ 6550 1500
+Wire Wire Line
+	6850 1500 7100 1500
+Connection ~ 6850 1500
+$Comp
+L GPS-Hardware-rescue:R-Device R?
+U 1 1 613BC252
+P 1900 1150
+AR Path="/613BC252" Ref="R?"  Part="1" 
+AR Path="/613B204B/613BC252" Ref="R1"  Part="1" 
+F 0 "R1" V 1800 1150 50  0000 C CNN
+F 1 "5k1" V 1900 1150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 1830 1150 50  0001 C CNN
+F 3 "~" H 1900 1150 50  0001 C CNN
+	1    1900 1150
+	0    1    1    0   
+$EndComp
+$Comp
+L GPS-Hardware-rescue:R-Device R?
+U 1 1 613BC258
+P 1900 1250
+AR Path="/613BC258" Ref="R?"  Part="1" 
+AR Path="/613B204B/613BC258" Ref="R2"  Part="1" 
+F 0 "R2" V 2000 1250 50  0000 C CNN
+F 1 "5k1" V 1900 1250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 1830 1250 50  0001 C CNN
+F 3 "~" H 1900 1250 50  0001 C CNN
+	1    1900 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L GPS-Hardware-rescue:R-Device R?
+U 1 1 613BC310
+P 5300 2000
+AR Path="/613BC310" Ref="R?"  Part="1" 
+AR Path="/613B204B/613BC310" Ref="R9"  Part="1" 
+F 0 "R9" V 5200 2000 50  0000 C CNN
+F 1 "10k" V 5300 2000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5230 2000 50  0001 C CNN
+F 3 "~" H 5300 2000 50  0001 C CNN
+	1    5300 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GPS~Hardware:B2B-XH-A(LF)(SN) J5
+U 1 1 61376EBD
+P 6500 2250
+F 0 "J5" H 6730 2246 50  0000 L CNN
+F 1 "B2B-XH-A(LF)(SN)" H 6730 2155 50  0000 L CNN
+F 2 "JST_B2B-XH-A(LF)(SN)" H 6500 2250 50  0001 L BNN
+F 3 "" H 6500 2250 50  0001 L BNN
+F 4 "7.0 mm" H 6500 2250 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 5 "1.0" H 6500 2250 50  0001 L BNN "PARTREV"
+F 6 "Manufacturer Recommendations" H 6500 2250 50  0001 L BNN "STANDARD"
+F 7 "JST Sales" H 6500 2250 50  0001 L BNN "MANUFACTURER"
+	1    6500 2250
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
